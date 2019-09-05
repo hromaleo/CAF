@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Cafeteria | Edenred</title>
+  </head>
+  <body>
+    <!-- Main header with company logo and user account values -->
+    <header class="main-header">
+      <div class="logo">
+        <img src="./img/edenred-logo.png" alt="Logo Edenred" />
+      </div>
+
+      <div class="user-balance">
+        <div class="user-balance__icon"></div>
+        <div class="user-balance__balance">Můj účet: 8256 bodů</div>
+      </div>
+
+      <span class="user-name">Jan Novák</span>
+      <span class="user-logout"><a href="index.html">Odhlásit se</a></span>
+
+      <div class="lang-select">
+        <div class="lang-select__icon"></div>
+        <div class="lang-select__menu">CZ</div>
+      </div>
+
+      <div class="contact-phone">
+        <div class="contact-phone__icon"></div>
+        <div class="contact-phone__number">800 153 156</div>
+      </div>
+
+      <button class="btn btn--shop" value="Košík" type="button">Košík</button>
+    </header>
+    <!-- End main header -->
+
+    <!-- Main menu (stripe) -->
+    <nav class="main-navbar">
+      <div class="main-navbar__icon"></div>
+      <div class="main-navbar__item">Katalog odměn</div>
+      <div class="main-navbar__item">Možnosti čerpání odměny</div>
+      <div class="main-navbar__item">Možnosti cafeterie</div>
+      <div class="main-navbar__item">Interní benefity</div>
+      <div class="main-navbar__item">Speciální slevy</div>
+    </nav>
+    <!-- End main menu -->
+
+    <!-- Hero image with reward search and basic links -->
+    <div class="hero">
+      <div class="hero__sidebar hero__sidebar--left">
+        <button
+          type="button"
+          value="Zprávy, novinky"
+          class="btn btn--msg btn--numbered"
+        >
+          Zprávy, novinky
+        </button>
+        <button type="button" value="Anketa" class="btn btn--msg">
+          Anketa
+        </button>
+        <button type="button" value="Jak to funguje?" class="btn btn--how">
+          Jak to funguje?
+        </button>
+      </div>
+
+      <div class="hero__content">
+        <h1>Vyberte si <strong>svou odměnu!</strong></h1>
+        <div class="search-field">
+          <div class="search-field__input">
+            <input type="text" />
+          </div>
+          <div class="search-field__btn">
+            <button type="submit" value="Vyhledat" class="btn btn--search">
+              Vyhledat
+            </button>
+          </div>
+          <div class="search-field__options">
+            <a href="">Zobrazit katalog</a> <a href="">Zobrazit na mapě</a>
+          </div>
+        </div>
+        <h2>Možnosti čerpání benefitů:</h2>
+        <div class="wrapper wrapper--profile">
+          <div class="card card--btn">
+            <div class="card__title">
+              Dobijte svou kartu
+            </div>
+            <div class="card__img">
+              <img src="./img/TBC.png" alt="" />
+            </div>
+            <div class="card__btn">
+              <button
+                type="button"
+                value="Chci body na kartu"
+                class="btn btn--link"
+              >
+                Chci body na kartu
+              </button>
+            </div>
+          </div>
+          <div class="card card--btn">
+            <div class="card__title">
+              Vyměňte body za poukázky
+            </div>
+            <div class="card__img">
+              <img src="./img/TMULTI.png" alt="" />
+            </div>
+            <div class="card__btn">
+              <button
+                type="button"
+                value="Mám zájem o poukázky"
+                class="btn btn--link"
+              >
+                Mám zájem o poukázky
+              </button>
+            </div>
+          </div>
+          <div class="card card--btn">
+            <div class="card__title">
+              Prohlédněte si partnerské e-shopy
+            </div>
+            <div class="card__img">
+              <img src="./img/basket.png" alt="" />
+            </div>
+            <div class="card__btn">
+              <button
+                type="button"
+                value="Zobrazit seznam e-shopů"
+                class="btn btn--link"
+              >
+                Zobrazit seznam e-shopů
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__sidebar hero__sidebar--right"></div>
+    </div>
+    <!-- End hero image-->
+
+    <!-- User area with account balance -->
+    <div class="area area--user">
+      <div class="area__icon"></div>
+      <div class="area__content">
+        <h2>Hodnoty vašich benefitů</h2>
+        <div>8256 Kč</div>
+        <div class="wrapper wrapper--profile">
+          <div class="profile-card">
+            <div class="profile-card__title">Penzijní připojištění</div>
+            <div class="profile-card__balance">0 Kč</div>
+            <div class="profile-card__exp-date">
+              expirace do: 20. 12. 2015
+            </div>
+            <div class="profile-card__img">
+              <img src="./img/human.png" alt="" />
+            </div>
+          </div>
+          <div class="profile-card">
+            <div class="profile-card__title">Příspěvek na cestování</div>
+            <div class="profile-card__balance">5000 Kč</div>
+            <div class="profile-card__exp-date">
+              expirace do: 20. 12. 2015
+            </div>
+            <div class="profile-card__img">
+              <img src="./img/aircraft.png" alt="" />
+            </div>
+          </div>
+          <div class="profile-card">
+            <div class="profile-card__title">Příspěvek na stravenky</div>
+            <div class="profile-card__balance">3000 Kč</div>
+            <div class="profile-card__exp-date">
+              expirace do: 20. 12. 2015
+            </div>
+            <div class="profile-card__img">
+              <img src="./img/vouchers-full.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="user-goto-profile">
+          <a href="">Zobrazit všechny benefity v profilu</a>
+        </div>
+      </div>
+    </div>
+    <!-- End user area -->
+
+    <!-- Options area with carousel -->
+    <div class="area area--options bg-light">
+      <div class="area__icon"></div>
+      <div class="area__content">
+        <h2>Možnosti Cafeterie</h2>
+        <div class="carousel">
+          <div class="card card--simple">
+            <div class="card__title">
+              <a href="">Převést peníze ze mzdy</a>
+            </div>
+            <div class="card__img">
+              <img src="./img/transfer-money.png" alt="" />
+            </div>
+          </div>
+          <div class="card card--simple">
+            <div class="card__title">
+              <a href="">Stravenky</a>
+            </div>
+            <div class="card__img">
+              <img src="./img/vouchers.png" alt="" />
+            </div>
+          </div>
+          <div class="card card--simple">
+            <div class="card__title">
+              <a href="">Modul mimořádných odměn</a>
+            </div>
+            <div class="card__img">
+              <img src="./img/transfer-from-hr.png" alt="" />
+            </div>
+          </div>
+          <div class="card card--simple">
+            <div class="card__title">
+              <a href="">Finanční benefity</a>
+            </div>
+            <div class="card__img">
+              <img src="./img/pig.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End options area -->
+
+    <!-- Rewards categories area -->
+    <div class="area area--categories">
+      <div class="area__icon"></div>
+      <div class="area__content">
+        <h2>Kategorie odměn</h2>
+        <h3>Vyberte si Vaši odměnu a pokračujte dále</h3>
+        <div class="wrapper wrapper--categories">
+          <div class="card card--category">
+            <div class="card__title">Autoškoly</div>
+            <div class="card__img">
+              <img src="./img/icon-car.png" alt="" />
+            </div>
+          </div>
+          <div class="card card--category">
+            <div class="card__title">Cestování</div>
+            <div class="card__img">
+              <img src="./img/icon-aircraft.png" alt="" />
+            </div>
+          </div>
+          <div class="card card--category">
+            <div class="card__title">Jazykové kurzy</div>
+            <div class="card__img">
+              <img src="./img/icon-cartoon.png" alt="" />
+            </div>
+          </div>
+          <div class="card card--category">
+            <div class="card__title">Doprava</div>
+            <div class="card__img">
+              <img src="./img/icon-train.png" alt="" />
+            </div>
+          </div>
+          <div class="card card--category">
+            <div class="card__title">Optika</div>
+            <div class="card__img">
+              <img src="./img/icon-eye.png" alt="" />
+            </div>
+          </div>
+          <div class="card card--category">
+            <div class="card__title">Sport&amp;Kultura</div>
+            <div class="card__img">
+              <img src="./img/icon-play-ball.png" alt="" />
+            </div>
+          </div>
+          <div class="card card--category">
+            <div class="card__title">Ubytování</div>
+            <div class="card__img">
+              <img src="./img/icon-house.png" alt="" />
+            </div>
+          </div>
+          <div class="card card--category">
+            <div class="card__title">Vzdělávání</div>
+            <div class="card__img">
+              <img src="./img/icon-scholar.png" alt="" />
+            </div>
+          </div>
+          <div class="card card--category">
+            <div class="card__title">Wellness</div>
+            <div class="card__img">
+              <img src="./img/icon-wellness.png" alt="" />
+            </div>
+          </div>
+          <div class="card card--category">
+            <div class="card__title">Zážitky</div>
+            <div class="card__img">
+              <img src="./img/icon-tent.png" alt="" />
+            </div>
+          </div>
+          <div class="card card--category">
+            <div class="card__title">Zdravotní péče</div>
+            <div class="card__img">
+              <img src="./img/icon-health.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End rewards categories -->
+
+    <!-- Main footer -->
+    <footer class="main-footer bg-dark">
+      <!-- <div class="main-footer__section"> -->
+      <!-- <div>Interní benefity</div> -->
+      <ul class="main-footer__section">
+        <li>Interní benefity</li>
+        <li>Zaměstnanecký program - telefonní operátor</li>
+        <li>Pitný režim</li>
+        <li>Soukromé volání z firemních mobilních telefonů</li>
+        <li>Kvartální odměny</li>
+        <li>Benefit na dopravu</li>
+        <li>Odkup vyřazeného firemního majetku</li>
+        <li>Příspěvek na životní pojištění</li>
+        <li>Příspěvek na penzijní připojištění</li>
+      </ul>
+      <!-- </div> -->
+      <!-- <div class="main-footer__section"> -->
+      <!-- <div>Odkazy</div> -->
+      <ul class="main-footer__section">
+        <li>Odkazy</li>
+        <li>Jak to funguje?</li>
+        <li>Pravidla</li>
+        <li>Převést peníze ze mzdy</li>
+        <li>FAQ - Nejčastější dotazy</li>
+        <li>Ankety</li>
+        <li>Noví partneři</li>
+      </ul>
+      <!-- </div> -->
+      <!-- <div class="main-footer__section"> -->
+      <!-- <div>Cafeterie</div> -->
+      <ul class="main-footer__section">
+        <li>Cafeterie</li>
+        <li>Můj profil</li>
+        <li>Aplikace Ticketka</li>
+        <li>Nákupní košík</li>
+        <li>Doručení a platba</li>
+        <button
+          type="button"
+          value="Kontaktovat správce"
+          class="btn btn--simple"
+        >
+          Kontaktovat správce
+        </button>
+      </ul>
+      <!-- </div> -->
+    </footer>
+
+    <!-- End main footer -->
+
+    <!-- Secondary footer with &copy -->
+    <footer class="secondary-footer">
+      <div>
+        Copyright &copy; 2015 <a href=""> Edenred Benefity Café</a>. Všechna
+        práva vyhrazena.
+      </div>
+      <div class="logo">
+        <span>Powered by</span>
+        <img src="./img/edenred-logo.png" alt="" />
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+// All wrappers basic grid settings
+.wrapper {
+  display: grid;
+  margin: 2rem auto;
+
+  // Simple cards without button wrapper, 3 cols grid
+  &--profile {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+  }
+
+  // Categories wrappes, 7 cols, 2 rows grid
+  &--categories {
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 1rem;
+  }
+}

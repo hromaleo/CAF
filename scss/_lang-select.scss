@@ -1,0 +1,14 @@
+.lang-select {
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    height: 2.5em;
+    width: 2.5em;
+    background: url("../img/icon-world.png") no-repeat center/contain;
+  }
+  &__menu {
+    color: $color-alt;
+    margin: 0 0.5em;
+  }
+}

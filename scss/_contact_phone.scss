@@ -1,0 +1,14 @@
+.contact-phone {
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    height: 1.25em;
+    width: 1.25em;
+    background: url("../img/icon-phone.png") no-repeat center/contain;
+  }
+  &__number {
+    color: $color-alt;
+    margin: 0 0.25em;
+  }
+}

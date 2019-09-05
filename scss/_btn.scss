@@ -1,0 +1,97 @@
+// All buttons, size dependent on container
+.btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1rem;
+  border: none;
+  border-radius: 3px;
+  white-space: nowrap;
+  padding-right: 1em;
+  background: inherit;
+  &:before {
+    content: " ";
+  }
+
+  &--shop {
+    border: 2px $color-medium solid;
+    min-width: 10em;
+
+    &:before {
+      content: " ";
+      background: url("../img/icon-shop-cart.png") no-repeat center/contain;
+      filter: saturate(0);
+      height: 1.5em;
+      width: 1.5em;
+      margin: 0 1em;
+    }
+  }
+
+  &--search {
+    color: $color-primary;
+    background: $color-alt;
+
+    &:before {
+      content: " ";
+      background: url("../img/icon-magnifier.png") no-repeat center/contain;
+      filter: saturate(0) invert(1);
+      height: 1em;
+      width: 1em;
+      margin: 0 1em;
+    }
+  }
+
+  &--msg {
+    color: $color-primary;
+    background: $color-additional;
+
+    &:before {
+      content: " ";
+      background: url("../img/icon-msg.png") no-repeat center/contain;
+      transform: rotate(90deg);
+      height: 1em;
+      width: 1em;
+      margin: 0 1em;
+    }
+  }
+
+  &--how {
+    color: $color-primary;
+    background: $color-additional;
+
+    &:before {
+      content: " ";
+      background: url("../img/icon-mouse.png") no-repeat center/contain;
+      transform: rotate(90deg);
+      height: 1em;
+      width: 1em;
+      margin: 0 1em;
+    }
+  }
+
+  &--numbered {
+    &:after {
+      content: "6";
+      background: red;
+      width: 2em;
+      height: 2em;
+      border-radius: 50%;
+      margin-left: 1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  // General link button without special icon
+  &--link {
+    color: $color-primary;
+    background: $color-alt;
+    padding: 0 2em;
+  }
+
+  &--simple {
+    color: inherit;
+    border: 2px $color-medium solid;
+  }
+}

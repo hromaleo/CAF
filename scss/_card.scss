@@ -1,0 +1,90 @@
+// All top-bottom cards with images, titles, buttons
+.card {
+  border: 2px $color-medium solid;
+  border-radius: 3px;
+  background: $color-primary;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  &__img {
+    padding: 1rem;
+    > * {
+      object-fit: contain;
+    }
+  }
+
+  // Big cards with link button
+  &--btn {
+    border: none;
+    min-width: 18rem;
+    max-width: 20rem;
+    min-height: 16rem;
+    padding: 2.5rem 3rem;
+
+    .card__title {
+      color: $color-alt;
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+
+    .card__img {
+      > * {
+        height: 7em;
+        width: 11em;
+      }
+    }
+
+    .card__btn {
+      height: 0;
+      > * {
+        height: 4em;
+      }
+    }
+  }
+
+  // Simple cards without button
+  &--simple {
+    min-height: 15rem;
+    padding: 2rem 2rem;
+
+    .card__title {
+      order: 2;
+      font-size: 1.125rem; /* 18px */
+      font-weight: bold;
+    }
+
+    .card__img {
+      > * {
+        height: 5.5em;
+        width: 5.5em;
+      }
+    }
+  }
+
+  // Category card without button, with title below
+  &--category {
+    border: none;
+
+    .card__title {
+      order: 2;
+      text-transform: uppercase;
+      // font-weight: bold;
+    }
+
+    .card__img {
+      height: 10rem;
+      width: 10rem;
+      border: 2px $color-medium solid;
+      display: flex;
+      margin-bottom: 1rem;
+      > * {
+        height: 4em;
+        width: 4em;
+        margin: auto;
+      }
+    }
+  }
+}

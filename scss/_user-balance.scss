@@ -1,0 +1,19 @@
+.user-balance {
+  border: 2px $color-alt solid;
+  border-radius: 10em;
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    height: 1.25em;
+    width: 1.25em;
+    flex-shrink: 0;
+    background: url("../img/icon-user.png") no-repeat center/contain;
+    margin: 0 0 0 2em;
+  }
+
+  &__balance {
+    color: $color-alt;
+    margin: 0 2em 0 1em;
+  }
+}

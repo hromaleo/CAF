@@ -1,0 +1,89 @@
+// Main page areas below hero
+.area {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 3rem;
+
+  // all areas top icon
+  &__icon {
+    background-color: $color-alt;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2em 2em;
+    width: 5rem;
+    height: 5rem;
+  }
+
+  // all areas content
+  &__content {
+    h2 {
+      margin-top: 3rem;
+      font-size: 2.0625rem; /* 33px */
+      line-height: 1.1125em; /* 21px */
+      & + h3 {
+        font-size: 1.125rem; /* 18px */
+        line-height: 1.3125em; /* 21px */
+      }
+    }
+  }
+
+  // User area with balance cards
+  &--user {
+    // user area top icon
+    .area__icon {
+      background-image: url("../img/icon-user-conf.png");
+      background-size: 2em 2em;
+    }
+
+    // user area content
+    .area__content {
+      h2 {
+        & + div {
+          //   font-size: 2.75rem; /* 44px */
+          //   color: $color-alt;
+          //   font-weight: bold;
+        }
+      }
+      > div:first-of-type {
+        font-size: 2.75rem; /* 44px */
+        color: $color-alt;
+        font-weight: bold;
+      }
+      .user-goto-profile {
+        color: $color-alt;
+        &:before {
+          content: "+";
+          display: inline-flex;
+          width: 1.5em;
+          height: 1.5em;
+          border-radius: 50%;
+          border: 2px $color-alt solid;
+          align-items: center;
+          justify-content: center;
+          margin-right: 1em;
+        }
+      }
+    }
+  }
+
+  // Cafeteria options area with cards
+  &--options {
+    border-top: 4px solid $color-alt;
+    // options area top icon
+    .area__icon {
+      background-image: url("../img/icon-list.png");
+      background-size: 2em 2em;
+    }
+  }
+
+  &--categories {
+    .area__icon {
+      display: none;
+    }
+    .area__content {
+    }
+  }
+}
