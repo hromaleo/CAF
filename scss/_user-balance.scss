@@ -1,19 +1,21 @@
 .user-balance {
-  border: 2px $color-alt solid;
+  border: 2px $color-alt-lighter solid;
   border-radius: 10em;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 2em;
+  white-space: nowrap;
 
   &__icon {
-    height: 1.25em;
-    width: 1.25em;
+    height: 1.5em;
+    width: 1.5em;
     flex-shrink: 0;
     background: url("../img/icon-user.png") no-repeat center/contain;
-    margin: 0 0 0 2em;
+    margin-right: 1em;
   }
 
   &__balance {
     color: $color-alt;
-    margin: 0 2em 0 1em;
   }
 }

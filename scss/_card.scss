@@ -20,9 +20,9 @@
   &--btn {
     border: none;
     min-width: 18rem;
-    max-width: 20rem;
-    min-height: 16rem;
-    padding: 2.5rem 3rem;
+    max-width: 21rem;
+    min-height: 16.25rem;
+    padding: 2.5rem;
 
     .card__title {
       color: $color-alt;
@@ -39,7 +39,8 @@
 
     .card__btn {
       height: 0;
-      > * {
+      min-width: 100%;
+      .btn {
         height: 4em;
       }
     }
@@ -57,6 +58,7 @@
     }
 
     .card__img {
+      order: 1;
       > * {
         height: 5.5em;
         width: 5.5em;
@@ -75,6 +77,7 @@
     }
 
     .card__img {
+      order: 1;
       height: 10rem;
       width: 10rem;
       border: 2px $color-medium solid;

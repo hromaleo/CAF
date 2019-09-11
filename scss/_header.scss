@@ -1,22 +1,28 @@
 // Main header with company logo and user account values
 .main-header {
-  height: 5rem;
-  max-width: 74rem;
-  margin: 1rem auto;
+  height: 7rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  color: $color-dark;
-  > .user-balance,
-  > .btn {
-    height: 4rem;
-  }
-  .logo {
+  &__logo {
+    flex-basis: 20rem;
     > * {
       height: 2.5rem;
       width: 11rem;
       object-fit: contain;
+      object-position: center left;
+    }
+  }
+  &__content {
+    flex-basis: 61rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .user-balance,
+    .btn {
+      height: 4rem;
     }
   }
 }
