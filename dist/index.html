@@ -6,38 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/main.css" />
     <link
-    href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Raleway:300,500,700,900&display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Raleway:300,500,700,900&display=swap"
+      rel="stylesheet"
     />
     <script src="./js/maximizeWidth.js"></script>
     <title>Cafeteria | Edenred</title>
   </head>
-  <body onload="maximizeWidth()" onresize="maximizeWidth()">
-    <div class="fixed">
+  <body>
+    <div class="h-fixed">
       <!-- Main header with company logo and user account values -->
-      <div class="bg-primary">
-        <div class="width-lim-82">
+      <div class="h-bg-primary">
+        <div class="container">
           <header class="main-header">
             <a href="index.html" class="link">
               <div class="main-header__logo">
-                <img src="./img/edenred-logo.png" alt="Logo Edenred" />
+                <img src="./img/edenred-logo.png" alt="Logo Edenred" class="main-header__img" />
               </div>
             </a>
 
             <div class="main-header__content">
               <a href="#" class="link">
-                <div class="user-balance">
+                <div class="user-balance user-balance--fixed-height">
                   <div class="user-balance__icon"></div>
                   <div class="user-balance__balance">Můj účet: 8256 bodů</div>
                 </div>
               </a>
 
               <a href="#" class="link">
-                <span class="user-name">Jan Novák</span>
+                <span class="main-header__user-name">Jan Novák</span>
               </a>
 
               <a href="index.html" class="link link--underlined">
-                <span class="user-logout">Odhlásit se</span>
+                <span class="main-header__user-logout">Odhlásit se</span>
               </a>
 
               <div class="lang-select">
@@ -45,13 +45,13 @@
                 <div class="lang-select__menu">CZ</div>
               </div>
 
-              <div class="contact-phone">
-                <div class="contact-phone__icon"></div>
-                <div class="contact-phone__number">800 153 156</div>
+              <div class="main-header__phone">
+                <div class="main-header__phone-icon"></div>
+                <div class="main-header__phone-number">800 153 156</div>
               </div>
 
               <a href="#" class="link">
-                <div class="btn btn--shop">
+                <div class="btn btn--shop btn--fixed-height">
                   Košík
                 </div>
               </a>
@@ -62,48 +62,49 @@
       <!-- End main header -->
 
       <!-- Main menu (stripe) -->
-      <div class="bg-alt">
-        <div class="width-lim-82">
-          <nav class="main-navbar">
-            <a href="index.html" class="link">
+      <nav class="main-navbar">
+        <div class="container">
+          <div class="main-navbar__inner">
+            <a href="index.html" class="main-navbar__link">
               <div class="main-navbar__icon"></div>
             </a>
-            <a href="#" class="link">
+            <a href="#" class="main-navbar__link">
               <div class="main-navbar__item">Katalog odměn</div>
             </a>
-            <div class="main-navbar__item">Možnosti čerpání odměny</div>
-            <div class="main-navbar__item">Možnosti cafeterie</div>
-            <div class="main-navbar__item">Interní benefity</div>
-            <a href="#" class="link">
+            <a href="#" class="main-navbar__link"><div class="main-navbar__item">Možnosti čerpání odměny</div></a>
+            <a href="#" class="main-navbar__link"><div class="main-navbar__item">Možnosti cafeterie</div></a>
+            <a href="#" class="main-navbar__link"><div class="main-navbar__item">Interní benefity</div></a>
+            <a href="#" class="main-navbar__link">
               <div class="main-navbar__item">Speciální slevy</div>
             </a>
-          </nav>
+          </div>
         </div>
-      </div>
+      </nav>
       <!-- End main menu -->
     </div>
-    <!-- End pos fixed -->
+    <!-- End pos h-fixed -->
+
+    <!--
+    <div class="sidebar sidebar--left">
+      <a href="#" class="link">
+        <div class="btn btn--msg btn--numbered">
+          Zprávy, novinky
+        </div>
+      </a>
+      <a href="#" class="link">
+        <div class="btn btn--msg">
+          Anketa
+        </div>
+      </a>
+      <a href="#" class="link">
+        <div class="btn btn--how">
+          Jak to funguje?
+        </div>
+      </a>
+    </div>-->
 
     <!-- Hero image with reward search and basic links -->
     <div class="hero">
-      <div class="hero__sidebar hero__sidebar--left">
-        <a href="#" class="link">
-          <div class="btn btn--msg btn--numbered">
-            Zprávy, novinky
-          </div>
-        </a>
-        <a href="#" class="link">
-          <div class="btn btn--msg">
-            Anketa
-          </div>
-        </a>
-        <a href="#" class="link">
-          <div class="btn btn--how">
-            Jak to funguje?
-          </div>
-        </a>
-      </div>
-
       <div class="hero__content">
         <h1>Vyberte si <strong>svou odměnu!</strong></h1>
         <div class="search-field">
@@ -169,27 +170,22 @@
           </div>
         </div>
       </div>
-
-      <div class="hero__sidebar hero__sidebar--right"></div>
     </div>
     <!-- End hero image-->
 
     <!-- User area with account balance -->
     <div class="area area--user">
       <div class="area__icon"></div>
-      <div class="width-lim-82 targetOfMaximizeWidth">
+      <div class="container targetOfMaximizeWidth">
         <div class="area__content">
-          <h2>Hodnoty vašich benefitů</h2>
-          <div>8256 Kč</div>
+          <h2 class="area__heading">Hodnoty vašich benefitů</h2>
+          <div class="area__price">8256 Kč</div>
           <div class="wrapper wrapper--profile">
-            <div class="balance-card">
+            <div class="balance-card balance-card--human">
               <div class="balance-card__title">Penzijní připojištění</div>
               <div class="balance-card__balance">0 Kč</div>
               <div class="balance-card__exp-date">
                 expirace do: 20. 12. 2015
-              </div>
-              <div class="balance-card__img">
-                <img src="./img/human.png" alt="" />
               </div>
             </div>
             <div class="balance-card">
@@ -224,12 +220,12 @@
     <!-- End user area -->
 
     <!-- Options area with carousel -->
-    <div class="bg-light">
+    <div class="h-bg-light">
       <div class="area area--options">
         <div class="area__icon"></div>
-        <div class="width-lim-82 targetOfMaximizeWidth">
+        <div class="container targetOfMaximizeWidth">
           <div class="area__content">
-            <h2>Možnosti Cafeterie</h2>
+            <h2 class="area__heading">Možnosti Cafeterie</h2>
             <div class="wrapper wrapper--carousel">
               <div class="card card--simple">
                 <div class="card__title">
@@ -279,10 +275,10 @@
     <!-- Rewards categories area -->
     <div class="area area--categories">
       <div class="area__icon"></div>
-      <div class="width-lim-82 targetOfMaximizeWidth">
+      <div class="container targetOfMaximizeWidth">
         <div class="area__content">
-          <h2>Kategorie odměn</h2>
-          <h3">Vyberte si Vaši odměnu a pokračujte dále</h3>
+          <h2 class="area__heading">Kategorie odměn</h2>
+          <h3 class="area__subheading">Vyberte si Vaši odměnu a pokračujte dále</h3>
           <div class="wrapper wrapper--categories">
             <a href="#" class="link">
               <div class="card card--category">
@@ -379,8 +375,8 @@
     <!-- End rewards categories -->
 
     <!-- Main footer -->
-    <div class=" bg-dark">
-      <div class="width-lim-82">
+    <div class=" h-bg-dark">
+      <div class="container">
         <footer class="main-footer">
           <ul class="main-footer__section">
             <li>Interní benefity</li>
@@ -433,7 +429,7 @@
     </div>
 
     <!-- Secondary footer with &copy -->
-    <div class="width-lim-82">
+    <div class="container">
       <footer class="secondary-footer">
         <div>
           Copyright &copy; 2015

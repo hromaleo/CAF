@@ -18,4 +18,8 @@
   &__balance {
     color: $color-alt;
   }
+
+  &--fixed-height {
+    height: 4rem;
+  }
 }

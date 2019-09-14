@@ -5,26 +5,32 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   position: relative;
+
   &__title {
+    flex: 1 1 auto;
+    max-width: 30%;
     color: $color-alt;
     width: 6rem;
     text-align: left;
   }
+
   &__balance {
+    flex: 1 1 auto;
     color: $color-alt;
     font-size: 2.75rem; /* 44px */
     padding-left: 1rem;
     font-weight: bold;
     text-align: right;
   }
+
   &__exp-date {
-    position: absolute;
-    text-align: right;
+    flex: 0 0 100%;
     width: 100%;
-    bottom: 1.5rem;
-    right: 2rem;
+    text-align: right;
   }
+
   &__img {
     position: absolute;
     height: 7rem;
@@ -34,5 +40,9 @@
       height: 100%;
       // object-fit: contain;
     }
+  }
+
+  &--human {
+    background: url("../img/human.png") no-repeat 95% bottom;
   }
 }

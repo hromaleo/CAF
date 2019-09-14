@@ -1,13 +1,14 @@
 function maximizeWidth() {
-   const source = document.querySelector(".width-lim-82");
-   const style = getComputedStyle(source);
-   const width = style.width;
-   console.log(source, width);
-   const target = document.getElementsByClassName("targetOfMaximizeWidth");
-   console.log(target);
-   const n = target.length;
-   for (var i = 0; i < n; i++) {
-      var e = target[i];
-      e.style.width = width
+   const container = document.querySelector(".container");
+   const containerStyle = getComputedStyle(container);
+   const containerWidth = containerStyle.width;
+   console.log(container, containerWidth);
+   const targetElms = document.getElementsByClassName("targetOfMaximizeWidth");
+   console.log(targetElms);
+   for (let i = 0; i < targetElms.length; i++) {
+      targetElms[i].style.width = containerWidth
    }
 }
+
+document.addEventListener("DOMContentLoaded", maximizeWidth);
+window.addEventListener("resize", maximizeWidth);

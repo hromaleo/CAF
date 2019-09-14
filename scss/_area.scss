@@ -20,15 +20,23 @@
   // all areas content
   &__content {
     min-width: inherit;
-    h2 {
-      margin-top: 3rem;
-      font-size: 2.0625rem; /* 33px */
-      line-height: 1.1125em; /* 21px */
-      & + h3 {
-        font-size: 1.125rem; /* 18px */
-        line-height: 1.3125em; /* 21px */
-      }
-    }
+  }
+
+  &__heading {
+    margin-top: 3rem;
+    font-size: 2rem;
+    line-height: 1.25rem;
+  }
+
+  &__subheading {
+    font-size: 1.1rem;
+    line-height: 1.25em;
+  }
+
+  &__price {
+    font-size: 2.75rem;
+    color: $color-alt;
+    font-weight: bold;
   }
 
   // User area with balance cards
@@ -41,18 +49,7 @@
 
     // user area content
     .area__content {
-      h2 {
-        & + div {
-          //   font-size: 2.75rem; /* 44px */
-          //   color: $color-alt;
-          //   font-weight: bold;
-        }
-      }
-      > div:first-of-type {
-        font-size: 2.75rem; /* 44px */
-        color: $color-alt;
-        font-weight: bold;
-      }
+
       .user-goto-profile {
         color: $color-alt;
         &:before {
@@ -82,9 +79,11 @@
 
   // Rewards categories area with cards
   &--categories {
+
     .area__icon {
       display: none;
     }
+
     .area__content {
     }
   }

@@ -1,10 +1,21 @@
 // Main menu (stripe)
 .main-navbar {
-  height: 4rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+  background: $color-alt;
+  color: $color-primary;
+  box-shadow: inset 0px -2px 0px $color-alt-darker;
+
+  &__inner {
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+  }
 
   &__icon {
     height: 1em;
@@ -12,8 +23,16 @@
     flex-shrink: 0;
     background: url("../img/icon-home.png") no-repeat right/contain;
   }
+
   &__item {
     padding: 0 2em;
     color: $color-primary;
+  }
+}
+
+
+@media (max-width: 82rem) {
+  .main-navbar {
+    justify-content: space-evenly;
   }
 }

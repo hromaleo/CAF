@@ -1,44 +1,12 @@
 // Hero image with reward search and basic links
 .hero {
-  min-height: calc(100vh - 11rem);
   background-image: url("../img/hero.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  display: flex;
-  flex-direction: row;
-
-  &__sidebar {
-    // background-color: rgba(0, 0, 0, 0.8);
-    width: 0;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-around;
-    &--left {
-      align-items: flex-start;
-      .btn {
-        height: 4rem;
-        position: relative;
-        transform: rotate(-90deg) translateX(-110px);
-        transform-origin: 0 0;
-      }
-      :nth-child(2) {
-        top: -50px;
-      }
-    }
-    &--right {
-      align-items: flex-end;
-      .btn {
-        transform: rotate(90deg) /*  translateX(-140px) */;
-        transform-origin: 100% 0;
-      }
-    }
-  }
 
   &__content {
     color: $color-primary;
-    height: 100%;
-    width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     flex-direction: column;

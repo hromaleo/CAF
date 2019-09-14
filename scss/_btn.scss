@@ -11,6 +11,10 @@
   padding-right: 1em;
   background: inherit;
 
+  &--fixed-height {
+    height: 4rem;
+  }
+
   &--shop {
     border: 2px $color-medium solid;
     min-width: 10em;

@@ -1,0 +1,48 @@
+// Main header with company logo and user account values
+.main-header {
+  height: 7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  @media (min-width: 82rem) {
+    justify-content: space-between;
+  }
+
+  &__logo {
+    flex-basis: 20rem;
+  }
+
+  &__img {
+    height: 2.5rem;
+    width: 11rem;
+    object-fit: contain;
+    object-position: center left;
+  }
+
+  &__content {
+    flex-basis: 61rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+
+  }
+
+  &__phone-icon {
+    height: 1.25em;
+    width: 1.25em;
+    background: url("../img/icon-phone.png") no-repeat center/contain;
+  }
+
+  &__phone-number {
+    color: $color-alt;
+    margin: 0 0.25em;
+  }
+}

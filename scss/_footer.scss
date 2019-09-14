@@ -4,32 +4,6 @@
   flex-direction: row;
   justify-content: space-between;
 
-  //   &__section {
-  //     max-height: 14rem;
-  //     display: flex;
-  //     flex-flow: row wrap; /* Flex bug */
-  //     justify-content: flex-start;
-  //     align-content: stretch;
-  //     writing-mode: vertical-lr; /* Flex bug */
-
-  //     li:first-of-type {
-  //       font-weight: bold;
-  //       // line-height: 4em;
-  //       // height: 4em;
-  //       // position: relative;
-  //     }
-
-  //     li {
-  //       line-height: 2em;
-  //       padding-right: 4em;
-  //       writing-mode: horizontal-tb; /* Flex bug */
-  //       height: 2em; /* Flex bug */
-  //       &:before {
-  //         content: "> ";
-  //       }
-  //     }
-  //   }
-
   /* https://github.com/philipwalton/flexbugs#flexbug-14 */
 
   &__section {
