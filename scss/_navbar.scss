@@ -1,0 +1,19 @@
+// Main menu (stripe)
+.main-navbar {
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__icon {
+    height: 1em;
+    width: 1em;
+    flex-shrink: 0;
+    background: url("../img/icon-home.png") no-repeat right/contain;
+  }
+  &__item {
+    padding: 0 2em;
+    color: $color-primary;
+  }
+}

@@ -1,0 +1,52 @@
+@media (max-width: 82rem) {
+  .main-header,
+  .main-navbar {
+    justify-content: space-evenly;
+  }
+  .search-field {
+    width: 40rem;
+  }
+}
+@media (max-width: 67rem) {
+  .card {
+    &--btn {
+      padding: 1rem;
+      min-width: 15rem;
+      .btn {
+        padding: 0;
+      }
+    }
+  }
+  .search-field {
+    width: 35rem;
+  }
+}
+@media (max-width: 58rem) {
+  .main-header {
+    .user-balance {
+      display: none;
+    }
+  }
+  .card {
+    &--btn {
+      padding: 0;
+      min-width: 13rem;
+    }
+  }
+  .wrapper {
+    &--profile {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &--carousel {
+      grid-template-columns: repeat(3, 1fr);
+      div:nth-child(4) {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 52rem) {
+  body {
+    display: none; /* :-) */
+  }
+}

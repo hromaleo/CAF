@@ -46,8 +46,13 @@ ul li {
   top: 0;
   z-index: 1; }
 
-.width-lim {
+.width-lim-82 {
   max-width: 82rem;
+  margin: 0 auto;
+  padding: 0 0.5rem; }
+
+.width-lim-74 {
+  max-width: 74rem;
   margin: 0 auto;
   padding: 0 0.5rem; }
 
@@ -253,7 +258,7 @@ ul li {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding: 4rem 0 6rem; }
+    padding: 4rem 4rem 6rem; }
     .hero__content h2 {
       font-size: 2.0625rem;
       /* 33px */ }
@@ -313,17 +318,19 @@ ul li {
     background-size: 2em 2em;
     width: 5rem;
     height: 5rem; }
-  .area__content h2 {
-    margin-top: 3rem;
-    font-size: 2.0625rem;
-    /* 33px */
-    line-height: 1.1125em;
-    /* 21px */ }
-    .area__content h2 + h3 {
-      font-size: 1.125rem;
-      /* 18px */
-      line-height: 1.3125em;
+  .area__content {
+    min-width: inherit; }
+    .area__content h2 {
+      margin-top: 3rem;
+      font-size: 2.0625rem;
+      /* 33px */
+      line-height: 1.1125em;
       /* 21px */ }
+      .area__content h2 + h3 {
+        font-size: 1.125rem;
+        /* 18px */
+        line-height: 1.3125em;
+        /* 21px */ }
   .area--user .area__icon {
     background-image: url("../img/icon-user-conf.png");
     background-size: 2em 2em; }
@@ -354,16 +361,19 @@ ul li {
 
 .wrapper {
   display: grid;
-  margin: 2rem 0; }
+  margin: 2rem 0;
+  justify-content: space-between; }
+  .wrapper--hero {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem; }
   .wrapper--profile {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem; }
   .wrapper--carousel {
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-flow: column;
     gap: 1rem; }
   .wrapper--categories {
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(auto-fit, 10rem);
     gap: 2.5rem 1rem; }
 
 .card {
@@ -450,7 +460,8 @@ ul li {
     position: absolute;
     text-align: right;
     width: 100%;
-    transform: translateY(2.5rem) translateX(-4rem); }
+    bottom: 1.5rem;
+    right: 2rem; }
   .balance-card__img {
     position: absolute;
     height: 7rem;
@@ -505,3 +516,37 @@ ul li {
     object-fit: contain;
     object-position: center left;
     float: left; }
+
+@media (max-width: 82rem) {
+  .main-header,
+  .main-navbar {
+    justify-content: space-evenly; }
+  .search-field {
+    width: 40rem; } }
+
+@media (max-width: 67rem) {
+  .card--btn {
+    padding: 1rem;
+    min-width: 15rem; }
+    .card--btn .btn {
+      padding: 0; }
+  .search-field {
+    width: 35rem; } }
+
+@media (max-width: 58rem) {
+  .main-header .user-balance {
+    display: none; }
+  .card--btn {
+    padding: 0;
+    min-width: 13rem; }
+  .wrapper--profile {
+    grid-template-columns: repeat(2, 1fr); }
+  .wrapper--carousel {
+    grid-template-columns: repeat(3, 1fr); }
+    .wrapper--carousel div:nth-child(4) {
+      display: none; } }
+
+@media (max-width: 52rem) {
+  body {
+    display: none;
+    /* :-) */ } }

@@ -6,16 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/main.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Raleway:300,500,700,900&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Raleway:300,500,700,900&display=swap"
+    rel="stylesheet"
     />
+    <script src="./js/maximizeWidth.js"></script>
     <title>Cafeteria | Edenred</title>
   </head>
-  <body>
+  <body onload="maximizeWidth()" onresize="maximizeWidth()">
     <div class="fixed">
       <!-- Main header with company logo and user account values -->
       <div class="bg-primary">
-        <div class="width-lim">
+        <div class="width-lim-82">
           <header class="main-header">
             <a href="index.html" class="link">
               <div class="main-header__logo">
@@ -62,7 +63,7 @@
 
       <!-- Main menu (stripe) -->
       <div class="bg-alt">
-        <div class="width-lim">
+        <div class="width-lim-82">
           <nav class="main-navbar">
             <a href="index.html" class="link">
               <div class="main-navbar__icon"></div>
@@ -120,7 +121,7 @@
           </div>
         </div>
         <h2>Možnosti čerpání benefitů:</h2>
-        <div class="wrapper wrapper--profile">
+        <div class="wrapper wrapper--hero">
           <div class="card card--btn">
             <div class="card__title">
               Dobijte svou kartu
@@ -176,7 +177,7 @@
     <!-- User area with account balance -->
     <div class="area area--user">
       <div class="area__icon"></div>
-      <div class="width-lim">
+      <div class="width-lim-82 targetOfMaximizeWidth">
         <div class="area__content">
           <h2>Hodnoty vašich benefitů</h2>
           <div>8256 Kč</div>
@@ -226,7 +227,7 @@
     <div class="bg-light">
       <div class="area area--options">
         <div class="area__icon"></div>
-        <div class="width-lim">
+        <div class="width-lim-82 targetOfMaximizeWidth">
           <div class="area__content">
             <h2>Možnosti Cafeterie</h2>
             <div class="wrapper wrapper--carousel">
@@ -278,98 +279,100 @@
     <!-- Rewards categories area -->
     <div class="area area--categories">
       <div class="area__icon"></div>
-      <div class="area__content">
-        <h2>Kategorie odměn</h2>
-        <h3>Vyberte si Vaši odměnu a pokračujte dále</h3>
-        <div class="wrapper wrapper--categories">
-          <a href="#" class="link">
-            <div class="card card--category">
-              <div class="card__title">Autoškoly</div>
-              <div class="card__img">
-                <img src="./img/icon-car.png" alt="" />
+      <div class="width-lim-82 targetOfMaximizeWidth">
+        <div class="area__content">
+          <h2>Kategorie odměn</h2>
+          <h3">Vyberte si Vaši odměnu a pokračujte dále</h3>
+          <div class="wrapper wrapper--categories">
+            <a href="#" class="link">
+              <div class="card card--category">
+                <div class="card__title">Autoškoly</div>
+                <div class="card__img">
+                  <img src="./img/icon-car.png" alt="" />
+                </div>
               </div>
-            </div>
-          </a>
-          <a href="#" class="link">
-            <div class="card card--category">
-              <div class="card__title">Cestování</div>
-              <div class="card__img">
-                <img src="./img/icon-aircraft.png" alt="" />
+            </a>
+            <a href="#" class="link">
+              <div class="card card--category">
+                <div class="card__title">Cestování</div>
+                <div class="card__img">
+                  <img src="./img/icon-aircraft.png" alt="" />
+                </div>
               </div>
-            </div>
-          </a>
-          <a href="#" class="link">
-            <div class="card card--category">
-              <div class="card__title">Jazykové kurzy</div>
-              <div class="card__img">
-                <img src="./img/icon-cartoon.png" alt="" />
+            </a>
+            <a href="#" class="link">
+              <div class="card card--category">
+                <div class="card__title">Jazykové kurzy</div>
+                <div class="card__img">
+                  <img src="./img/icon-cartoon.png" alt="" />
+                </div>
               </div>
-            </div>
-          </a>
-          <a href="#" class="link">
-            <div class="card card--category">
-              <div class="card__title">Doprava</div>
-              <div class="card__img">
-                <img src="./img/icon-train.png" alt="" />
+            </a>
+            <a href="#" class="link">
+              <div class="card card--category">
+                <div class="card__title">Doprava</div>
+                <div class="card__img">
+                  <img src="./img/icon-train.png" alt="" />
+                </div>
               </div>
-            </div>
-          </a>
-          <a href="#" class="link">
-            <div class="card card--category">
-              <div class="card__title">Optika</div>
-              <div class="card__img">
-                <img src="./img/icon-eye.png" alt="" />
+            </a>
+            <a href="#" class="link">
+              <div class="card card--category">
+                <div class="card__title">Optika</div>
+                <div class="card__img">
+                  <img src="./img/icon-eye.png" alt="" />
+                </div>
               </div>
-            </div>
-          </a>
-          <a href="#" class="link">
-            <div class="card card--category">
-              <div class="card__title">Sport&amp;Kultura</div>
-              <div class="card__img">
-                <img src="./img/icon-play-ball.png" alt="" />
+            </a>
+            <a href="#" class="link">
+              <div class="card card--category">
+                <div class="card__title">Sport&amp;Kultura</div>
+                <div class="card__img">
+                  <img src="./img/icon-play-ball.png" alt="" />
+                </div>
               </div>
-            </div>
-          </a>
-          <a href="#" class="link">
-            <div class="card card--category">
-              <div class="card__title">Ubytování</div>
-              <div class="card__img">
-                <img src="./img/icon-house.png" alt="" />
+            </a>
+            <a href="#" class="link">
+              <div class="card card--category">
+                <div class="card__title">Ubytování</div>
+                <div class="card__img">
+                  <img src="./img/icon-house.png" alt="" />
+                </div>
               </div>
-            </div>
-          </a>
-          <a href="#" class="link">
-            <div class="card card--category">
-              <div class="card__title">Vzdělávání</div>
-              <div class="card__img">
-                <img src="./img/icon-scholar.png" alt="" />
+            </a>
+            <a href="#" class="link">
+              <div class="card card--category">
+                <div class="card__title">Vzdělávání</div>
+                <div class="card__img">
+                  <img src="./img/icon-scholar.png" alt="" />
+                </div>
               </div>
-            </div>
-          </a>
-          <a href="#" class="link">
-            <div class="card card--category">
-              <div class="card__title">Wellness</div>
-              <div class="card__img">
-                <img src="./img/icon-wellness.png" alt="" />
+            </a>
+            <a href="#" class="link">
+              <div class="card card--category">
+                <div class="card__title">Wellness</div>
+                <div class="card__img">
+                  <img src="./img/icon-wellness.png" alt="" />
+                </div>
               </div>
-            </div>
-          </a>
-          <a href="#" class="link">
-            <div class="card card--category">
-              <div class="card__title">Zážitky</div>
-              <div class="card__img">
-                <img src="./img/icon-tent.png" alt="" />
+            </a>
+            <a href="#" class="link">
+              <div class="card card--category">
+                <div class="card__title">Zážitky</div>
+                <div class="card__img">
+                  <img src="./img/icon-tent.png" alt="" />
+                </div>
               </div>
-            </div>
-          </a>
-          <a href="#" class="link">
-            <div class="card card--category">
-              <div class="card__title">Zdravotní péče</div>
-              <div class="card__img">
-                <img src="./img/icon-health.png" alt="" />
+            </a>
+            <a href="#" class="link">
+              <div class="card card--category">
+                <div class="card__title">Zdravotní péče</div>
+                <div class="card__img">
+                  <img src="./img/icon-health.png" alt="" />
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -377,7 +380,7 @@
 
     <!-- Main footer -->
     <div class=" bg-dark">
-      <div class="width-lim">
+      <div class="width-lim-82">
         <footer class="main-footer">
           <ul class="main-footer__section">
             <li>Interní benefity</li>
@@ -430,7 +433,7 @@
     </div>
 
     <!-- Secondary footer with &copy -->
-    <div class="width-lim">
+    <div class="width-lim-82">
       <footer class="secondary-footer">
         <div>
           Copyright &copy; 2015
