@@ -18,14 +18,10 @@
   }
 
   // all areas content
-  &__content {
-    min-width: inherit;
-  }
-
   &__heading {
     margin-top: 3rem;
     font-size: 2rem;
-    line-height: 1.25rem;
+    line-height: 1.25em;
   }
 
   &__subheading {
@@ -41,36 +37,15 @@
 
   // User area with balance cards
   &--user {
-    // user area top icon
     .area__icon {
       background-image: url("../img/icon-user-conf.png");
       background-size: 2em 2em;
-    }
-
-    // user area content
-    .area__content {
-
-      .user-goto-profile {
-        color: $color-alt;
-        &:before {
-          content: "+";
-          display: inline-flex;
-          width: 1.5em;
-          height: 1.5em;
-          border-radius: 50%;
-          border: 2px $color-alt solid;
-          align-items: center;
-          justify-content: center;
-          margin-right: 1em;
-        }
-      }
     }
   }
 
   // Cafeteria options area with cards
   &--options {
     border-top: 4px solid $color-alt;
-    // options area top icon
     .area__icon {
       background-image: url("../img/icon-list.png");
       background-size: 2em 2em;
@@ -79,12 +54,8 @@
 
   // Rewards categories area with cards
   &--categories {
-
     .area__icon {
       display: none;
-    }
-
-    .area__content {
     }
   }
 }

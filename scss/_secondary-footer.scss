@@ -1,0 +1,25 @@
+.secondary-footer {
+  padding: 2rem 0;
+
+  &__text-line {
+    height: 2rem;
+  }
+
+  &__logo-line {
+    height: 2rem;
+  }
+
+  &__logo-title {
+    font-size: 0.875rem;
+    padding-right: 1.5rem;
+    float: left;
+  }
+
+  &__logo-img {
+    height: 2rem;
+    width: 11rem;
+    object-position: center left;
+    float: left;
+  }
+  // float of both to avoid small gap between span elements
+}

@@ -1,10 +1,16 @@
-$font-primary:      "Museo Sans", "Raleway", Arial, Helvetica, sans-serif;
-$font-alt:          "Gloria Hallelujah";
-$color-primary:     #ffffff;
-$color-alt:         #d20025;
-$color-alt-lighter: #f6ccd3;
-$color-alt-darker:  #9b011c;
-$color-light:       #eeeeee;
-$color-medium:      #dcdcdc;
-$color-dark:        #171b27;
-$color-additional:  #11204c;
+$font-primary:       "Museo Sans", "Raleway", Arial, Helvetica, sans-serif;
+$font-alt:           "Gloria Hallelujah";
+
+$color-primary:      #ffffff;
+$color-alt:          #d20025;
+$color-alt-lighter:  #f6ccd3;
+$color-alt-darker:   #9b011c;
+$color-light:        #eeeeee;
+$color-medium:       #dcdcdc;
+$color-dark:         #171b27;
+$color-additional:   #11204c;
+
+$breakpoint-small:   52rem;
+$breakpoint-medium:  58rem;
+$breakpoint-large:   67rem;
+$breakpoint-huge:    82rem;

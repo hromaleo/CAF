@@ -1,9 +1,16 @@
-.link,
-.link * {
+.link {
   color: inherit;
   text-decoration: none;
 }
 
+.link--coloured {
+  color: $color-alt;
+}
+
 .link--underlined {
+  text-decoration: underline;
+}
+
+.link--underlined-on-hover:hover {
   text-decoration: underline;
 }

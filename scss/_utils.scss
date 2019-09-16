@@ -1,18 +1,18 @@
 // Helpers
+// Fixed position, useful for header
 .h-fixed {
   position: sticky;
   top: 0;
   z-index: 1;
 }
 
-.h-bg-primary {
+// Backgrounds
+.h-bg-prim {
   background: $color-primary;
 }
 
 .h-bg-alt {
   background: $color-alt;
-  color: $color-primary;
-  box-shadow: inset 0px -2px 0px $color-alt-darker;
 }
 
 .h-bg-light {
@@ -25,5 +25,23 @@
 
 .h-bg-dark {
   background-color: $color-dark;
+}
+
+// Text colors
+.h-col-prim {
   color: $color-primary;
+}
+
+.h-col-add {
+  color: $color-additional;
+}
+
+// Shadows
+.h-sh-alt {
+  box-shadow: inset 0px -2px 0px $color-alt-darker;
+}
+
+// Alternate fonts
+.h-font-alt {
+  font-family: $font-alt;
 }

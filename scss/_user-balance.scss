@@ -7,6 +7,10 @@
   padding: 0 2em;
   white-space: nowrap;
 
+  &--fixed-height {
+    height: 4rem;
+  }
+
   &__icon {
     height: 1.5em;
     width: 1.5em;
@@ -15,11 +19,7 @@
     margin-right: 1em;
   }
 
-  &__balance {
+  &__value {
     color: $color-alt;
-  }
-
-  &--fixed-height {
-    height: 4rem;
   }
 }

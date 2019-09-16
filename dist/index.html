@@ -1,90 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Raleway:300,500,700,900&display=swap"
-      rel="stylesheet"
-    />
-    <script src="./js/maximizeWidth.js"></script>
-    <title>Cafeteria | Edenred</title>
-  </head>
-  <body>
-    <div class="h-fixed">
-      <!-- Main header with company logo and user account values -->
-      <div class="h-bg-primary">
-        <div class="container">
-          <header class="main-header">
-            <a href="index.html" class="link">
-              <div class="main-header__logo">
-                <img src="./img/edenred-logo.png" alt="Logo Edenred" class="main-header__img" />
-              </div>
-            </a>
 
-            <div class="main-header__content">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Raleway:300,500,700,900&display=swap"
+    rel="stylesheet" />
+  <script src="./js/maximizeWidth.js"></script>
+  <title>Cafeteria | Edenred</title>
+</head>
+
+<body>
+  <div class="h-fixed">
+    <!-- Main header with company logo and user account values -->
+    <div class="h-bg-prim"> <!-- Needed because its fixed position - otherwise transparent! -->
+      <div class="container">
+        <header class="main-header">
+          <a href="index.html" class="link">
+            <div class="main-header__logo">
+              <img src="./img/edenred-logo.png" alt="Logo Edenred" class="main-header__img" />
+            </div>
+          </a>
+
+          <div class="main-header__content">
+            <div class="main-header__user-balance">
               <a href="#" class="link">
                 <div class="user-balance user-balance--fixed-height">
                   <div class="user-balance__icon"></div>
-                  <div class="user-balance__balance">Můj účet: 8256 bodů</div>
-                </div>
-              </a>
-
-              <a href="#" class="link">
-                <span class="main-header__user-name">Jan Novák</span>
-              </a>
-
-              <a href="index.html" class="link link--underlined">
-                <span class="main-header__user-logout">Odhlásit se</span>
-              </a>
-
-              <div class="lang-select">
-                <div class="lang-select__icon"></div>
-                <div class="lang-select__menu">CZ</div>
-              </div>
-
-              <div class="main-header__phone">
-                <div class="main-header__phone-icon"></div>
-                <div class="main-header__phone-number">800 153 156</div>
-              </div>
-
-              <a href="#" class="link">
-                <div class="btn btn--shop btn--fixed-height">
-                  Košík
+                  <div class="user-balance__value">Můj účet: 8256 bodů</div>
                 </div>
               </a>
             </div>
-          </header>
-        </div>
-      </div>
-      <!-- End main header -->
 
-      <!-- Main menu (stripe) -->
-      <nav class="main-navbar">
-        <div class="container">
-          <div class="main-navbar__inner">
-            <a href="index.html" class="main-navbar__link">
-              <div class="main-navbar__icon"></div>
+            <a href="#" class="link">
+              <span class="main-header__user-name">Jan Novák</span>
             </a>
-            <a href="#" class="main-navbar__link">
-              <div class="main-navbar__item">Katalog odměn</div>
+
+            <a href="index.html" class="link link--underlined">
+              <span class="main-header__user-logout">Odhlásit se</span>
             </a>
-            <a href="#" class="main-navbar__link"><div class="main-navbar__item">Možnosti čerpání odměny</div></a>
-            <a href="#" class="main-navbar__link"><div class="main-navbar__item">Možnosti cafeterie</div></a>
-            <a href="#" class="main-navbar__link"><div class="main-navbar__item">Interní benefity</div></a>
-            <a href="#" class="main-navbar__link">
-              <div class="main-navbar__item">Speciální slevy</div>
+
+            <div class="lang-select">
+              <div class="lang-select__icon"></div>
+              <div class="lang-select__menu">CZ</div>
+            </div>
+
+            <div class="main-header__phone">
+              <div class="main-header__phone-icon"></div>
+              <div class="main-header__phone-number">800 153 156</div>
+            </div>
+
+            <a href="#" class="link">
+              <div class="btn btn--shop btn--fixed-height">
+                Košík
+              </div>
             </a>
           </div>
-        </div>
-      </nav>
-      <!-- End main menu -->
+        </header>
+      </div>
     </div>
-    <!-- End pos h-fixed -->
+    <!-- End main header -->
 
-    <!--
+    <!-- Main menu (stripe) -->
+    <div class="h-bg-alt h-sh-alt h-col-prim">
+      <div class="container">
+        <nav class="main-navbar">
+          <a href="index.html" class="main-navbar__link">
+            <div class="main-navbar__icon"></div>
+          </a>
+          <a href="#" class="main-navbar__link">
+            <div class="main-navbar__item">Katalog odměn</div>
+          </a>
+          <a href="#" class="main-navbar__link">
+            <div class="main-navbar__item">Možnosti čerpání odměny</div>
+          </a>
+          <a href="#" class="main-navbar__link">
+            <div class="main-navbar__item">Možnosti cafeterie</div>
+          </a>
+          <a href="#" class="main-navbar__link">
+            <div class="main-navbar__item">Interní benefity</div>
+          </a>
+          <a href="#" class="main-navbar__link">
+            <div class="main-navbar__item">Speciální slevy</div>
+          </a>
+        </nav>
+      </div>
+    </div>
+    <!-- End main menu -->
+  </div>
+  <!-- End pos h-fixed -->
+
+  <!--
     <div class="sidebar sidebar--left">
       <a href="#" class="link">
         <div class="btn btn--msg btn--numbered">
@@ -103,344 +111,345 @@
       </a>
     </div>-->
 
-    <!-- Hero image with reward search and basic links -->
-    <div class="hero">
-      <div class="hero__content">
-        <h1>Vyberte si <strong>svou odměnu!</strong></h1>
-        <div class="search-field">
-          <div class="search-field__input">
-            <input type="text" placeholder="hledejte např. fitness Praha" />
+  <!-- Hero image with reward search and basic links -->
+  <div class="hero">
+    <div class="hero__content">
+      <h1 class="hero__heading">Vyberte si <strong>svou odměnu!</strong></h1>
+      <div class="search-field">
+        <input class="search-field__input" type="text" placeholder="hledejte např. fitness Praha" />
+        <!-- <div class="search-field__btn"> -->
+        <button type="submit" value="Vyhledat" class="search-field__btn btn btn--search">
+          Vyhledat
+        </button>
+        <!-- </div> -->
+        <div class="search-field__options">
+          <a href="#" class="search-field__option link link--underlined">Zobrazit katalog</a>
+          <a href="#" class="search-field__option link link--underlined">Zobrazit na mapě</a>
+        </div>
+      </div>
+      <h2 class="hero__subheading">Možnosti čerpání benefitů:</h2>
+      <div class="wrapper wrapper--hero">
+        <div class="card card--btn">
+          <div class="card__title">
+            Dobijte svou kartu
           </div>
-          <div class="search-field__btn">
-            <button type="submit" value="Vyhledat" class="btn btn--search">
-              Vyhledat
-            </button>
+          <div class="card__img">
+            <img src="./img/TBC.png" alt="" />
           </div>
-          <div class="search-field__options">
-            <a href="#" class="link link--underlined">Zobrazit katalog</a>
-            <a href="#" class="link link--underlined">Zobrazit na mapě</a>
+          <div class="card__btn">
+            <a href="#" class="link">
+              <div class="btn btn--link btn--fixed-height">
+                Chci body na kartu
+              </div>
+            </a>
           </div>
         </div>
-        <h2>Možnosti čerpání benefitů:</h2>
-        <div class="wrapper wrapper--hero">
-          <div class="card card--btn">
-            <div class="card__title">
-              Dobijte svou kartu
-            </div>
-            <div class="card__img">
-              <img src="./img/TBC.png" alt="" />
-            </div>
-            <div class="card__btn">
-              <a href="#" class="link">
-                <div class="btn btn--link">
-                  Chci body na kartu
-                </div>
-              </a>
-            </div>
+        <div class="card card--btn">
+          <div class="card__title">
+            Vyměňte body za poukázky
           </div>
-          <div class="card card--btn">
-            <div class="card__title">
-              Vyměňte body za poukázky
-            </div>
-            <div class="card__img">
-              <img src="./img/TMULTI.png" alt="" />
-            </div>
-            <div class="card__btn">
-              <a href="#" class="link">
-                <div class="btn btn--link">
-                  Mám zájem o poukázky
-                </div>
-              </a>
-            </div>
+          <div class="card__img">
+            <img src="./img/TMULTI.png" alt="" />
           </div>
-          <div class="card card--btn">
-            <div class="card__title">
-              Prohlédněte si partnerské e-shopy
-            </div>
-            <div class="card__img">
-              <img src="./img/basket.png" alt="" />
-            </div>
-            <div class="card__btn">
-              <a href="#" class="link">
-                <div class="btn btn--link">
-                  Zobrazit seznam e-shopů
-                </div>
-              </a>
-            </div>
+          <div class="card__btn">
+            <a href="#" class="link">
+              <div class="btn btn--link btn--fixed-height">
+                Mám zájem o poukázky
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="card card--btn">
+          <div class="card__title">
+            Prohlédněte si partnerské e-shopy
+          </div>
+          <div class="card__img">
+            <img src="./img/basket.png" alt="" />
+          </div>
+          <div class="card__btn">
+            <a href="#" class="link">
+              <div class="btn btn--link btn--fixed-height">
+                Zobrazit seznam e-shopů
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </div>
-    <!-- End hero image-->
+  </div>
+  <!-- End hero image-->
 
-    <!-- User area with account balance -->
-    <div class="area area--user">
+  <!-- User area with account balance -->
+  <div class="area area--user">
+    <div class="area__icon"></div>
+    <div class="container targetOfMaximizeWidth">
+      <h2 class="area__heading">Hodnoty vašich benefitů</h2>
+      <div class="area__price">8256 Kč</div>
+      <div class="wrapper wrapper--profile">
+        <div class="balance-card balance-card--insurance">
+          <div class="balance-card__title">Penzijní připojištění</div>
+          <div class="balance-card__value">0 Kč</div>
+          <div class="balance-card__exp-date">
+            expirace do: 20. 12. 2015
+          </div>
+        </div>
+        <div class="balance-card balance-card--travel">
+          <div class="balance-card__title">Příspěvek na cestování</div>
+          <div class="balance-card__value">5000 Kč</div>
+          <div class="balance-card__exp-date">
+            expirace do: 20. 12. 2015
+          </div>
+        </div>
+        <div class="balance-card balance-card--meals">
+          <div class="balance-card__title">Příspěvek na stravenky</div>
+          <div class="balance-card__value">3000 Kč</div>
+          <div class="balance-card__exp-date">
+            expirace do: 20. 12. 2015
+          </div>
+        </div>
+      </div>
+      <a href="#" class="user-goto-profile link">
+        <span class="link link--underlined">Zobrazit všechny benefity v profilu</span>
+      </a>
+    </div>
+  </div>
+  <!-- End user area -->
+
+  <!-- Options area with carousel -->
+  <div class="h-bg-light">
+    <div class="area area--options">
       <div class="area__icon"></div>
       <div class="container targetOfMaximizeWidth">
-        <div class="area__content">
-          <h2 class="area__heading">Hodnoty vašich benefitů</h2>
-          <div class="area__price">8256 Kč</div>
-          <div class="wrapper wrapper--profile">
-            <div class="balance-card balance-card--human">
-              <div class="balance-card__title">Penzijní připojištění</div>
-              <div class="balance-card__balance">0 Kč</div>
-              <div class="balance-card__exp-date">
-                expirace do: 20. 12. 2015
-              </div>
+        <h2 class="area__heading">Možnosti Cafeterie</h2>
+        <div class="wrapper wrapper--carousel">
+          <div class="card card--simple">
+            <div class="card__title">
+              <a href="#" class="link link--underlined">Převést peníze ze mzdy</a>
             </div>
-            <div class="balance-card">
-              <div class="balance-card__title">Příspěvek na cestování</div>
-              <div class="balance-card__balance">5000 Kč</div>
-              <div class="balance-card__exp-date">
-                expirace do: 20. 12. 2015
-              </div>
-              <div class="balance-card__img">
-                <img src="./img/aircraft.png" alt="" />
-              </div>
-            </div>
-            <div class="balance-card">
-              <div class="balance-card__title">Příspěvek na stravenky</div>
-              <div class="balance-card__balance">3000 Kč</div>
-              <div class="balance-card__exp-date">
-                expirace do: 20. 12. 2015
-              </div>
-              <div class="balance-card__img">
-                <img src="./img/vouchers-full.png" alt="" />
-              </div>
+            <div class="card__img">
+              <img src="./img/transfer-money.png" alt="" />
             </div>
           </div>
-          <div class="user-goto-profile">
-            <a href="#" class="link link--underlined">
-              Zobrazit všechny benefity v profilu
-            </a>
+          <div class="card card--simple">
+            <div class="card__title">
+              <a href="#" class="link link--underlined">Stravenky</a>
+            </div>
+            <div class="card__img">
+              <img src="./img/vouchers.png" alt="" />
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <!-- End user area -->
-
-    <!-- Options area with carousel -->
-    <div class="h-bg-light">
-      <div class="area area--options">
-        <div class="area__icon"></div>
-        <div class="container targetOfMaximizeWidth">
-          <div class="area__content">
-            <h2 class="area__heading">Možnosti Cafeterie</h2>
-            <div class="wrapper wrapper--carousel">
-              <div class="card card--simple">
-                <div class="card__title">
-                  <a href="#" class="link link--underlined"
-                    >Převést peníze ze mzdy</a
-                  >
-                </div>
-                <div class="card__img">
-                  <img src="./img/transfer-money.png" alt="" />
-                </div>
-              </div>
-              <div class="card card--simple">
-                <div class="card__title">
-                  <a href="#" class="link link--underlined">Stravenky</a>
-                </div>
-                <div class="card__img">
-                  <img src="./img/vouchers.png" alt="" />
-                </div>
-              </div>
-              <div class="card card--simple">
-                <div class="card__title">
-                  <a href="#" class="link link--underlined"
-                    >Modul mimořádných odměn</a
-                  >
-                </div>
-                <div class="card__img">
-                  <img src="./img/transfer-from-hr.png" alt="" />
-                </div>
-              </div>
-              <div class="card card--simple">
-                <div class="card__title">
-                  <a href="#" class="link link--underlined"
-                    >Finanční benefity</a
-                  >
-                </div>
-                <div class="card__img">
-                  <img src="./img/pig.png" alt="" />
-                </div>
-              </div>
+          <div class="card card--simple">
+            <div class="card__title">
+              <a href="#" class="link link--underlined">Modul mimořádných odměn</a>
+            </div>
+            <div class="card__img">
+              <img src="./img/transfer-from-hr.png" alt="" />
+            </div>
+          </div>
+          <div class="card card--simple">
+            <div class="card__title">
+              <a href="#" class="link link--underlined">Finanční benefity</a>
+            </div>
+            <div class="card__img">
+              <img src="./img/pig.png" alt="" />
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- End options area -->
+  </div>
+  <!-- End options area -->
 
-    <!-- Rewards categories area -->
-    <div class="area area--categories">
-      <div class="area__icon"></div>
-      <div class="container targetOfMaximizeWidth">
-        <div class="area__content">
-          <h2 class="area__heading">Kategorie odměn</h2>
-          <h3 class="area__subheading">Vyberte si Vaši odměnu a pokračujte dále</h3>
-          <div class="wrapper wrapper--categories">
-            <a href="#" class="link">
-              <div class="card card--category">
-                <div class="card__title">Autoškoly</div>
-                <div class="card__img">
-                  <img src="./img/icon-car.png" alt="" />
-                </div>
+  <!-- Rewards categories area -->
+  <div class="area area--categories">
+    <div class="area__icon"></div>
+    <div class="container targetOfMaximizeWidth">
+      <h2 class="area__heading">Kategorie odměn</h2>
+      <h3 class="area__subheading">
+        Vyberte si Vaši odměnu a pokračujte dále
+      </h3>
+      <div class="wrapper wrapper--categories">
+        <a href="#" class="link">
+          <div class="card card--category">
+            <div class="card__title">Autoškoly</div>
+            <div class="card__frame">
+              <div class="card__img">
+                <img src="./img/icon-car.png" alt="" />
               </div>
-            </a>
-            <a href="#" class="link">
-              <div class="card card--category">
-                <div class="card__title">Cestování</div>
-                <div class="card__img">
-                  <img src="./img/icon-aircraft.png" alt="" />
-                </div>
-              </div>
-            </a>
-            <a href="#" class="link">
-              <div class="card card--category">
-                <div class="card__title">Jazykové kurzy</div>
-                <div class="card__img">
-                  <img src="./img/icon-cartoon.png" alt="" />
-                </div>
-              </div>
-            </a>
-            <a href="#" class="link">
-              <div class="card card--category">
-                <div class="card__title">Doprava</div>
-                <div class="card__img">
-                  <img src="./img/icon-train.png" alt="" />
-                </div>
-              </div>
-            </a>
-            <a href="#" class="link">
-              <div class="card card--category">
-                <div class="card__title">Optika</div>
-                <div class="card__img">
-                  <img src="./img/icon-eye.png" alt="" />
-                </div>
-              </div>
-            </a>
-            <a href="#" class="link">
-              <div class="card card--category">
-                <div class="card__title">Sport&amp;Kultura</div>
-                <div class="card__img">
-                  <img src="./img/icon-play-ball.png" alt="" />
-                </div>
-              </div>
-            </a>
-            <a href="#" class="link">
-              <div class="card card--category">
-                <div class="card__title">Ubytování</div>
-                <div class="card__img">
-                  <img src="./img/icon-house.png" alt="" />
-                </div>
-              </div>
-            </a>
-            <a href="#" class="link">
-              <div class="card card--category">
-                <div class="card__title">Vzdělávání</div>
-                <div class="card__img">
-                  <img src="./img/icon-scholar.png" alt="" />
-                </div>
-              </div>
-            </a>
-            <a href="#" class="link">
-              <div class="card card--category">
-                <div class="card__title">Wellness</div>
-                <div class="card__img">
-                  <img src="./img/icon-wellness.png" alt="" />
-                </div>
-              </div>
-            </a>
-            <a href="#" class="link">
-              <div class="card card--category">
-                <div class="card__title">Zážitky</div>
-                <div class="card__img">
-                  <img src="./img/icon-tent.png" alt="" />
-                </div>
-              </div>
-            </a>
-            <a href="#" class="link">
-              <div class="card card--category">
-                <div class="card__title">Zdravotní péče</div>
-                <div class="card__img">
-                  <img src="./img/icon-health.png" alt="" />
-                </div>
-              </div>
-            </a>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <!-- End rewards categories -->
-
-    <!-- Main footer -->
-    <div class=" h-bg-dark">
-      <div class="container">
-        <footer class="main-footer">
-          <ul class="main-footer__section">
-            <li>Interní benefity</li>
-            <li>
-              <a href="#" class="link">
-                Zaměstnanecký program - telefonní operátor</a
-              >
-            </li>
-            <li><a href="#" class="link">Pitný režim</a></li>
-            <li>
-              <a href="#" class="link">
-                Soukromé volání z firemních mobilních telefonů</a
-              >
-            </li>
-            <li><a href="#" class="link">Kvartální odměny</a></li>
-            <li><a href="#" class="link">Benefit na dopravu</a></li>
-            <li>
-              <a href="#" class="link">Odkup vyřazeného firemního majetku</a>
-            </li>
-            <li><a href="#" class="link">Příspěvek na životní pojištění</a></li>
-            <li>
-              <a href="#" class="link">Příspěvek na penzijní připojištění</a>
-            </li>
-          </ul>
-
-          <ul class="main-footer__section">
-            <li>Odkazy</li>
-            <li><a href="#" class="link">Jak to funguje?</a></li>
-            <li><a href="#" class="link">Pravidla</a></li>
-            <li><a href="#" class="link">Převést peníze ze mzdy</a></li>
-            <li><a href="#" class="link">FAQ - Nejčastější dotazy</a></li>
-            <li><a href="#" class="link">Ankety</a></li>
-            <li><a href="#" class="link">Noví partneři</a></li>
-          </ul>
-          <ul class="main-footer__section">
-            <li>Cafeterie</li>
-            <li><a href="#" class="link">Můj profil</a></li>
-            <li><a href="#" class="link">Aplikace Ticketka</a></li>
-            <li><a href="#" class="link">Nákupní košík</a></li>
-            <li><a href="#" class="link">Doručení a platba</a></li>
-            <a href="#" class="link">
-              <div class="btn btn--simple">
-                Kontaktovat správce
+        </a>
+        <a href="#" class="link">
+          <div class="card card--category">
+            <div class="card__title">Cestování</div>
+            <div class="card__frame">
+              <div class="card__img">
+                <img src="./img/icon-aircraft.png" alt="" />
               </div>
-            </a>
-          </ul>
-        </footer>
-        <!-- End main footer -->
+            </div>
+          </div>
+        </a>
+        <a href="#" class="link">
+          <div class="card card--category">
+            <div class="card__title">Jazykové kurzy</div>
+            <div class="card__frame">
+              <div class="card__img">
+                <img src="./img/icon-cartoon.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="link">
+          <div class="card card--category">
+            <div class="card__title">Doprava</div>
+            <div class="card__frame">
+              <div class="card__img">
+                <img src="./img/icon-train.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="link">
+          <div class="card card--category">
+            <div class="card__title">Optika</div>
+            <div class="card__frame">
+              <div class="card__img">
+                <img src="./img/icon-eye.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="link">
+          <div class="card card--category">
+            <div class="card__title">Sport&amp;Kultura</div>
+            <div class="card__frame">
+              <div class="card__img">
+                <img src="./img/icon-play-ball.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="link">
+          <div class="card card--category">
+            <div class="card__title">Ubytování</div>
+            <div class="card__frame">
+              <div class="card__img">
+                <img src="./img/icon-house.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="link">
+          <div class="card card--category">
+            <div class="card__title">Vzdělávání</div>
+            <div class="card__frame">
+              <div class="card__img">
+                <img src="./img/icon-scholar.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="link">
+          <div class="card card--category">
+            <div class="card__title">Wellness</div>
+            <div class="card__frame">
+              <div class="card__img">
+                <img src="./img/icon-wellness.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="link">
+          <div class="card card--category">
+            <div class="card__title">Zážitky</div>
+            <div class="card__frame">
+              <div class="card__img">
+                <img src="./img/icon-tent.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="link">
+          <div class="card card--category">
+            <div class="card__title">Zdravotní péče</div>
+            <div class="card__frame">
+              <div class="card__img">
+                <img src="./img/icon-health.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </a>
       </div>
     </div>
+  </div>
+  <!-- End rewards categories -->
 
-    <!-- Secondary footer with &copy -->
+  <!-- Main footer -->
+  <div class="h-bg-dark h-col-prim">
     <div class="container">
-      <footer class="secondary-footer">
-        <div>
-          Copyright &copy; 2015
-          <a href="#" class="link link--underlined"> Edenred Benefity Café</a>.
-          Všechna práva vyhrazena.
-        </div>
-        <div class="logo">
-          <span>Powered by</span>
-          <img src="./img/edenred-logo.png" alt="Logo Edenred" />
-        </div>
+      <footer class="main-footer">
+        <ul class="main-footer__section">
+          <li class="main-footer__section-title">Interní benefity</li>
+          <li class="main-footer__item">
+            <a href="#" class="link">
+              Zaměstnanecký program - telefonní operátor</a>
+          </li>
+          <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">Pitný režim</a></li>
+          <li class="main-footer__item">
+            <a href="#" class="link link--underlined-on-hover">
+              Soukromé volání z firemních mobilních telefonů</a>
+          </li>
+          <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">Kvartální odměny</a></li>
+          <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">Benefit na dopravu</a></li>
+          <li class="main-footer__item">
+            <a href="#" class="link link--underlined-on-hover">Odkup vyřazeného firemního majetku</a>
+          </li>
+          <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">Příspěvek na životní pojištění</a></li>
+          <li class="main-footer__item">
+            <a href="#" class="link link--underlined-on-hover">Příspěvek na penzijní připojištění</a>
+          </li>
+        </ul>
+
+        <ul class="main-footer__section">
+          <li class="main-footer__section-title">Odkazy</li>
+          <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">Jak to funguje?</a></li>
+          <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">Pravidla</a></li>
+          <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">Převést peníze ze mzdy</a></li>
+          <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">FAQ - Nejčastější dotazy</a></li>
+          <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">Ankety</a></li>
+          <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">Noví partneři</a></li>
+        </ul>
+        <ul class="main-footer__section">
+          <li class="main-footer__section-title">Cafeterie</li>
+          <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">Můj profil</a></li>
+          <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">Aplikace Ticketka</a></li>
+          <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">Nákupní košík</a></li>
+          <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">Doručení a platba</a></li>
+          <a href="#" class="main-footer__btn link">
+            <div class="btn btn--simple btn--fixed-height">
+              Kontaktovat správce
+            </div>
+          </a>
+        </ul>
       </footer>
+      <!-- End main footer -->
     </div>
-  </body>
+  </div>
+
+  <!-- Secondary footer with &copy -->
+  <div class="container">
+    <footer class="secondary-footer">
+      <div class="secondary-footer__text-line">
+        Copyright &copy; 2015
+        <a href="#" class="link link--underlined link--coloured"> Edenred Benefity Café</a>.
+        Všechna práva vyhrazena.
+      </div>
+      <div class="secondary-footer__logo-line">
+        <span class="secondary-footer__logo-title h-font-alt h-col-add">Powered by</span>
+        <img class="secondary-footer__logo-img" src="./img/edenred-logo.png" alt="Logo Edenred" />
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>

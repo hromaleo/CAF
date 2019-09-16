@@ -1,15 +1,13 @@
 // Main menu (stripe)
 .main-navbar {
-  background: $color-alt;
-  color: $color-primary;
-  box-shadow: inset 0px -2px 0px $color-alt-darker;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
 
-  &__inner {
-    height: 4rem;
-    display: flex;
-    flex-direction: row;
+  @media (min-width: $breakpoint-huge) {
     justify-content: flex-start;
-    align-items: stretch;
   }
 
   &__link {
@@ -26,13 +24,5 @@
 
   &__item {
     padding: 0 2em;
-    color: $color-primary;
-  }
-}
-
-
-@media (max-width: 82rem) {
-  .main-navbar {
-    justify-content: space-evenly;
   }
 }

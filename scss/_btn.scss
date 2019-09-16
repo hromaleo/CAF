@@ -1,4 +1,4 @@
-// All buttons, size dependent on container
+// All buttons, size dependent on container by default (otherwise use specified modifier), background inherited by default (otherwise defined by modifier)
 .btn {
   display: flex;
   justify-content: space-evenly;
@@ -89,7 +89,11 @@
   &--link {
     color: $color-primary;
     background: $color-alt;
-    padding: 0 2em;
+    padding: 0 1em;
+
+    @media (min-width: $breakpoint-medium) {
+      padding: 0 2em;
+    }
   }
 
   &--simple {

@@ -12,14 +12,23 @@
 
   // Balance cards, 3 cols grid
   &--profile {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    @media (min-width: $breakpoint-medium) {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   // Options cards carousel, 4 cols grid
   &--carousel {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    div:nth-child(4) {
+      display: none;
+    } /* probably will be solved differently as soon the carousel is working */
     gap: 1rem;
+    @media (min-width: $breakpoint-medium) {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 
   // Categories, fixed size tiles, grid flexible

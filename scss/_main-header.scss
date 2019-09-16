@@ -6,7 +6,7 @@
   justify-content: space-evenly;
   align-items: center;
 
-  @media (min-width: 82rem) {
+  @media (min-width: $breakpoint-huge) {
     justify-content: space-between;
   }
 
@@ -29,10 +29,17 @@
     align-items: center;
   }
 
+  &__user-balance {
+    display: none;
+
+    @media (min-width: $breakpoint-medium) {
+      display: inherit;
+    }
+  }
+
   &__phone {
     display: flex;
     align-items: center;
-
   }
 
   &__phone-icon {

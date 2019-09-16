@@ -1,7 +1,7 @@
 .balance-card {
   border: 2px $color-medium solid;
   border-radius: 3px;
-  padding: 3rem 2rem;
+  padding: 3rem 2rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,33 +16,37 @@
     text-align: left;
   }
 
-  &__balance {
+  &__value {
     flex: 1 1 auto;
     color: $color-alt;
-    font-size: 2.75rem; /* 44px */
-    padding-left: 1rem;
+    padding-left: 0.5rem;
     font-weight: bold;
     text-align: right;
+    font-size: 1.75rem; /* 28px */
+    @media (min-width: $breakpoint-large) {
+      font-size: 2.25rem; /* 36px */
+    }
+    @media (min-width: $breakpoint-huge) {
+      font-size: 2.75rem; /* 44px */
+    }
+    transition: font-size 0.5s ease-in;
   }
 
   &__exp-date {
     flex: 0 0 100%;
-    width: 100%;
     text-align: right;
+    margin-top: 1rem;
   }
 
-  &__img {
-    position: absolute;
-    height: 7rem;
-    bottom: 0;
-    right: 2rem;
-    > * {
-      height: 100%;
-      // object-fit: contain;
-    }
-  }
-
-  &--human {
+  &--insurance {
     background: url("../img/human.png") no-repeat 95% bottom;
+  }
+
+  &--travel {
+    background: url("../img/aircraft.png") no-repeat 95% bottom;
+  }
+
+  &--meals {
+    background: url("../img/vouchers-full.png") no-repeat right bottom;
   }
 }
