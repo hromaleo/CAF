@@ -74,7 +74,7 @@
   &--numbered {
     &:after {
       content: "6";
-      background: red;
+      background: $color-alt;
       width: 2em;
       height: 2em;
       border-radius: 50%;

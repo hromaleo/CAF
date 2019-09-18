@@ -11,8 +11,22 @@
   }
 
   &__link {
+    padding: 0 2em;
     display: flex;
     align-items: center;
+    &:hover {
+      background-color: $color-alt-hover;
+    }
+    &--dropdown:after {
+      content: "";
+      background: url("../img/arrow-nav.png") no-repeat center center/contain;
+      height: 6px;
+      width: 10px;
+      margin-left: 0.5em;
+    }
+    &--icon {
+      padding: 0;
+    }
   }
 
   &__icon {
@@ -20,9 +34,5 @@
     width: 1em;
     flex-shrink: 0;
     background: url("../img/icon-home.png") no-repeat right/contain;
-  }
-
-  &__item {
-    padding: 0 2em;
   }
 }

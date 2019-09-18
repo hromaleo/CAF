@@ -5,4 +5,4 @@
 3. Zbavit se javascriptu u kategorií odměn
 4. ~Připravit responsivní breakpointy~
 5. ~Přepsat vše na mobile-first~
-6. Udělat menu v navigaci
+6. ~Udělat menu v navigaci~

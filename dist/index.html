@@ -9,13 +9,15 @@
   <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Raleway:300,500,700,900&display=swap"
     rel="stylesheet" />
   <script src="./js/maximizeWidth.js"></script>
+  <script src="./js/secondaryNav.js"></script>
   <title>Cafeteria | Edenred</title>
 </head>
 
 <body>
   <div class="h-fixed">
     <!-- Main header with company logo and user account values -->
-    <div class="h-bg-prim"> <!-- Needed because its fixed position - otherwise transparent! -->
+    <div class="h-bg-prim">
+      <!-- Needed because its fixed position - otherwise transparent! -->
       <div class="container">
         <header class="main-header">
           <a href="index.html" class="link">
@@ -67,24 +69,66 @@
     <div class="h-bg-alt h-sh-alt h-col-prim">
       <div class="container">
         <nav class="main-navbar">
-          <a href="index.html" class="main-navbar__link">
+          <a href="index.html" class="main-navbar__link main-navbar__link--icon">
             <div class="main-navbar__icon"></div>
           </a>
           <a href="#" class="main-navbar__link">
             <div class="main-navbar__item">Katalog odměn</div>
           </a>
-          <a href="#" class="main-navbar__link">
+          <a href="#" class="main-navbar__link main-navbar__link--dropdown">
             <div class="main-navbar__item">Možnosti čerpání odměny</div>
           </a>
-          <a href="#" class="main-navbar__link">
+          <a href="#" class="main-navbar__link main-navbar__link--dropdown">
             <div class="main-navbar__item">Možnosti cafeterie</div>
           </a>
-          <a href="#" class="main-navbar__link">
+          <a href="#" class="main-navbar__link main-navbar__link--dropdown">
             <div class="main-navbar__item">Interní benefity</div>
           </a>
           <a href="#" class="main-navbar__link">
             <div class="main-navbar__item">Speciální slevy</div>
           </a>
+        </nav>
+      </div>
+    </div>
+    <div class="h-bg-prim h-col-add h-sh-med-b">
+      <div class="container">
+        <nav class="secondary-navbar">
+          <ul class="secondary-navbar__section h-sh-med-r">
+            <li class="secondary-navbar__section-title">Ticket Benefit Card</li>
+            <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Nová karta</a></li>
+            <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Dobití karty</a></li>
+            <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Znovuvydání karty</a>
+            </li>
+          </ul>
+          <ul class="secondary-navbar__section h-sh-med-r">
+            <li class="secondary-navbar__section-title">E-ticket</li>
+            <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Co je e-ticket</a>
+            </li>
+            <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Katalog odměn</a></li>
+          </ul>
+          <ul class="secondary-navbar__section h-sh-med-r">
+            <li class="secondary-navbar__section-title">Poukázky</li>
+            <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket Multi</a></li>
+            <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket Academica</a>
+            </li>
+            <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket Medica</a></li>
+            <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket Holiday</a>
+            </li>
+            <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket Sport &amp;
+                Kultura</a></li>
+            <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket Compliments</a>
+            </li>
+          </ul>
+          <ul class="secondary-navbar__section h-sh-med-r">
+            <li class="secondary-navbar__section-title">Benefit na fakturu</li>
+            <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Jak to funguje?</a>
+            </li>
+          </ul>
+          <ul class="secondary-navbar__section">
+            <li class="secondary-navbar__section-title">Přímá platba v e-shopech</li>
+            <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Seznam e-shopů</a>
+            </li>
+          </ul>
         </nav>
       </div>
     </div>
@@ -138,7 +182,7 @@
           </div>
           <div class="card__btn">
             <a href="#" class="link">
-              <div class="btn btn--link btn--fixed-height">
+              <div class="btn btn--link btn--fixed-height h-sh-alt">
                 Chci body na kartu
               </div>
             </a>
@@ -153,7 +197,7 @@
           </div>
           <div class="card__btn">
             <a href="#" class="link">
-              <div class="btn btn--link btn--fixed-height">
+              <div class="btn btn--link btn--fixed-height h-sh-alt">
                 Mám zájem o poukázky
               </div>
             </a>
@@ -168,7 +212,7 @@
           </div>
           <div class="card__btn">
             <a href="#" class="link">
-              <div class="btn btn--link btn--fixed-height">
+              <div class="btn btn--link btn--fixed-height h-sh-alt">
                 Zobrazit seznam e-shopů
               </div>
             </a>
@@ -391,20 +435,19 @@
         <ul class="main-footer__section">
           <li class="main-footer__section-title">Interní benefity</li>
           <li class="main-footer__item">
-            <a href="#" class="link">
-              Zaměstnanecký program - telefonní operátor</a>
+            <a href="#" class="link link--underlined-on-hover">Zaměstnanecký program - telefonní operátor</a>
           </li>
           <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">Pitný režim</a></li>
           <li class="main-footer__item">
-            <a href="#" class="link link--underlined-on-hover">
-              Soukromé volání z firemních mobilních telefonů</a>
+            <a href="#" class="link link--underlined-on-hover">Soukromé volání z firemních mobilních telefonů</a>
           </li>
           <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">Kvartální odměny</a></li>
           <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">Benefit na dopravu</a></li>
           <li class="main-footer__item">
             <a href="#" class="link link--underlined-on-hover">Odkup vyřazeného firemního majetku</a>
           </li>
-          <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">Příspěvek na životní pojištění</a></li>
+          <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">Příspěvek na životní
+              pojištění</a></li>
           <li class="main-footer__item">
             <a href="#" class="link link--underlined-on-hover">Příspěvek na penzijní připojištění</a>
           </li>
@@ -414,8 +457,10 @@
           <li class="main-footer__section-title">Odkazy</li>
           <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">Jak to funguje?</a></li>
           <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">Pravidla</a></li>
-          <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">Převést peníze ze mzdy</a></li>
-          <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">FAQ - Nejčastější dotazy</a></li>
+          <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">Převést peníze ze mzdy</a>
+          </li>
+          <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">FAQ - Nejčastější dotazy</a>
+          </li>
           <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">Ankety</a></li>
           <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">Noví partneři</a></li>
         </ul>
