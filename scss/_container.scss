@@ -1,5 +1,5 @@
 .container {
-  max-width: $breakpoint-huge;
+  max-width: map-get($breakpoints, "huge");
   margin: 0 auto;
   padding: 0 0.5rem;
 }

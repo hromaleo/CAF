@@ -10,7 +10,9 @@ $color-medium:       #dcdcdc;
 $color-dark:         #171b27;
 $color-additional:   #11204c;
 
-$breakpoint-small:   52rem;
-$breakpoint-medium:  58rem;
-$breakpoint-large:   67rem;
-$breakpoint-huge:    82rem;
+$breakpoints: (
+    "small":    52rem,
+    "medium":   58rem,
+    "large":    67rem,
+    "huge":     82rem
+)

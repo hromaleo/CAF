@@ -2,10 +2,10 @@
   width: 35rem;
   margin: 1.25em 2em 3em;
 
-  @media (min-width: $breakpoint-large) {
+  @include mediaLgUp {
     width: 40rem;
   }
-  @media (min-width: $breakpoint-huge) {
+  @include mediaHgUp {
     width: 48rem;
   }
 

@@ -91,7 +91,7 @@
     background: $color-alt;
     padding: 0 1em;
 
-    @media (min-width: $breakpoint-medium) {
+    @include mediaMdUp {
       padding: 0 2em;
     }
   }

@@ -6,7 +6,7 @@
   justify-content: space-evenly;
   align-items: stretch;
 
-  @media (min-width: $breakpoint-huge) {
+  @include mediaHgUp {
     justify-content: flex-start;
   }
 

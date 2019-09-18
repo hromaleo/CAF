@@ -1,4 +1,4 @@
-@media (max-width: $breakpoint-small) {
+@media (max-width: map-get($breakpoints, "small")) {
   body {
     display: none; /* :-) */
     // header, nav - nějaký hamburger

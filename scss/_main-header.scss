@@ -6,7 +6,7 @@
   justify-content: space-evenly;
   align-items: center;
 
-  @media (min-width: $breakpoint-huge) {
+  @include mediaHgUp {
     justify-content: space-between;
   }
 
@@ -32,7 +32,7 @@
   &__user-balance {
     display: none;
 
-    @media (min-width: $breakpoint-medium) {
+    @include mediaMdUp {
       display: inherit;
     }
   }
