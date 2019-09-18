@@ -1,0 +1,21 @@
+{#
+ # First, we will extend default page layout which contains doctype, <html>, <head>, <body> and page structure.
+ # Page structure is divided into header, content and footer blocks. You can change the blocks as you wish though.
+ #}
+{% extends "layout/default.nunjucks" %}
+
+{% block header %}
+		<div>
+			INDEX HEADER
+		</div>
+{% endblock %}
+
+{% block content %}
+		<div>PAGE CONTENT</div>
+{% endblock %}
+
+{% block footer %}
+		<div>
+			INDEX FOOTER
+		</div>
+{% endblock %}

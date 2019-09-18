@@ -1,0 +1,34 @@
+/* Basic CSS settings goes here. */
+
+// Fonts
+$baseTextSize:  100%;
+$fontPrimary:   sans-serif;
+$fontSecondary: serif;
+
+// Base colors
+$colorPrimary:   #666;
+$colorSecondary: #111;
+
+// Font weights
+$fwLight:   300;
+$fwRegular: 400;
+$fwBold:    700;
+
+// Animation durations
+$timeNormal: 175ms;
+$timeMedium: 350ms;
+
+// Basic indent unit
+$in: 8px;
+
+// Media breakpoints. Use them wisely! Regular website only needs 4 to 5 breakpoints.
+// Possible values are: Xs, Sm, Md, Lg, Xl, Hg
+$breakpoints: (
+	"Sm": 480px,
+	"Md": 768px,
+	"Lg": 1024px,
+	"Xl": 1320px
+);
+
+// Indent values. Used mostly by helper classes. Don't use more than 8 values.
+$indentValues: (4, 8, 16, 24, 32, 64);

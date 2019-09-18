@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		{% include "../includes/head.nunjucks" %}
+	</head>
+
+	<body>
+		{% block header %}
+			HEADER
+		{% endblock %}
+		{% block content %}
+				NO CONTENT DEFINED
+		{% endblock %}
+		{% block footer %}
+			FOOTER
+		{% endblock %}
+		<script src="js/app.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,11 @@
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="{{ page.description }}">
+<meta name="keywords" content="{{ page.keywords }}">
+<meta name="author" content="{{ page.author }}">
+<meta name="robots" content="{{ page.robots }}">
+{% block title %}
+		<title>{{ page.title }}</title>
+{% endblock %}
+<link rel="stylesheet" type="text/css" href="css/main.css">

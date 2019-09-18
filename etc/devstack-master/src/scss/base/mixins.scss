@@ -1,0 +1,113 @@
+// If "sm" breakpoint has 400px, "sm down" breakpoint have 399px.
+$breakpointsDown: ();
+@each $breakpoint, $value in $breakpoints {
+	$breakpointsDown: map-merge($breakpointsDown, ($breakpoint: $value - 1px));
+}
+
+/* Media queries */
+@mixin mediaXsUp {
+	@if map-get($breakpoints, "Xs") != null {
+		@media screen and (min-width: map-get($breakpoints, "Xs")) {
+			@content;
+		}
+	}
+}
+
+@mixin mediaSmUp {
+	@if map-get($breakpoints, "Sm") != null {
+		@media screen and (min-width: map-get($breakpoints, "Sm")) {
+			@content;
+		}
+	}
+}
+
+@mixin mediaMdUp {
+	@if map-get($breakpoints, "Md") != null {
+		@media screen and (min-width: map-get($breakpoints, "Md")) {
+			@content;
+		}
+	}
+}
+
+@mixin mediaLgUp {
+	@if map-get($breakpoints, "Lg") != null {
+		@media screen and (min-width: map-get($breakpoints, "Lg")) {
+			@content;
+		}
+	}
+}
+
+@mixin mediaXlUp {
+	@if map-get($breakpoints, "Xl") != null {
+		@media screen and (min-width: map-get($breakpoints, "Xl")) {
+			@content;
+		}
+	}
+}
+
+@mixin mediaHgUp {
+	@if map-get($breakpoints, "Hg") != null {
+		@media screen and (min-width: map-get($breakpoints, "Hg")) {
+			@content;
+		}
+	}
+}
+
+
+@mixin mediaXsDown {
+	@if map-get($breakpoints, "Xs") != null {
+		@media screen and (max-width: map-get($breakpointsDown, "Xs")) {
+			@content;
+		}
+	}
+}
+
+@mixin mediaSmDown {
+	@if map-get($breakpoints, "Sm") != null {
+		@media screen and (max-width: map-get($breakpointsDown, "Sm")) {
+			@content;
+		}
+	}
+}
+
+@mixin mediaMdDown {
+	@if map-get($breakpoints, "Md") != null {
+		@media screen and (max-width: map-get($breakpointsDown, "Md")) {
+			@content;
+		}
+	}
+}
+
+@mixin mediaLgDown {
+	@if map-get($breakpoints, "Lg") != null {
+		@media screen and (max-width: map-get($breakpointsDown, "Lg")) {
+			@content;
+		}
+	}
+}
+
+@mixin mediaXlDown {
+	@if map-get($breakpoints, "Xl") != null {
+		@media screen and (max-width: map-get($breakpointsDown, "Xl")) {
+			@content;
+		}
+	}
+}
+
+@mixin mediaHgDown {
+	@if map-get($breakpoints, "Hg") != null {
+		@media screen and (max-width: map-get($breakpointsDown, "Hg")) {
+			@content;
+		}
+	}
+}
+
+/* Clearfix */
+@mixin clearfix {
+
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}

@@ -1,0 +1,9 @@
+/* This is just an example of regular component. You can change it or delete it. */
+.content {
+	padding-left: 4 * $in;
+	padding-right: 4 * $in;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 128rem;
+	box-sizing: content-box;
+}
