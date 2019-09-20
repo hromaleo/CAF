@@ -14,6 +14,7 @@
     padding: 0 2em;
     display: flex;
     align-items: center;
+    transition: background-color $time-slow ease-in-out;
     &:hover {
       background-color: $color-alt-hover;
     }

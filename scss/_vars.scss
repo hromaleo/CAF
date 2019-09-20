@@ -16,4 +16,9 @@ $breakpoints: (
     "medium":   58rem,
     "large":    67rem,
     "huge":     82rem
-)
+);
+
+$time-quick:    0.3s;
+$time-slow:     0.5s;
+
+$indentValues: (4, 8, 16, 24, 32, 64);

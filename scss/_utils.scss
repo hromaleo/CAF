@@ -6,6 +6,12 @@
   z-index: 1;
 }
 
+// Absolute position, useful for nav
+.h-overlayed {
+  position: absolute;
+  width: 100%;
+}
+
 // Backgrounds
 .h-bg-prim {
   background: $color-primary;
@@ -52,4 +58,16 @@
 // Alternate fonts
 .h-font-alt {
   font-family: $font-alt;
+}
+
+// Margins
+$indentTypes: ("Top", "Right", "Bottom", "Left");
+
+@each $indent in $indentValues {
+	@each $indentType in $indentTypes {
+
+		.m#{$indentType}#{$indent} {
+			margin-#{to-lower-case($indentType)}: #{$indent}px;
+		}
+	}
 }

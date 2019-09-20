@@ -1,42 +1,42 @@
-// All wrappers basic grid settings
-.wrapper {
-  display: grid;
-  margin: 2rem 0;
-  justify-content: space-between;
+// // All wrappers basic grid settings
+// .wrapper {
+//   display: grid;
+//   margin: 2rem 0;
+//   justify-content: space-between;
 
-  // Big Btn cards, 3 cols grid
-  &--hero {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-  }
+//   // Big Btn cards, 3 cols grid
+//   &--hero {
+//     grid-template-columns: repeat(3, 1fr);
+//     gap: 2rem;
+//   }
 
-  // Balance cards, 3 cols grid
-  &--profile {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    @include mediaMdUp {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
+//   // Balance cards, 3 cols grid
+//   &--profile {
+//     grid-template-columns: repeat(2, 1fr);
+//     gap: 2rem;
+//     @include mediaMdUp {
+//       grid-template-columns: repeat(3, 1fr);
+//     }
+//   }
 
-  // Options cards carousel, 4 cols grid
-  &--carousel {
-    grid-template-columns: repeat(3, 1fr);
-    div:nth-child(4) {
-      display: none;
-    } /* probably will be solved differently as soon the carousel is working */
-    gap: 1rem;
-    @include mediaMdUp {
-      grid-template-columns: repeat(4, 1fr);
-      div:nth-child(4) {
-        display: flex;
-      }
-    }
-  }
+//   // Options cards carousel, 4 cols grid
+//   &--carousel {
+//     grid-template-columns: repeat(3, 1fr);
+//     div:nth-child(4) {
+//       display: none;
+//     } /* probably will be solved differently as soon the carousel is working */
+//     gap: 1rem;
+//     @include mediaMdUp {
+//       grid-template-columns: repeat(4, 1fr);
+//       div:nth-child(4) {
+//         display: flex;
+//       }
+//     }
+//   }
 
-  // Categories, fixed size tiles, grid flexible
-  &--categories {
-    grid-template-columns: repeat(auto-fit, 10rem);
-    gap: 2.5rem 1rem;
-  }
-}
+//   // Categories, fixed size tiles, grid flexible
+//   &--categories {
+//     grid-template-columns: repeat(auto-fit, 10rem);
+//     gap: 2.5rem 1rem;
+//   }
+// }

@@ -1,5 +1,12 @@
 .secondary-navbar {
+  /* handled by JS */
   display: none;
+  height: 0;
+  opacity: 0;
+  /* handled by JS */
+  transition-property: height, opacity;
+  transition-duration: $time-quick;
+  transition-timing-function: ease-in;
   flex-direction: row;
   justify-content: space-between;
   
