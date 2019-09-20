@@ -1,5 +1,7 @@
 // All top-bottom cards with images, titles, buttons
 .card {
+  height: 100%;
+  width: 100%;
   border: 2px $color-medium solid;
   border-radius: 3px;
   background: $color-primary;
@@ -53,7 +55,6 @@
   // Simple cards without button
   &--simple {
     // min-height: 15rem;
-    height: 100%;
     padding: 2rem 2rem;
 
     .card__title {

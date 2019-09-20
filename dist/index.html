@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="css/main.css" />
   <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Raleway:300,500,700,900&display=swap"
     rel="stylesheet" />
-  <!-- <script src="./js/maximizeWidth.js"></script> -->
   <script src="./js/secondaryNav.js"></script>
   <title>Cafeteria | Edenred</title>
 </head>
@@ -133,6 +132,7 @@
         </nav>
       </div>
     </div>
+    <!-- End dropdown menu -->
     <!-- End main menu -->
   </div>
   <!-- End pos h-fixed -->
@@ -162,18 +162,15 @@
       <h1 class="hero__heading">Vyberte si <strong>svou odměnu!</strong></h1>
       <div class="search-field">
         <input class="search-field__input" type="text" placeholder="hledejte např. fitness Praha" />
-        <!-- <div class="search-field__btn"> -->
         <button type="submit" value="Vyhledat" class="search-field__btn btn btn--search">
           Vyhledat
         </button>
-        <!-- </div> -->
         <div class="search-field__options">
           <a href="#" class="search-field__option link link--underlined">Zobrazit katalog</a>
           <a href="#" class="search-field__option link link--underlined">Zobrazit na mapě</a>
         </div>
       </div>
       <h2 class="hero__subheading">Možnosti čerpání benefitů:</h2>
-      <!-- <div class="wrapper wrapper--hero"> -->
       <div class="mTop32 mBottom32">
         <div class="Grid Grid--3">
           <div class="Grid-col">
@@ -236,10 +233,9 @@
   <!-- User area with account balance -->
   <div class="area area--user">
     <div class="area__icon"></div>
-    <div class="container targetOfMaximizeWidth">
+    <div class="container">
       <h2 class="area__heading">Hodnoty vašich benefitů</h2>
       <div class="area__price">8256 Kč</div>
-      <!-- <div class="wrapper wrapper--profile"> -->
       <div class="mTop32 mBottom32">
         <div class="Grid Grid--2 Grid--3medium">
           <div class="Grid-col">
@@ -282,10 +278,10 @@
   <div class="h-bg-light">
     <div class="area area--options">
       <div class="area__icon"></div>
-      <div class="container targetOfMaximizeWidth">
+      <div class="container">
         <h2 class="area__heading">Možnosti Cafeterie</h2>
-        <!-- <div class="wrapper wrapper--carousel"> -->
         <div class="mTop32 mBottom32">
+          <div class="stretcher"></div> <!-- In order the carousel to take whole limited width -->
           <div class="Grid Grid--3 Grid--4medium Grid--smallSpace">
             <div class="Grid-col">
               <div class="card card--simple">
@@ -337,12 +333,11 @@
   <!-- Rewards categories area -->
   <div class="area area--categories">
     <div class="area__icon"></div>
-    <div class="container targetOfMaximizeWidth">
+    <div class="container">
       <h2 class="area__heading">Kategorie odměn</h2>
       <h3 class="area__subheading">
         Vyberte si Vaši odměnu a pokračujte dále
       </h3>
-      <!-- <div class="wrapper wrapper--categories"> -->
       <div class="mTop32 mBottom32">
         <div class="Grid Grid--3 Grid--4small Grid--5medium Grid--6large Grid--7huge Grid--rewards">
           <div class="Grid-col">
@@ -550,6 +545,7 @@
       </div>
     </footer>
   </div>
+  <!-- End secondary footer -->
 </body>
 
 </html>

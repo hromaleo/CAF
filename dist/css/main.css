@@ -366,7 +366,6 @@ img {
     .secondary-navbar__section-title:before {
       content: " "; }
   .secondary-navbar__item {
-    padding-right: 4em;
     display: flex;
     align-items: center; }
     .secondary-navbar__item:before {
@@ -375,8 +374,15 @@ img {
       height: 1em;
       width: 5px;
       margin-right: 0.5em; }
-  .secondary-navbar__btn {
-    margin: 1em 0; }
+    @media screen and (min-width: 58rem) {
+      .secondary-navbar__item {
+        padding-right: 1em; } }
+    @media screen and (min-width: 67rem) {
+      .secondary-navbar__item {
+        padding-right: 2em; } }
+    @media screen and (min-width: 82rem) {
+      .secondary-navbar__item {
+        padding-right: 4em; } }
 
 .hero {
   background-image: url("../img/hero.png");
@@ -514,7 +520,7 @@ img {
 
 .Grid-col {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   box-sizing: border-box;
   padding: 0.5rem; }
   @media screen and (min-width: 67rem) {
@@ -617,7 +623,7 @@ img {
 .Grid-col--12-12 {
   width: 100%; }
 
-@media screen and (min-width: 52rem) {
+@media screen and (min-width: 54rem) {
   .Grid--1small .Grid-col {
     width: 100%; }
   .Grid-col--1-12small {
@@ -831,6 +837,8 @@ img {
     margin-right: 1em; }
 
 .card {
+  height: 100%;
+  width: 100%;
   border: 2px #dcdcdc solid;
   border-radius: 3px;
   background: #ffffff;
@@ -868,7 +876,6 @@ img {
       /* end hack */
       min-width: 100%; }
   .card--simple {
-    height: 100%;
     padding: 2rem 2rem; }
     .card--simple .card__title {
       order: 2;
@@ -905,7 +912,8 @@ img {
   align-items: center;
   flex-wrap: wrap;
   position: relative;
-  height: 100%; }
+  height: 100%;
+  width: 100%; }
   .balance-card__title {
     flex: 1 1 auto;
     max-width: 30%;
@@ -957,7 +965,6 @@ img {
     .main-footer__section-title:before {
       content: " "; }
   .main-footer__item {
-    padding-right: 4em;
     display: flex;
     align-items: center; }
     .main-footer__item:before {
@@ -966,6 +973,15 @@ img {
       height: 1em;
       width: 5px;
       margin-right: 0.5em; }
+    @media screen and (min-width: 58rem) {
+      .main-footer__item {
+        padding-right: 1em; } }
+    @media screen and (min-width: 67rem) {
+      .main-footer__item {
+        padding-right: 2em; } }
+    @media screen and (min-width: 82rem) {
+      .main-footer__item {
+        padding-right: 4em; } }
   .main-footer__btn {
     margin-top: 1em; }
 
@@ -985,7 +1001,11 @@ img {
     object-position: center left;
     float: left; }
 
-@media (max-width: 52rem) {
+@media (max-width: 54rem) {
   body {
     display: none;
     /* :-) */ } }
+
+.stretcher {
+  padding: 0 50vw;
+  margin: 0 -2rem; }
