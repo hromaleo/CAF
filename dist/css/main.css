@@ -1001,11 +1001,6 @@ img {
     object-position: center left;
     float: left; }
 
-@media (max-width: 54rem) {
-  body {
-    display: none;
-    /* :-) */ } }
-
 .stretcher {
   padding: 0 50vw;
   margin: 0 -2rem; }
