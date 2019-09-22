@@ -60,17 +60,6 @@ $columnGutterBig: 2rem !default;
 	}
 }
 
-.Grid--rewards {
-	margin-top: -$columnGutter*2.5/2;
-	margin-bottom: -$columnGutter*2.5/2;
-	margin-left: -$columnGutter/2;
-	margin-right: -$columnGutter/2;
-
-	.Grid-col {
-		padding: $columnGutter*2.5/2 $columnGutter / 2;
-	}
-}
-
 @for $i from 1 through $gridColumnCount {
 
 	.Grid--#{$i} .Grid-col {

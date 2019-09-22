@@ -63,6 +63,9 @@ img {
 .h-col-add {
   color: #11204c; }
 
+.h-text-center {
+  text-align: center; }
+
 .h-sh-alt {
   box-shadow: inset 0px -2px 0px #9b011c; }
 
@@ -316,7 +319,8 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: stretch; }
+  align-items: stretch;
+  position: relative; }
   @media screen and (min-width: 82rem) {
     .main-navbar {
       justify-content: flex-start; } }
@@ -358,7 +362,10 @@ img {
     display: grid;
     grid-template-rows: 4rem repeat(auto-fit, 2rem);
     grid-auto-flow: column;
-    align-items: center; }
+    align-items: center;
+    border-right: 1px solid #dcdcdc; }
+    .secondary-navbar__section:last-child {
+      border-right: none; }
   .secondary-navbar__section-title {
     color: #d20025;
     font-weight: bold;
@@ -466,11 +473,6 @@ img {
     padding-right: 2em; }
 
 .area {
-  display: flex;
-  flex-direction: column;
-  justify-items: flex-start;
-  align-items: center;
-  text-align: center;
   padding-bottom: 3rem; }
   .area__icon {
     background-color: #d20025;
@@ -478,18 +480,22 @@ img {
     background-repeat: no-repeat;
     background-size: 2em 2em;
     width: 5rem;
-    height: 5rem; }
+    height: 5rem;
+    margin: 0px auto; }
   .area__heading {
     margin-top: 3rem;
     font-size: 2rem;
-    line-height: 1.25em; }
+    line-height: 1.25em;
+    text-align: center; }
   .area__subheading {
     font-size: 1.1rem;
-    line-height: 1.25em; }
+    line-height: 1.25em;
+    text-align: center; }
   .area__price {
     font-size: 2.75rem;
     color: #d20025;
-    font-weight: bold; }
+    font-weight: bold;
+    text-align: center; }
   .area--user .area__icon {
     background-image: url("../img/icon-user-conf.png");
     background-size: 2em 2em; }
@@ -500,6 +506,8 @@ img {
       background-size: 2em 2em; }
   .area--categories .area__icon {
     display: none; }
+  .area--grey {
+    background: #eeeeee; }
 
 .Grid {
   display: flex;
@@ -542,14 +550,6 @@ img {
   margin: -0.5rem; }
   .Grid--smallSpace .Grid-col {
     padding: 0.5rem; }
-
-.Grid--rewards {
-  margin-top: -1.25rem;
-  margin-bottom: -1.25rem;
-  margin-left: -0.5rem;
-  margin-right: -0.5rem; }
-  .Grid--rewards .Grid-col {
-    padding: 1.25rem 0.5rem; }
 
 .Grid--1 .Grid-col {
   width: 100%; }
@@ -966,12 +966,17 @@ img {
       content: " "; }
   .main-footer__item {
     display: flex;
-    align-items: center; }
+    align-items: flex-start;
+    margin-bottom: 0.2rem; }
     .main-footer__item:before {
       content: "";
       background: url("../img/arrow-footer.png") no-repeat left center/contain;
-      height: 1em;
+      flex: 0 0 5px;
       width: 5px;
+      min-width: 5px;
+      max-width: 5px;
+      height: 10px;
+      margin-top: 0.25em;
       margin-right: 0.5em; }
     @media screen and (min-width: 58rem) {
       .main-footer__item {
@@ -1000,7 +1005,3 @@ img {
     width: 11rem;
     object-position: center left;
     float: left; }
-
-.stretcher {
-  padding: 0 50vw;
-  margin: 0 -2rem; }

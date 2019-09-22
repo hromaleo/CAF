@@ -71,12 +71,43 @@
           <a href="index.html" class="main-navbar__link main-navbar__link--icon">
             <div class="main-navbar__icon"></div>
           </a>
-          <a href="#" class="main-navbar__link">
-            <div class="main-navbar__item">Katalog odměn</div>
-          </a>
-          <a href="#" class="main-navbar__link main-navbar__link--dropdown">
-            <div class="main-navbar__item">Možnosti čerpání odměny</div>
-          </a>
+          <div class="main-navbar__item">
+            <a href="#" class="main-navbar__link">
+              <div class="main-navbar__item">Katalog odměn</div>
+            </a>
+          </div>
+          <div class="main-navbar__item">
+            <a href="#" class="main-navbar__link main-navbar__link--dropdown">
+              <div class="main-navbar__item">Možnosti čerpání odměny</div>
+            </a>
+            <nav class="subnav subnav--active">
+              <div class="item"><a href="#">sdfsdfds</a></div>
+              <div class="item"><a href="#">sdfsdfds</a></div>
+              <div class="item"><a href="#">sdfsdfds</a></div>
+              <div class="item"><a href="#">sdfsdfds</a></div>
+              <div class="item"><a href="#">sdfsdfds</a></div>
+            </nav>
+            <style>
+              .subnav {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 64px;
+                visibility: hidden;
+                opacity: 0;
+                transform: translateY(-20px);
+                transition: opacity 300ms, transform 300ms, visibility 0ms 300ms;
+                background-color: #f5f;
+              }
+
+              .subnav--active {
+                visibility: visible;
+                opacity: 1;
+                transform: translateY(0);
+                transition: visibility 0ms, opacity 300ms, transform 300ms;
+              }
+            </style>
+          </div>
           <a href="#" class="main-navbar__link main-navbar__link--dropdown">
             <div class="main-navbar__item">Možnosti cafeterie</div>
           </a>
@@ -93,20 +124,20 @@
     <div class="h-bg-prim h-col-add h-overlayed h-sh-med-b">
       <div class="container">
         <nav class="secondary-navbar h-sh-med-b">
-          <ul class="secondary-navbar__section h-sh-med-r">
+          <ul class="secondary-navbar__section">
             <li class="secondary-navbar__section-title">Ticket Benefit Card</li>
             <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Nová karta</a></li>
             <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Dobití karty</a></li>
             <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Znovuvydání karty</a>
             </li>
           </ul>
-          <ul class="secondary-navbar__section h-sh-med-r">
+          <ul class="secondary-navbar__section">
             <li class="secondary-navbar__section-title">E-ticket</li>
             <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Co je e-ticket</a>
             </li>
             <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Katalog odměn</a></li>
           </ul>
-          <ul class="secondary-navbar__section h-sh-med-r">
+          <ul class="secondary-navbar__section">
             <li class="secondary-navbar__section-title">Poukázky</li>
             <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket Multi</a></li>
             <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket Academica</a>
@@ -119,7 +150,7 @@
             <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket Compliments</a>
             </li>
           </ul>
-          <ul class="secondary-navbar__section h-sh-med-r">
+          <ul class="secondary-navbar__section">
             <li class="secondary-navbar__section-title">Benefit na fakturu</li>
             <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Jak to funguje?</a>
             </li>
@@ -267,60 +298,59 @@
           </div>
         </div>
       </div>
-      <a href="#" class="user-goto-profile link">
-        <span class="link link--underlined">Zobrazit všechny benefity v profilu</span>
-      </a>
+      <div class="h-text-center">
+        <a href="#" class="user-goto-profile link">
+          <span class="link link--underlined">Zobrazit všechny benefity v profilu</span>
+        </a>
+      </div>
     </div>
   </div>
   <!-- End user area -->
 
   <!-- Options area with carousel -->
-  <div class="h-bg-light">
-    <div class="area area--options">
-      <div class="area__icon"></div>
-      <div class="container">
-        <h2 class="area__heading">Možnosti Cafeterie</h2>
-        <div class="mTop32 mBottom32">
-          <div class="stretcher"></div> <!-- In order the carousel to take whole limited width -->
-          <div class="Grid Grid--3 Grid--4medium Grid--smallSpace">
-            <div class="Grid-col">
-              <div class="card card--simple">
-                <div class="card__title">
-                  <a href="#" class="link link--underlined">Převést peníze ze mzdy</a>
-                </div>
-                <div class="card__img">
-                  <img src="./img/transfer-money.png" alt="" />
-                </div>
+  <div class="area area--options area--grey">
+    <div class="area__icon"></div>
+    <div class="container">
+      <h2 class="area__heading">Možnosti Cafeterie</h2>
+      <div class="mTop32 mBottom32">
+        <div class="Grid Grid--3 Grid--4medium Grid--smallSpace">
+          <div class="Grid-col">
+            <div class="card card--simple">
+              <div class="card__title">
+                <a href="#" class="link link--underlined">Převést peníze ze mzdy</a>
+              </div>
+              <div class="card__img">
+                <img src="./img/transfer-money.png" alt="" />
               </div>
             </div>
-            <div class="Grid-col">
-              <div class="card card--simple">
-                <div class="card__title">
-                  <a href="#" class="link link--underlined">Stravenky</a>
-                </div>
-                <div class="card__img">
-                  <img src="./img/vouchers.png" alt="" />
-                </div>
+          </div>
+          <div class="Grid-col">
+            <div class="card card--simple">
+              <div class="card__title">
+                <a href="#" class="link link--underlined">Stravenky</a>
+              </div>
+              <div class="card__img">
+                <img src="./img/vouchers.png" alt="" />
               </div>
             </div>
-            <div class="Grid-col">
-              <div class="card card--simple">
-                <div class="card__title">
-                  <a href="#" class="link link--underlined">Modul mimořádných odměn</a>
-                </div>
-                <div class="card__img">
-                  <img src="./img/transfer-from-hr.png" alt="" />
-                </div>
+          </div>
+          <div class="Grid-col">
+            <div class="card card--simple">
+              <div class="card__title">
+                <a href="#" class="link link--underlined">Modul mimořádných odměn</a>
+              </div>
+              <div class="card__img">
+                <img src="./img/transfer-from-hr.png" alt="" />
               </div>
             </div>
-            <div class="Grid-col">
-              <div class="card card--simple">
-                <div class="card__title">
-                  <a href="#" class="link link--underlined">Finanční benefity</a>
-                </div>
-                <div class="card__img">
-                  <img src="./img/pig.png" alt="" />
-                </div>
+          </div>
+          <div class="Grid-col">
+            <div class="card card--simple">
+              <div class="card__title">
+                <a href="#" class="link link--underlined">Finanční benefity</a>
+              </div>
+              <div class="card__img">
+                <img src="./img/pig.png" alt="" />
               </div>
             </div>
           </div>
@@ -328,6 +358,7 @@
       </div>
     </div>
   </div>
+
   <!-- End options area -->
 
   <!-- Rewards categories area -->
@@ -339,7 +370,7 @@
         Vyberte si Vaši odměnu a pokračujte dále
       </h3>
       <div class="mTop32 mBottom32">
-        <div class="Grid Grid--3 Grid--4small Grid--5medium Grid--6large Grid--7huge Grid--rewards">
+        <div class="Grid Grid--3 Grid--4small Grid--5medium Grid--6large Grid--7huge">
           <div class="Grid-col">
             <a href="#" class="link">
               <div class="card card--category">

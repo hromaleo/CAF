@@ -9,7 +9,7 @@
   transition-timing-function: ease-in;
   flex-direction: row;
   justify-content: space-between;
-  
+
   &__section {
     height: 15rem;
     padding: 1rem 0 2rem;
@@ -17,6 +17,11 @@
     grid-template-rows: 4rem repeat(auto-fit, 2rem);
     grid-auto-flow: column;
     align-items: center;
+    border-right: 1px solid $color-medium;
+
+    &:last-child {
+      border-right: none;
+    }
   }
 
   &__section-title {
@@ -37,7 +42,7 @@
       height: 1em;
       width: 5px;
       margin-right: 0.5em;
-    }    
+    }
     @include mediaMdUp {
       padding-right: 1em;
     }

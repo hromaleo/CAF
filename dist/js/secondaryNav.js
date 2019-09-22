@@ -26,8 +26,8 @@ function displaySecondaryNav() {
    const dropdowns = document.querySelectorAll(".main-navbar__link--dropdown, .secondary-navbar__item");
    console.log("Navigation menus and items to be close-able: ", dropdowns);
    for (let i = 0; i < dropdowns.length; i++) {
-      dropdowns[i].removeEventListener("click", displaySecondaryNav)
-      dropdowns[i].addEventListener("click", hideSecondaryNav)
+      dropdowns[i].removeEventListener("click", displaySecondaryNav);
+      dropdowns[i].addEventListener("click", hideSecondaryNav);
    };
 }
 
@@ -51,8 +51,8 @@ function hideSecondaryNav() {
    const dropdowns = document.querySelectorAll(".main-navbar__link--dropdown, .secondary-navbar__item");
    console.log("Navigation dropdown menus reset: ", dropdowns);
    for (let i = 0; i < dropdowns.length; i++) {
-      dropdowns[i].removeEventListener("click", hideSecondaryNav)
-      dropdowns[i].addEventListener("click", displaySecondaryNav)
+      dropdowns[i].removeEventListener("click", hideSecondaryNav);
+      dropdowns[i].addEventListener("click", displaySecondaryNav);
    };
 }
 
