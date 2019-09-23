@@ -15,156 +15,337 @@
 <body>
   <div class="h-fixed">
     <!-- Main header with company logo and user account values -->
-    <div class="h-bg-prim">
-      <!-- Needed because its fixed position - otherwise transparent! -->
-      <div class="container">
-        <header class="main-header">
-          <a href="index.html" class="link">
-            <div class="main-header__logo">
-              <img src="./img/edenred-logo.png" alt="Logo Edenred" class="main-header__img" />
-            </div>
-          </a>
+    <header class="main-header">
+      <div class="container main-header__inner">
+        <a href="index.html" class="link">
+          <div class="main-header__logo">
+            <img src="./img/edenred-logo.png" alt="Logo Edenred" class="main-header__img" />
+          </div>
+        </a>
 
-          <div class="main-header__content">
-            <div class="main-header__user-balance">
-              <a href="#" class="link">
-                <div class="user-balance user-balance--fixed-height">
-                  <div class="user-balance__icon"></div>
-                  <div class="user-balance__value">Můj účet: 8256 bodů</div>
-                </div>
-              </a>
-            </div>
-
+        <div class="main-header__content">
+          <div class="main-header__user-balance">
             <a href="#" class="link">
-              <span class="main-header__user-name">Jan Novák</span>
-            </a>
-
-            <a href="index.html" class="link link--underlined">
-              <span class="main-header__user-logout">Odhlásit se</span>
-            </a>
-
-            <div class="lang-select">
-              <div class="lang-select__icon"></div>
-              <div class="lang-select__menu">CZ</div>
-            </div>
-
-            <div class="main-header__phone">
-              <div class="main-header__phone-icon"></div>
-              <div class="main-header__phone-number">800 153 156</div>
-            </div>
-
-            <a href="#" class="link">
-              <div class="btn btn--shop btn--fixed-height">
-                Košík
+              <div class="user-balance user-balance--fixed-height">
+                <div class="user-balance__icon"></div>
+                <div class="user-balance__value">Můj účet: 8256 bodů</div>
               </div>
             </a>
           </div>
-        </header>
+
+          <a href="#" class="link">
+            <span class="main-header__user-name">Jan Novák</span>
+          </a>
+
+          <a href="index.html" class="link link--underlined">
+            <span class="main-header__user-logout">Odhlásit se</span>
+          </a>
+
+          <div class="lang-select">
+            <div class="lang-select__icon"></div>
+            <div class="lang-select__menu">CZ</div>
+          </div>
+
+          <div class="main-header__phone">
+            <div class="main-header__phone-icon"></div>
+            <div class="main-header__phone-number">800 153 156</div>
+          </div>
+
+          <a href="#" class="link">
+            <div class="btn btn--shop btn--fixed-height">
+              Košík
+            </div>
+          </a>
+        </div>
       </div>
-    </div>
+    </header>
     <!-- End main header -->
 
     <!-- Main menu (stripe) -->
-    <div class="h-bg-alt h-sh-alt h-col-prim">
-      <div class="container">
-        <nav class="main-navbar">
+    <nav class="main-navbar">
+      <div class="container main-navbar__inner">
+        <div class="main-navbar__item main-navbar__item">
           <a href="index.html" class="main-navbar__link main-navbar__link--icon">
-            <div class="main-navbar__icon"></div>
+            <div class="main-navbar__img"></div>
           </a>
-          <div class="main-navbar__item">
-            <a href="#" class="main-navbar__link">
-              <div class="main-navbar__item">Katalog odměn</div>
-            </a>
-          </div>
-          <div class="main-navbar__item">
-            <a href="#" class="main-navbar__link main-navbar__link--dropdown">
-              <div class="main-navbar__item">Možnosti čerpání odměny</div>
-            </a>
-            <nav class="subnav subnav--active">
-              <div class="item"><a href="#">sdfsdfds</a></div>
-              <div class="item"><a href="#">sdfsdfds</a></div>
-              <div class="item"><a href="#">sdfsdfds</a></div>
-              <div class="item"><a href="#">sdfsdfds</a></div>
-              <div class="item"><a href="#">sdfsdfds</a></div>
-            </nav>
-            <style>
-              .subnav {
-                position: absolute;
-                left: 0;
-                right: 0;
-                top: 64px;
-                visibility: hidden;
-                opacity: 0;
-                transform: translateY(-20px);
-                transition: opacity 300ms, transform 300ms, visibility 0ms 300ms;
-                background-color: #f5f;
-              }
-
-              .subnav--active {
-                visibility: visible;
-                opacity: 1;
-                transform: translateY(0);
-                transition: visibility 0ms, opacity 300ms, transform 300ms;
-              }
-            </style>
-          </div>
-          <a href="#" class="main-navbar__link main-navbar__link--dropdown">
-            <div class="main-navbar__item">Možnosti cafeterie</div>
-          </a>
-          <a href="#" class="main-navbar__link main-navbar__link--dropdown">
-            <div class="main-navbar__item">Interní benefity</div>
-          </a>
+        </div>
+        <div class="main-navbar__item">
           <a href="#" class="main-navbar__link">
-            <div class="main-navbar__item">Speciální slevy</div>
+            Katalog odměn
           </a>
-        </nav>
+        </div>
+        <div class="main-navbar__item">
+          <a href="#" class="main-navbar__link main-navbar__link--dropdown">
+            Možnosti čerpání odměny
+          </a>
+          <nav class="secondary-navbar">
+            <div class="container secondary-navbar__inner">
+              <div class="secondary-navbar__section">
+                <div class="secondary-navbar__section-title">Ticket Benefit Card</div>
+                <ul class="secondary-navbar__section-list">
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Nová karta</a>
+                  </li>
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Dobití karty</a>
+                  </li>
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Znovuvydání
+                      karty</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="secondary-navbar__section">
+                <div class="secondary-navbar__section-title">E-ticket</div>
+                <ul class="secondary-navbar__section-list">
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Co je
+                      e-ticket</a>
+                  </li>
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Katalog
+                      odměn</a>
+                  </li>
+              </div>
+              <div class="secondary-navbar__section">
+                <div class="secondary-navbar__section-title">Poukázky</div>
+                <ul class="secondary-navbar__section-list">
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket Multi</a>
+                  </li>
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket
+                      Academica</a>
+                  </li>
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket
+                      Medica</a>
+                  </li>
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket
+                      Holiday</a>
+                  </li>
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket Sport
+                      &amp;
+                      Kultura</a></li>
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket
+                      Compliments</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="secondary-navbar__section">
+                <div class="secondary-navbar__section-title">Benefit na fakturu</div>
+                <ul class="secondary-navbar__section-list">
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Jak to
+                      funguje?</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="secondary-navbar__section">
+                <div class="secondary-navbar__section-title">Přímá platba v e-shopech</div>
+                <ul class="secondary-navbar__section-list">
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Seznam
+                      e-shopů</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="main-navbar__item">
+          <a href="#" class="main-navbar__link main-navbar__link--dropdown">
+            Možnosti Cafeterie
+          </a>
+          <nav class="secondary-navbar">
+            <div class="container secondary-navbar__inner">
+              <div class="secondary-navbar__section">
+                <div class="secondary-navbar__section-title">Možnosti Cafeterie</div>
+                <ul class="secondary-navbar__section-list">
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Nová karta</a>
+                  </li>
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Dobití karty</a>
+                  </li>
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Znovuvydání
+                      karty</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="secondary-navbar__section">
+                <div class="secondary-navbar__section-title">Možnosti Cafeterie</div>
+                <ul class="secondary-navbar__section-list">
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Co je
+                      e-ticket</a>
+                  </li>
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Katalog
+                      odměn</a>
+                  </li>
+              </div>
+              <div class="secondary-navbar__section">
+                <div class="secondary-navbar__section-title">Možnosti Cafeterie</div>
+                <ul class="secondary-navbar__section-list">
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket Multi</a>
+                  </li>
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket
+                      Academica</a>
+                  </li>
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket
+                      Medica</a>
+                  </li>
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket
+                      Holiday</a>
+                  </li>
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket Sport
+                      &amp;
+                      Kultura</a></li>
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket
+                      Compliments</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="secondary-navbar__section">
+                <div class="secondary-navbar__section-title">Možnosti Cafeterie</div>
+                <ul class="secondary-navbar__section-list">
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Jak to
+                      funguje?</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="secondary-navbar__section">
+                <div class="secondary-navbar__section-title">Možnosti Cafeterie</div>
+                <ul class="secondary-navbar__section-list">
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Seznam
+                      e-shopů</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="main-navbar__item">
+          <a href="#" class="main-navbar__link main-navbar__link--dropdown">
+            Interní benefity
+          </a>
+          <nav class="secondary-navbar">
+            <div class="container secondary-navbar__inner">
+              <div class="secondary-navbar__section">
+                <div class="secondary-navbar__section-title">Interní benefity</div>
+                <ul class="secondary-navbar__section-list">
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Nová karta</a>
+                  </li>
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Dobití karty</a>
+                  </li>
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Znovuvydání
+                      karty</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="secondary-navbar__section">
+                <div class="secondary-navbar__section-title">Interní benefity</div>
+                <ul class="secondary-navbar__section-list">
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Co je
+                      e-ticket</a>
+                  </li>
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Katalog
+                      odměn</a>
+                  </li>
+              </div>
+              <div class="secondary-navbar__section">
+                <div class="secondary-navbar__section-title">Interní benefity</div>
+                <ul class="secondary-navbar__section-list">
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket Multi</a>
+                  </li>
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket
+                      Academica</a>
+                  </li>
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket
+                      Medica</a>
+                  </li>
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket
+                      Holiday</a>
+                  </li>
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket Sport
+                      &amp;
+                      Kultura</a></li>
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket
+                      Compliments</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="secondary-navbar__section">
+                <div class="secondary-navbar__section-title">Interní benefity</div>
+                <ul class="secondary-navbar__section-list">
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Jak to
+                      funguje?</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="secondary-navbar__section">
+                <div class="secondary-navbar__section-title">Interní benefity</div>
+                <ul class="secondary-navbar__section-list">
+                  <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Seznam
+                      e-shopů</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="main-navbar__item">
+          <a href="#" class="main-navbar__link">
+            Speciální slevy
+          </a>
+        </div>
       </div>
-    </div>
+    </nav>
+    <!-- End main menu -->
     <!-- Dropdown menu -->
-    <div class="h-bg-prim h-col-add h-overlayed h-sh-med-b">
-      <div class="container">
-        <nav class="secondary-navbar h-sh-med-b">
-          <ul class="secondary-navbar__section">
-            <li class="secondary-navbar__section-title">Ticket Benefit Card</li>
+    <!-- <nav class="secondary-navbar h-overlayed">
+      <div class="container secondary-navbar__inner">
+        <div class="secondary-navbar__section">
+          <div class="secondary-navbar__section-title">Ticket Benefit Card</div>
+          <ul class="secondary-navbar__section-list">
             <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Nová karta</a></li>
-            <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Dobití karty</a></li>
-            <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Znovuvydání karty</a>
+            <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Dobití karty</a>
+            </li>
+            <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Znovuvydání
+                karty</a>
             </li>
           </ul>
-          <ul class="secondary-navbar__section">
-            <li class="secondary-navbar__section-title">E-ticket</li>
+        </div>
+        <div class="secondary-navbar__section">
+          <div class="secondary-navbar__section-title">E-ticket</div>
+          <ul class="secondary-navbar__section-list">
             <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Co je e-ticket</a>
             </li>
-            <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Katalog odměn</a></li>
-          </ul>
-          <ul class="secondary-navbar__section">
-            <li class="secondary-navbar__section-title">Poukázky</li>
-            <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket Multi</a></li>
+            <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Katalog odměn</a>
+            </li>
+        </div>
+        <div class="secondary-navbar__section">
+          <div class="secondary-navbar__section-title">Poukázky</div>
+          <ul class="secondary-navbar__section-list">
+            <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket Multi</a>
+            </li>
             <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket Academica</a>
             </li>
-            <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket Medica</a></li>
+            <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket Medica</a>
+            </li>
             <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket Holiday</a>
             </li>
             <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket Sport &amp;
                 Kultura</a></li>
-            <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket Compliments</a>
+            <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Ticket
+                Compliments</a>
             </li>
           </ul>
-          <ul class="secondary-navbar__section">
-            <li class="secondary-navbar__section-title">Benefit na fakturu</li>
+        </div>
+        <div class="secondary-navbar__section">
+          <div class="secondary-navbar__section-title">Benefit na fakturu</div>
+          <ul class="secondary-navbar__section-list">
             <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Jak to funguje?</a>
             </li>
           </ul>
-          <ul class="secondary-navbar__section">
-            <li class="secondary-navbar__section-title">Přímá platba v e-shopech</li>
+        </div>
+        <div class="secondary-navbar__section">
+          <div class="secondary-navbar__section-title">Přímá platba v e-shopech</div>
+          <ul class="secondary-navbar__section-list">
             <li class="secondary-navbar__item"><a href="#" class="link link--underlined-on-hover">Seznam e-shopů</a>
             </li>
           </ul>
-        </nav>
+        </div>
       </div>
-    </div>
+    </nav> -->
     <!-- End dropdown menu -->
-    <!-- End main menu -->
   </div>
   <!-- End pos h-fixed -->
 
@@ -510,11 +691,11 @@
   <!-- End rewards categories -->
 
   <!-- Main footer -->
-  <div class="h-bg-dark h-col-prim">
-    <div class="container">
-      <footer class="main-footer">
-        <ul class="main-footer__section">
-          <li class="main-footer__section-title">Interní benefity</li>
+  <footer class="main-footer">
+    <div class="container main-footer__inner">
+      <div class="main-footer__section">
+        <div class="main-footer__section-title">Interní benefity</div>
+        <ul class="main-footer__section-list">
           <li class="main-footer__item">
             <a href="#" class="link link--underlined-on-hover">Zaměstnanecký program - telefonní operátor</a>
           </li>
@@ -533,20 +714,25 @@
             <a href="#" class="link link--underlined-on-hover">Příspěvek na penzijní připojištění</a>
           </li>
         </ul>
+      </div>
 
-        <ul class="main-footer__section">
-          <li class="main-footer__section-title">Odkazy</li>
+      <div class="main-footer__section">
+        <div class="main-footer__section-title">Odkazy</div>
+        <ul class="main-footer__section-list">
           <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">Jak to funguje?</a></li>
           <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">Pravidla</a></li>
           <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">Převést peníze ze mzdy</a>
           </li>
-          <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">FAQ - Nejčastější dotazy</a>
+          <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">FAQ - Nejčastější
+              dotazy</a>
           </li>
           <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">Ankety</a></li>
           <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">Noví partneři</a></li>
         </ul>
-        <ul class="main-footer__section">
-          <li class="main-footer__section-title">Cafeterie</li>
+      </div>
+      <div class="main-footer__section">
+        <div class="main-footer__section-title">Cafeterie</div>
+        <ul class="main-footer__section-list">
           <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">Můj profil</a></li>
           <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">Aplikace Ticketka</a></li>
           <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">Nákupní košík</a></li>
@@ -557,14 +743,14 @@
             </div>
           </a>
         </ul>
-      </footer>
-      <!-- End main footer -->
+      </div>
     </div>
-  </div>
+  </footer>
+  <!-- End main footer -->
 
   <!-- Secondary footer with &copy -->
-  <div class="container">
-    <footer class="secondary-footer">
+  <footer class="secondary-footer">
+    <div class="container">
       <div class="secondary-footer__text-line">
         Copyright &copy; 2015
         <a href="#" class="link link--underlined link--coloured"> Edenred Benefity Café</a>.
@@ -574,8 +760,8 @@
         <span class="secondary-footer__logo-title h-font-alt h-col-add">Powered by</span>
         <img class="secondary-footer__logo-img" src="./img/edenred-logo.png" alt="Logo Edenred" />
       </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
   <!-- End secondary footer -->
 </body>
 

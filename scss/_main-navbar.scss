@@ -1,37 +1,52 @@
 // Main menu (stripe)
 .main-navbar {
-  height: 4rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: stretch;
+  background-color: $color-alt;
+  color: $color-primary;
+  border-bottom: 2px solid $color-alt-darker;
   position: relative;
 
-  @include mediaHgUp {
-    justify-content: flex-start;
+  &__inner {
+    height: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+  
+    @include mediaHgUp {
+      justify-content: flex-start;
+    }
   }
 
+  &__item {
+    display: flex;
+    align-items: stretch;
+    transition: background-color $time-slow ease-in-out;
+    
+    &:hover {
+      background-color: $color-alt-hover;
+    }
+  }
+  
   &__link {
     padding: 0 2em;
     display: flex;
     align-items: center;
-    transition: background-color $time-slow ease-in-out;
-    &:hover {
-      background-color: $color-alt-hover;
-    }
-    &--dropdown:after {
-      content: "";
-      background: url("../img/arrow-nav.png") no-repeat center center/contain;
-      height: 6px;
-      width: 10px;
-      margin-left: 0.5em;
-    }
+
     &--icon {
       padding: 0;
     }
+
+    &--dropdown {
+      padding-right: 1em;
+      &:after {
+        content: "";
+        background: url("../img/arrow-nav.png") no-repeat center center/contain;
+        height: 6px;
+        width: 10px;
+        margin-left: 0.5em;
+      }
+    }
   }
 
-  &__icon {
+  &__img {
     height: 1em;
     width: 1em;
     flex-shrink: 0;

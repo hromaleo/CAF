@@ -33,7 +33,7 @@
   background-color: $color-dark;
 }
 
-// Text colors
+// Text
 .h-col-prim {
   color: $color-primary;
 }
@@ -44,19 +44,6 @@
 
 .h-text-center {
   text-align: center;
-}
-
-// Shadows
-.h-sh-alt {
-  box-shadow: inset 0px -2px 0px $color-alt-darker;
-}
-
-.h-sh-med-r {
-  box-shadow: inset -1px 0px 0px $color-medium;
-}
-
-.h-sh-med-b {
-  box-shadow: inset 0px -1px 0px $color-medium;
 }
 
 // Alternate fonts

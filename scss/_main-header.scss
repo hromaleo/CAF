@@ -1,14 +1,19 @@
 // Main header with company logo and user account values
 .main-header {
-  height: 7rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+  background-color: $color-primary;
+  
+  &__inner {
+    height: 7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 
-  @include mediaHgUp {
-    justify-content: space-between;
+    @include mediaHgUp {
+      justify-content: space-between;
+    }
   }
+
 
   &__logo {
     flex-basis: 20rem;
