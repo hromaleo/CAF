@@ -9,6 +9,7 @@
   border-radius: 3px;
   white-space: nowrap;
   background: inherit;
+  font-size: inherit;
   
   @include mediaSmUp {
     padding-right: 1em;
@@ -114,6 +115,10 @@
   &--simple {
     color: inherit;
     border: 2px $color-medium solid;
-    padding: 0 2em;
+    padding: 0 1em;
+
+    @include mediaMdUp {
+      padding: 0 2em;
+    }
   }
 }
