@@ -1,5 +1,13 @@
 /* Media queries */
-/* Up to = min-width */
+/* Up from = min-width */
+@mixin mediaTiUp {
+	@if map-get($breakpoints, "tiny") != null {
+		@media screen and (min-width: map-get($breakpoints, "tiny")) {
+			@content;
+		}
+	}
+}
+
 @mixin mediaSmUp {
 	@if map-get($breakpoints, "small") != null {
 		@media screen and (min-width: map-get($breakpoints, "small")) {
@@ -31,7 +39,7 @@
 		}
 	}
 }
-/* From = max-width */
+/* Till = max-width */
 @mixin mediaHgDown {
 	@if map-get($breakpoints, "huge") != null {
 		@media screen and (max-width: map-get($breakpoints, "huge")) {

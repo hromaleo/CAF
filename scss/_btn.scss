@@ -8,8 +8,19 @@
   border: none;
   border-radius: 3px;
   white-space: nowrap;
-  padding-right: 1em;
   background: inherit;
+  
+  @include mediaSmUp {
+    padding-right: 1em;
+  }
+
+  &:before {
+    display: none;
+
+    @include mediaSmUp {
+      display: inherit;
+    }
+  }
 
   &--fixed-height {
     height: 4rem;
@@ -17,7 +28,10 @@
 
   &--shop {
     border: 2px $color-medium solid;
-    min-width: 10em;
+    
+    @include mediaMdUp {
+      min-width: 10em;
+    }
 
     &:before {
       content: " ";
@@ -40,6 +54,7 @@
       height: 1em;
       width: 1em;
       margin: 0 1em;
+      flex-shrink: 0;
     }
   }
 

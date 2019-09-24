@@ -1,12 +1,14 @@
 .search-field {
-  width: 35rem;
-  margin: 1.25em 2em 3em;
-
-  @include mediaLgUp {
-    width: 40rem;
+  width: 20rem;
+  margin: 0.5em 0;
+  
+  @include mediaTiUp {
+    width: 60vw;
+    margin: 1.25em 2em;
   }
   @include mediaHgUp {
     width: 48rem;
+    margin: 1.25em 2em 3em;
   }
 
   &__input {
@@ -46,6 +48,11 @@
   &__options {
     float: left;
     margin: 1em 0;
+    display: none;
+  
+    @include mediaTiUp {
+      display: inherit;
+    }
   }
   
   &__option {

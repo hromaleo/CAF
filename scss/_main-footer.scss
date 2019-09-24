@@ -2,6 +2,11 @@
   background-color: $color-dark;
   color: $color-primary;
   padding: 2rem 0;
+  display: none;
+
+  @include mediaTiUp {
+    display: inherit;
+  }
 
   &__inner {
     display: flex;
@@ -28,6 +33,16 @@
     align-items: flex-start;
     padding-right: 0.25em;
 
+    @include mediaMdUp {
+      padding-right: 0.5em;
+    }
+    @include mediaLgUp {
+      padding-right: 1em;
+    }
+    @include mediaHgUp {
+      padding-right: 2em;
+    }
+    
     &:before {
       content: "";
       background: url("../img/arrow-footer.png") no-repeat left center/contain;
@@ -38,15 +53,6 @@
       height: 7.5px;
       margin-top: 8px-3.725px;
       margin-right: 8px;
-    }
-    @include mediaMdUp {
-      padding-right: 0.5em;
-    }
-    @include mediaLgUp {
-      padding-right: 1em;
-    }
-    @include mediaHgUp {
-      padding-right: 2em;
     }
   }
 

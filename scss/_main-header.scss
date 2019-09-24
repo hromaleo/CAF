@@ -3,15 +3,22 @@
   background-color: $color-primary;
   
   &__inner {
-    height: 7rem;
+    height: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-
+    
+    @include mediaMdUp {
+      height: 6rem;
+    }
+    @include mediaLgUp {
+      height: 7rem;
+    }
     @include mediaHgUp {
       justify-content: space-between;
     }
+    transition: height $time-slow ease-in;
   }
 
 
@@ -32,6 +39,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    display: none;
+
+    @include mediaTiUp {
+      display: inherit;
+    }
   }
 
   &__user-balance {

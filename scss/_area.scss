@@ -1,6 +1,13 @@
 // Main page areas below hero
 .area {
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
+
+  @include mediaSmUp {
+    padding-bottom: 2rem;
+  }
+  @include mediaHgUp {
+    padding-bottom: 3rem;
+  }
 
   // all areas top icon
   &__icon {
@@ -15,10 +22,17 @@
 
   // all areas content
   &__heading {
-    margin-top: 3rem;
     font-size: 2rem;
     line-height: 1.25em;
     text-align: center;
+    margin-top: 0.5rem;
+    
+    @include mediaTiUp {
+      margin-top: 1rem;
+    }
+    @include mediaHgUp {
+      margin-top: 3rem;
+    }
   }
 
   &__subheading {

@@ -4,15 +4,27 @@
   color: $color-primary;
   border-bottom: 2px solid $color-alt-darker;
   position: relative;
+  display: none;
+
+  @include mediaTiUp {
+    display: inherit;
+  }
 
   &__inner {
-    height: 4rem;
+    height: 2rem;
     display: flex;
     justify-content: space-evenly;
-  
+    
+    @include mediaMdUp {
+      height: 3rem;
+    }
+    @include mediaLgUp {
+      height: 4rem;
+    }
     @include mediaHgUp {
       justify-content: flex-start;
     }
+    transition: height $time-slow ease-in;
   }
 
   &__item {
@@ -26,9 +38,20 @@
   }
   
   &__link {
-    padding: 0 2em;
+    padding: 0 0.5rem;
     display: flex;
     align-items: center;
+    font-size: 75%;
+
+    @include mediaMdUp {
+      padding: 0 1rem;
+      font-size: 87.5%;
+    }
+    @include mediaLgUp {
+      padding: 0 2rem;
+      font-size: 100%;
+    }
+    transition: font-size $time-slow ease-in;
 
     &--icon {
       padding: 0;

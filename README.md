@@ -11,7 +11,7 @@
 9. ~Hlavní navigace i podnavigace mají obrácenou logiku elementů. Správně by mělo být .navbar -> .container -> .navbar__items~
 10. ~U navigací se také zbavit helperů. Navigace sama si definuje barvu pozadí, itemy uvnitř navigace si samy definují barvu textu.~
 11. ~Podnavigaci šoupnout do hlavní navigace dle růžového vzoru.~
-12. Dořešit responsive, ať začíná na 320px.
-13. Na mobilu v headeru ponechat jenom logo, ostatní části skrýt.
+12. ~Dořešit responsive, ať začíná na 320px.~
+13. ~Na mobilu v headeru ponechat jenom logo, ostatní části skrýt.~
 14. Hlavní menu a podmenu udělat responsivně až nakonec tak, že všechny položky budou pod sebou.
 15. Pokud zbyde čas, tak udělat stránku Kontakty s ohledem na budoucí stránky.
