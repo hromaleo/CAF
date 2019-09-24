@@ -1,68 +1,64 @@
 function createDropdown() {
-   const dropdowns = document.querySelectorAll(".main-navbar__link--dropdown, .secondary-navbar__item");
+   const mainNavItems = document.querySelectorAll(".main-navbar__link--dropdown");
+   const subNavItems = document.querySelectorAll(".secondary-navbar__item");
    const allSubNavs = document.querySelectorAll(".secondary-navbar");
-   console.log("Navigation dropdown menu links: ", dropdowns);
-   console.log(allSubNavs);
-   for (let i = 0; i < dropdowns.length; i++) {
-      dropdowns[i].addEventListener("click", function switchSecondaryNav(ev) {
-         const clicked = ev.target;
-         let subNav;
-         switch (clicked.classList.contains("main-navbar__link--dropdown")) {
-            case true:
-               for (let j = 0; j < allSubNavs.length; j++) {
-                  allSubNavs[j].classList.remove("secondary-navbar--active");
-                  console.log("skryto");
-               };
-               console.log("Main menu item clicked");
-               subNav = clicked.nextElementSibling;
-               if (subNav != null) {
-                  console.log("To be displayed or hid", subNav);
-                  switch (subNav.classList.contains("secondary-navbar--active")) {
-                     case true:
-                        subNav.classList.remove("secondary-navbar--active");
-                        console.log("Subnav hid thru main nav item");
-                        break;
-                     case false:
-                        subNav.classList.add("secondary-navbar--active");
-                        console.log("Subnav displayed");
-                        break;
-                     default:
-                        alert("Could not switch any submenu");
-                        break;
-                  };
-               }
-               else {
-                  alert("Could not switch any submenu, no submenu included");
-               };
-               break;
-            case false:
-               console.log("Not a main menu item clicked");
-               subNav = clicked.parentElement;
-               while (subNav.classList.contains("secondary-navbar") == false) {
-                  subNav = subNav.parentElement;
-               };
-               switch (subNav.classList.contains("secondary-navbar--active")) {
-                  case true:
-                     subNav.classList.remove("secondary-navbar--active");
-                     console.log("Subnav hid thru subnav item");
-                     break;
-                  case false:
-                     subNav.classList.add("secondary-navbar--active");
-                     console.log("Subnav displayed");
-                     break;
-                  default:
-                     alert("Could not switch any submenu");
-                     break;
-               };
-               break;
-            default:
-               console.log("Ambiguos");
-               break;
+   console.log("Navigation dropdown menu links: ", mainNavItems);
+   console.log("All submenus items closing opened submenu: ", subNavItems);
+   console.log("Submenus: ", allSubNavs);
+
+   for (let i = 0; i < mainNavItems.length; i++) {
+      mainNavItems[i].addEventListener("click", function switchSecondaryNav(event) {
+         const clicked = event.target;
+         let toHideSubNav;
+         let toShowSubNav;
+         console.log("Main menu item clicked: ", clicked);
+
+         for (let j = 0; j < allSubNavs.length; j++) {
+            if (allSubNavs[j].classList.contains("secondary-navbar--active")) { /* hide any previosuly displayed subnav */
+               toHideSubNav = allSubNavs[j]; /* and remember which one it was for the next FOR loop */
+               console.log("Submenu already displayed, hiding it: ", toHideSubNav);
+               toHideSubNav.classList.remove("secondary-navbar--active");
+            }
+            else {
+               console.log("Submenu already hidden: ", allSubNavs[j]);
+            };
          };
 
+         if (clicked.nextElementSibling) {
+            for (let k = 0; k < allSubNavs.length; k++) {
+               if (allSubNavs[k] != toHideSubNav) { /* in order not to display the same in previous FOR loop hidden submenu again */
+                  if (allSubNavs[k] == clicked.nextElementSibling) { /* display this one clicked on */
+                     toShowSubNav = allSubNavs[k];
+                     console.log("Submenu to display: ", toShowSubNav);
+                     toShowSubNav.classList.add("secondary-navbar--active");
+                  };
+               };
+            }
+         }
+         else {
+            alert("Dropdown item clicked, but no submenu defined!")
+         };
       });
    };
-}
+
+   for (let i = 0; i < subNavItems.length; i++) {
+      subNavItems[i].addEventListener("click", function hideSecondaryNav() {
+         let toHideSubNav;
+         console.log("Sub menu item clicked");
+
+         for (let j = 0; j < allSubNavs.length; j++) {
+            if (allSubNavs[j].classList.contains("secondary-navbar--active"))   /* hide any displayed subnav */ {
+               toHideSubNav = allSubNavs[j];
+               console.log("Hiding this submenu: ", toHideSubNav);
+               toHideSubNav.classList.remove("secondary-navbar--active");
+            }
+            else {
+               console.log("Submenu already hidden: ", allSubNavs[j]);
+            };
+         };
+      });
+   }
+};
 
 // function displaySecondaryNav() {
 //    const nav = document.querySelector(".secondary-navbar__inner");
