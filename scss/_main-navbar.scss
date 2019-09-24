@@ -4,17 +4,18 @@
   color: $color-primary;
   border-bottom: 2px solid $color-alt-darker;
   position: relative;
-  display: none;
-
-  @include mediaTiUp {
-    display: inherit;
-  }
 
   &__inner {
-    height: 2rem;
+    // height: 2rem;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
+    align-items: stretch;
     
+    @include mediaTiUp {
+      flex-direction: row;
+      height: 2rem;
+    }
     @include mediaMdUp {
       height: 3rem;
     }
@@ -29,7 +30,14 @@
 
   &__item {
     display: flex;
+    flex-direction: column;
     align-items: stretch;
+    position: relative;
+
+    @include mediaTiUp {
+      position: initial;
+      flex-direction: row;
+    }
     transition: background-color $time-slow ease-in-out;
     
     &:hover {
@@ -38,11 +46,16 @@
   }
   
   &__link {
-    padding: 0 0.5rem;
+    padding: 0.5rem 0;
     display: flex;
+    justify-content: center;
     align-items: center;
-    font-size: 75%;
+    font-size: 100%;
 
+    @include mediaTiUp {
+      padding: 0 1rem;
+      font-size: 75%; /* because .main-navbar__inner has flex-direction: row */
+    }
     @include mediaMdUp {
       padding: 0 1rem;
       font-size: 87.5%;
@@ -55,10 +68,18 @@
 
     &--icon {
       padding: 0;
+      display: none;
+
+      @include mediaTiUp {
+        display: inherit;
+      }
     }
 
     &--dropdown {
-      padding-right: 1em;
+      @include mediaTiUp {
+        padding-right: 1em;
+      }
+
       &:after {
         content: "";
         background: url("../img/arrow-nav.png") no-repeat center center/contain;

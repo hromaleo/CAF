@@ -1,15 +1,20 @@
 .secondary-navbar {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 34px;
+  position: relative;
+  display: none;
   visibility: hidden;
   opacity: 0;
   transform: translateY(-20px);
   transition: opacity $time-quick, transform $time-quick, visibility 0ms $time-quick;
   background-color: $color-primary;
-  border-bottom: 1px solid $color-medium;
-
+  
+  @include mediaTiUp {
+    position: absolute;
+    display: initial;
+    left: 0;
+    right: 0;
+    top: 34px;
+    border-bottom: 1px solid $color-medium;
+  }
   @include mediaMdUp {
     top: 50px;
   }
@@ -19,15 +24,21 @@
 
   &__inner {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+
+    @include mediaTiUp {
+      flex-direction: row;
+    }
   }
 
   &__section {
     padding: 0.25rem 0 0.25rem 0.25rem;
-    border-right: 1px solid $color-medium;
     font-size: 75%;
-
+    
+    @include mediaTiUp {
+      border-right: 1px solid $color-medium;
+    }
     @include mediaMdUp {
       padding: 0.5rem 0 0.5rem 0.5rem;
       font-size: 87.5%;
@@ -48,11 +59,13 @@
 
   &__section-title {
     color: $color-alt;
-    min-height: 4em;
     display: flex;
     align-items: center;
     padding-right: 0.25rem;
     
+    @include mediaTiUp {
+      min-height: 4em;
+    }
     @include mediaMdUp {
       padding-right: 0.5rem;
     }
@@ -65,10 +78,14 @@
   }
   
   &__section-list {
-    display: grid;
-    grid-template-rows: repeat(4, minmax(2em, max-content));
-    grid-auto-flow: column;
-    row-gap: 0.2em;
+    display: flex;
+        
+    @include mediaTiUp {
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-rows: repeat(4, minmax(2em, max-content));
+      row-gap: 0.2em;
+    }
   }
 
   &__item {
@@ -102,6 +119,7 @@
 
   &--active {
     visibility: visible;
+    display: initial;
     opacity: 1;
     transform: translateY(0);
     transition: visibility 0ms, opacity $time-slow, transform $time-slow;

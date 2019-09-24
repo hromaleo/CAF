@@ -2,4 +2,11 @@
   max-width: map-get($breakpoints, "huge");
   margin: 0 auto;
   padding: 0 1rem;
+    
+  &--no-padding {
+    padding: 0;
+    @include mediaTiUp {
+      padding: 0 1rem;
+    }
+  }
 }
