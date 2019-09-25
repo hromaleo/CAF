@@ -2,9 +2,11 @@
 // Fixed position, useful for header
 .h-fixed {
   @include mediaTiUp {
-    position: sticky;
-    top: 0;
-    z-index: 1;
+    @media screen and (min-height: 40rem) {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
   }
 }
 

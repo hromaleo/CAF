@@ -14,6 +14,7 @@
 
     @include mediaTiUp {
       flex-direction: row;
+      justify-content: space-between;
     }
   }
 
@@ -49,10 +50,11 @@
 
     @include mediaTiUp {
       display: grid;
-      grid-template-rows: repeat(6, minmax(2rem, max-content));
+      grid-template-rows: repeat(6, minmax(2em, max-content));
       grid-auto-flow: column;
       row-gap: 0.2rem; 
     }
+    transition: grid-template-rows $time-slow ease-in;
   }
   
   &__item {
