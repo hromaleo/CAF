@@ -1,0 +1,8 @@
+.dropdown-list {
+   &__item {
+      margin: 1.25em 0;
+      color: $color-alt;
+      list-style-type: initial;
+      list-style-position: inside;
+   }
+}

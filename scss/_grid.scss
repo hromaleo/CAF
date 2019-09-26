@@ -33,6 +33,22 @@ $columnGutterBig: 2rem !default;
 	@include mediaLgUp() {
 		padding: $columnGutterBig / 2;
 	}
+
+	&--column {
+		flex-direction: column;
+		justify-content: flex-start;
+		
+	}
+	&--column-end {
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: stretch;
+		
+		@include mediaSmUp() {
+			align-items: flex-end;
+			padding: 1.5rem 2.5rem;
+		 }
+	}
 }
 
 .Grid--noIndent {

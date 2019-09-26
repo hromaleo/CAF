@@ -1,0 +1,63 @@
+.contact-box {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  border: 2px solid $color-alt;
+  padding: 1.5rem 3.5rem;
+  
+  @include mediaSmUp() {
+    padding: 0.5rem 0.5rem;
+  }
+  @include mediaMdUp() {
+    padding: 1.5rem 1.5rem;
+  }
+  @include mediaLgUp() {
+    padding: 1.5rem 3.5rem;
+  }
+  @include mediaHgUp() {
+    padding: 1.5rem 6.5rem;
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    line-height: 2em;
+    color: $color-alt;
+    font-weight: bold;
+    font-size: 1rem;
+
+    @include mediaMdUp() {
+      font-size: 1.25rem;
+    }
+  }
+
+  &__contact-icon {
+    height: 1.5em;
+    width: 1.5em;
+    display: none;
+
+    &--mail {
+      background: url("../img/icon-mail.png") no-repeat center/contain;
+    }
+    &--phone {
+      background: url("../img/icon-phone.png") no-repeat center/contain;
+    }
+
+    @include mediaSmUp() {
+      display: initial;
+    }
+  }
+
+  &__contact-text {
+    white-space: nowrap;
+
+    @include mediaSmUp() {
+      margin-left: 0.5em;
+    }
+    @include mediaMdUp() {
+      margin-left: 1.5em;
+    }
+  }
+}
