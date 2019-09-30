@@ -4,19 +4,16 @@
   visibility: hidden;
   opacity: 0;
   transform: translateY(-20px);
-  transition: opacity $time-quick, transform $time-quick, visibility 0ms $time-quick;
+  transition: opacity $time-slow, transform $time-slow, visibility 0ms $time-slow;
   background-color: $color-primary;
   
-  @include mediaTiUp {
+  @include mediaMdUp {
     position: absolute;
     display: initial;
     left: 0;
     right: 0;
-    top: 34px;
-    border-bottom: 1px solid $color-medium;
-  }
-  @include mediaMdUp {
     top: 50px;
+    border-bottom: 1px solid $color-medium;
   }
   @include mediaLgUp {
     top: 66px;
@@ -27,31 +24,24 @@
     flex-direction: column;
     justify-content: center;
 
-    @include mediaTiUp {
+    @include mediaMdUp {
       flex-direction: row;
     }
   }
 
   &__section {
     padding: 0.25rem 0 0.25rem 0.25rem;
-    font-size: 100%;
     
-    @include mediaTiUp {
-      font-size: 75%;
-      border-right: 1px solid $color-medium;
-    }
     @include mediaMdUp {
+      border-right: 1px solid $color-medium;
       padding: 0.5rem 0 0.5rem 0.5rem;
-      font-size: 87.5%;
     }
     @include mediaLgUp {
       padding: 0.75rem 0 1rem 1rem;
-      font-size: 100%;
     }
     @include mediaHgUp {
       padding: 1rem 0 2rem 2rem;
     }
-    transition: font-size $time-slow ease-in;
 
     &:last-child {
       border-right: none;
@@ -64,10 +54,8 @@
     align-items: center;
     padding-right: 0.25rem;
     
-    @include mediaTiUp {
-      min-height: 4em;
-    }
     @include mediaMdUp {
+      min-height: 4em;
       padding-right: 0.5rem;
     }
     @include mediaLgUp {
@@ -82,7 +70,7 @@
     display: flex;
     flex-wrap: wrap;
         
-    @include mediaTiUp {
+    @include mediaMdUp {
       display: grid;
       grid-auto-flow: column;
       grid-template-rows: repeat(4, minmax(2em, max-content));

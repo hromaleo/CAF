@@ -24,14 +24,7 @@
     padding-left: 0.5rem;
     font-weight: bold;
     text-align: right;
-    font-size: 1.75rem; /* 28px */
-    @include mediaLgUp {
-      font-size: 2.25rem; /* 36px */
-    }
-    @include mediaHgUp {
-      font-size: 2.75rem; /* 44px */
-    }
-    transition: font-size $time-slow ease-in;
+    font-size: 2.75rem; /* 44px */
   }
 
   &__exp-date {
