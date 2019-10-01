@@ -22,8 +22,25 @@ a {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-weight: 100; }
+
+h1 {
+  font-size: 2.75rem;
+  /* 44px */ }
+
+h2 {
+  font-size: 2rem;
+  /* 32px */ }
+
+h3 {
+  font-size: 1.5rem;
+  /* 24px */ }
+
+h4 {
+  font-size: 1.1rem;
+  /* 17.5px */ }
 
 ul li {
   list-style: none; }
@@ -33,11 +50,19 @@ img {
   height: 100%;
   object-fit: contain; }
 
+hr {
+  width: 100%;
+  height: 2px;
+  background-color: #eeeeee; }
+
 @media screen and (min-width: 37rem) and (min-height: 40rem) {
   .h-fixed {
     position: sticky;
     top: 0;
     z-index: 1; } }
+
+.h-clearfix {
+  clear: both; }
 
 .h-bg-prim {
   background: #ffffff; }
@@ -159,6 +184,22 @@ img {
     @media screen and (min-width: 58rem) {
       .container--no-padding {
         padding: 0 1rem; } }
+  .container--floated-childs {
+    clear: both;
+    overflow: auto; }
+  .container__content {
+    margin: 2.75rem 0 2rem; }
+    @media screen and (min-width: 58rem) {
+      .container__content {
+        width: 50%;
+        float: left; } }
+  .container__pane {
+    margin: 2.75rem 0 2rem; }
+    @media screen and (min-width: 58rem) {
+      .container__pane {
+        width: 50%;
+        float: right;
+        text-align: right; } }
 
 .main-header {
   background-color: #ffffff; }
@@ -544,12 +585,6 @@ img {
     @media screen and (min-width: 83.25rem) {
       .hero__content {
         padding-bottom: 6rem; } }
-  .hero__heading {
-    font-size: 2.6875rem;
-    /* 43px */ }
-  .hero__subheading {
-    font-size: 2.0625rem;
-    /* 33px */ }
 
 .sidebar {
   width: 0;
@@ -635,18 +670,25 @@ img {
     height: 5rem;
     margin: 0px auto; }
   .area__heading {
-    font-size: 2rem;
     line-height: 1.25em;
     text-align: center;
-    margin-top: 0.5rem; }
+    padding-top: 0.5rem; }
     @media screen and (min-width: 37rem) {
       .area__heading {
-        margin-top: 1rem; } }
+        padding-top: 1rem; } }
     @media screen and (min-width: 83.25rem) {
       .area__heading {
-        margin-top: 3rem; } }
+        padding-top: 3rem; } }
+    .area__heading--underlined {
+      border-bottom: 2px solid #eeeeee;
+      padding-bottom: 0.25rem; }
+      @media screen and (min-width: 37rem) {
+        .area__heading--underlined {
+          padding-bottom: 0.5rem; } }
+      @media screen and (min-width: 83.25rem) {
+        .area__heading--underlined {
+          padding-bottom: 1.5rem; } }
   .area__subheading {
-    font-size: 1.1rem;
     line-height: 1.25em;
     text-align: center; }
   .area__price {
@@ -664,7 +706,7 @@ img {
       background-size: 2em 2em; }
   .area--categories .area__icon {
     display: none; }
-  .area--grey {
+  .area--light-bnd {
     background: #eeeeee; }
 
 .Grid {
@@ -692,17 +734,6 @@ img {
   @media screen and (min-width: 67rem) {
     .Grid-col {
       padding: 1rem; } }
-  .Grid-col--column {
-    flex-direction: column;
-    justify-content: flex-start; }
-  .Grid-col--column-end {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch; }
-    @media screen and (min-width: 47rem) {
-      .Grid-col--column-end {
-        align-items: flex-end;
-        padding: 1.5rem 2.5rem; } }
 
 .Grid--noIndent {
   margin: 0; }
@@ -1254,18 +1285,18 @@ img {
     object-position: center left;
     float: left; }
 
-.text {
+.typo--plain-text {
   padding: 1rem 0; }
 
-.main-title {
-  font-size: 1.5em;
-  margin-bottom: 1em;
+.typo--main-title {
   line-height: 1.25em;
   color: #d20025;
   font-weight: bold; }
 
 .contact-form {
-  margin: 2rem 0; }
+  margin: 1.5rem 0 1rem; }
+  .contact-form__legend {
+    margin: 1.5em 0; }
   .contact-form__line {
     margin: 0.5em 0 0.75em;
     padding-left: 0.75em;
@@ -1308,7 +1339,7 @@ img {
     @media screen and (min-width: 58rem) {
       .contact-form__input {
         margin: 0;
-        flex-basis: 23rem; } }
+        flex-basis: 100%; } }
     .contact-form__input--box {
       background-color: #ffffff;
       min-height: 13rem; }
@@ -1338,18 +1369,9 @@ img {
   list-style-position: inside; }
 
 .contact-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
+  display: inline-block;
   border: 2px solid #d20025;
   padding: 1.5rem; }
-  @media screen and (min-width: 47rem) {
-    .contact-box {
-      padding: 0.5rem 0.5rem; } }
-  @media screen and (min-width: 58rem) {
-    .contact-box {
-      padding: 1.5rem 1.5rem; } }
   @media screen and (min-width: 67rem) {
     .contact-box {
       padding: 1.5rem 3.5rem; } }
