@@ -1286,6 +1286,9 @@ hr {
     float: left; }
 
 .typo--plain-text {
+  line-height: initial;
+  color: initial;
+  font-weight: normal;
   padding: 1rem 0; }
 
 .typo--main-title {
@@ -1362,11 +1365,24 @@ hr {
         line-height: 3rem;
         flex-shrink: 0; } }
 
-.dropdown-list__item {
-  margin: 1.25em 0;
-  color: #d20025;
-  list-style-type: initial;
-  list-style-position: inside; }
+.dropdown-list {
+  padding-left: 1em; }
+  .dropdown-list__item {
+    margin: 1.25em 0;
+    color: #d20025;
+    list-style-type: initial; }
+  .dropdown-list__content {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.2s, transform 0.2s, visibility 0ms 0.2s; }
+    .dropdown-list__content--active {
+      visibility: visible;
+      display: initial;
+      opacity: 1;
+      transform: translateY(0);
+      transition: visibility 0ms, opacity 0.2s, transform 0.2s; }
 
 .contact-box {
   display: inline-block;

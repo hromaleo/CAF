@@ -1,6 +1,6 @@
-function createDropdown() {
+function createDropdownSecNav() {
    const mainNavItems = document.querySelectorAll(".main-navbar__link--dropdown");
-   const subNavItems = document.querySelectorAll(".secondary-navbar__item");
+   const subNavItems = document.querySelectorAll(".secondary-navbar__link");
 
    for (let i = 0; i < mainNavItems.length; i++) {
 
@@ -25,7 +25,7 @@ function createDropdown() {
    for (let i = 0; i < subNavItems.length; i++) {
 
       subNavItems[i].addEventListener("click", (e) => {
-         e.preventDefault;
+         e.preventDefault();
 
          const target = e.target;
          const secondaryNav = target.closest(".secondary-navbar");
@@ -35,4 +35,4 @@ function createDropdown() {
    }
 }
 
-document.addEventListener("DOMContentLoaded", createDropdown);
+document.addEventListener("DOMContentLoaded", createDropdownSecNav);
