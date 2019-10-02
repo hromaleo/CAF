@@ -64,3 +64,9 @@ hr {
   height: 2px;
   background-color: $color-light;
 }
+
+button {
+  &:hover {
+    cursor: pointer;
+  }
+}

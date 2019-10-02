@@ -55,6 +55,9 @@ hr {
   height: 2px;
   background-color: #eeeeee; }
 
+button:hover {
+  cursor: pointer; }
+
 @media screen and (min-width: 37rem) and (min-height: 40rem) {
   .h-fixed {
     position: sticky;
