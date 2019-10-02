@@ -74,7 +74,7 @@
          font-size: 1rem;
          color: $color-primary;
          background-color: $color-positive;
-         box-shadow: 0px 2px 0px $color-positive-darker;
+         box-shadow: 0px $line-thin 0px $color-positive-darker;
          
          @include mediaMdUp {
             flex-basis: 7.5rem;

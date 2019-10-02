@@ -1,6 +1,6 @@
 .contact-box {
   display: inline-block;
-  border: 2px solid $color-alt;
+  border: $line-thin solid $color-alt;
   padding: 1.5rem;
   
   @include mediaLgUp {

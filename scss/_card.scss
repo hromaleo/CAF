@@ -2,7 +2,7 @@
 .card {
   height: 100%;
   width: 100%;
-  border: 2px $color-medium solid;
+  border: $line-thin $color-medium solid;
   border-radius: 3px;
   background: $color-primary;
   display: flex;
@@ -89,7 +89,7 @@
       order: 1;
       height: 10rem;
       width: 10rem;
-      border: 2px $color-medium solid;
+      border: $line-thin $color-medium solid;
       display: flex;
       margin-bottom: 1rem;
     }

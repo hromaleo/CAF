@@ -2,7 +2,7 @@
 .main-navbar {
   background-color: $color-alt;
   color: $color-primary;
-  border-bottom: 2px solid $color-alt-darker;
+  border-bottom: $line-thin solid $color-alt-darker;
   position: relative;
 
   &__inner {
