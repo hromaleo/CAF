@@ -34,7 +34,7 @@
     }
 
     &--underlined {
-      border-bottom: 2px solid $color-light;
+      border-bottom: $line-thin solid $color-light;
       padding-bottom: 0.25rem;
       
       @include mediaTiUp {

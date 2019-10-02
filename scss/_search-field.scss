@@ -15,7 +15,7 @@
     float: left;
     width: 75%;
     height: 4rem;
-    box-shadow: 0px 2px 0px #000;
+    box-shadow: 0px $line-thin 0px #000;
     border-radius: 3px 0 0 3px;
     padding: 1.5em;
     &::-webkit-input-placeholder {
@@ -42,7 +42,8 @@
     width: 25%;
     height: 4rem;
     background-color: $color-alt;
-    box-shadow: 0px 2px 0px $color-alt-darker;
+    box-shadow: 0px $line-thin
+     0px $color-alt-darker;
     border-radius: 0 3px 3px 0;
   }
 
