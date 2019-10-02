@@ -203,6 +203,8 @@ button:hover {
         width: 50%;
         float: right;
         text-align: right; } }
+  .container__pane-img {
+    height: 18rem; }
   .container__center-column {
     max-width: 47rem;
     margin: 4rem auto 2rem;

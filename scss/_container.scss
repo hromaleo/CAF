@@ -31,6 +31,10 @@
       text-align: right;
     }
   }
+
+  &__pane-img {
+    height: 18rem;
+  }
   
   &__center-column {
     max-width: map-get($breakpoints, "small");
