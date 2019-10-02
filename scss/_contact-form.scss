@@ -71,10 +71,9 @@
       }
 
       &--btn {
-         font-size: 1rem;
-         color: $color-primary;
-         background-color: $color-positive;
-         box-shadow: 0px $line-thin 0px $color-positive-darker;
+         padding: 0;
+         border: none;
+         background-color: inherit;
          
          @include mediaMdUp {
             flex-basis: 7.5rem;

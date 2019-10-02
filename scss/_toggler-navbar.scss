@@ -1,0 +1,19 @@
+.toggler-navbar {
+  display: flex;
+  justify-content: flex-start; //because of this, __item--empty needed
+
+  &__item {
+    padding-top: 2rem;
+    
+    &--active {
+      transform: translateY(-$line-thin);
+      border-top: $line-thin solid $color-alt;
+    }
+  }
+
+  &__empty { //ensures spacing
+    flex-basis: 3.5rem;
+    flex-shrink: 1;
+    flex-grow: 0;
+  }
+}

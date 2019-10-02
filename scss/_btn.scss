@@ -1,14 +1,16 @@
-// All buttons, size dependent on container by default (otherwise use specified modifier), background inherited by default (otherwise defined by modifier)
+// All buttons, size dependent on container by default (otherwise use specified modifiers), background, colour and font-size inherited by default and no border by default (otherwise defined by modifier)
 .btn {
   display: inline-flex;
+  display: -ms-inline-flexbox;
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  border: none;
-  border-radius: 3px;
   overflow-wrap: break-word;
   background: inherit;
   font-size: inherit;
+  color: inherit;
+  border-radius: 3px;
+  border: none;
   padding: 0 0.5em;
   
   @include mediaSmUp {
@@ -25,6 +27,7 @@
     }
   }
 
+  // Dimensions
   &--constrained-height {
     min-height: 4rem;
   }
@@ -37,13 +40,48 @@
     width: 100%;
   }
 
-  &--shop {
-    border: 2px $color-medium solid;
-    
-    @include mediaMdUp {
-      min-width: 10em;
-    }
+  // Borders
+  &--bordered {
+    border-width: $line-thin;
+    border-style: solid;
+  }
 
+  &--bor-medium {
+    border-color: $color-medium;
+  }
+
+  &--bor-alt {
+    border-color: $color-alt;
+  }
+
+  // Colours
+  &--col-inh-alt {
+    background-color: inherit;
+    color: $color-alt;
+  }
+  
+  &--col-alt-prim {
+    background-color: $color-alt;
+    color: $color-primary;
+  }
+  
+  &--col-add-prim {
+    background-color: $color-additional;
+    color: $color-primary;
+  }
+  
+  &--col-pos-prim {
+    background-color: $color-positive;
+    color: $color-primary;
+  }
+
+  // Shadows
+  &--sh-pos {
+    box-shadow: 0px $line-thin 0px $color-positive-darker;
+  }
+
+  // Actual types
+  &--shop {
     &:before {
       content: " ";
       background: url("../img/icon-shop-cart.png") no-repeat center/contain;
@@ -53,10 +91,17 @@
     }
   }
 
-  &--search {
-    color: $color-primary;
-    background: $color-alt;
+  &--shop-col {
+    &:before {
+      content: " ";
+      background: url("../img/icon-shop-cart.png") no-repeat center/contain;
+      filter: saturate(0) invert(1);
+      height: 2em;
+      width: 2em;
+    }
+  }
 
+  &--search {
     &:before {
       content: " ";
       background: url("../img/icon-magnifier.png") no-repeat center/contain;
@@ -68,9 +113,6 @@
   }
 
   &--msg {
-    color: $color-primary;
-    background: $color-additional;
-
     &:before {
       content: " ";
       background: url("../img/icon-msg.png") no-repeat center/contain;
@@ -81,9 +123,6 @@
   }
 
   &--how {
-    color: $color-primary;
-    background: $color-additional;
-
     &:before {
       content: " ";
       background: url("../img/icon-mouse.png") no-repeat center/contain;
@@ -92,7 +131,7 @@
       width: 1em;
     }
   }
-
+  
   &--numbered {
     &:after {
       content: "6";
@@ -106,37 +145,8 @@
       align-items: center;
     }
   }
-
-  // General coloured link button without special icon
-  &--link {
-    color: $color-primary;
-    background: $color-alt;
-    padding: 0;
-  }
-
-  // Without background
-  &--simple {
-    color: inherit;
-    border: 2px $color-medium solid;
-
-    @include mediaMdUp {
-      padding: 0 2em;
-    }
-  }
-
-  // Confirm button
-  &--positive {
-    color: $color-primary;
-    background-color: $color-positive;
-    box-shadow: 0px 2px 0px $color-positive-darker;
-  }
-
-  // Fwd button
-  &--go {
-    color: $color-alt;
-    border: 2px $color-alt solid;
-    text-transform: uppercase;
-    
+  
+  &--go {    
     &:before {
       content: " ";
       background: url("../img/icon-arrow.png") no-repeat center/contain;
@@ -144,5 +154,22 @@
       width: 1em;
       flex-shrink: 0;
     }
+  }
+
+  // General button without special icon, possibly with more text
+  &--no-padding {
+    padding: 0;
+  }
+
+  // General button without special icon, possibly with less text
+  &--more-padding {
+    @include mediaMdUp {
+      padding: 0 2em;
+    }
+  }
+
+  // Big letters
+  &--uppercase {
+    text-transform: uppercase;
   }
 }

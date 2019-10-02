@@ -31,4 +31,10 @@
       text-align: right;
     }
   }
+  
+  &__center-column {
+    max-width: map-get($breakpoints, "small");
+    margin: 4rem auto 2rem;
+    padding: 0 1.25rem;
+  }
 }
