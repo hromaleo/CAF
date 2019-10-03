@@ -1338,7 +1338,6 @@ input[type="number"] {
     margin: 1.5em 0; }
   .contact-form__line {
     margin: 0.5em 0 0.75em;
-    padding-left: 0.75em;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -1346,6 +1345,7 @@ input[type="number"] {
     @media screen and (min-width: 58rem) {
       .contact-form__line {
         margin: 0.5em 0;
+        padding-left: 0.75em;
         flex-direction: row;
         justify-content: flex-end;
         align-items: flex-start; } }
@@ -1557,8 +1557,13 @@ input[type="number"] {
     width: 1.5em;
     margin-right: 2em; }
 
+.exc-rewards-mod__form {
+  margin: 1rem 0; }
+  @media screen and (min-width: 58rem) {
+    .exc-rewards-mod__form {
+      margin: 1.5rem 0 3.5rem; } }
+
 .exc-rewards-form {
-  margin: 1.5rem 0 1rem;
   padding: 2rem;
   font-weight: bold; }
   .exc-rewards-form__line {

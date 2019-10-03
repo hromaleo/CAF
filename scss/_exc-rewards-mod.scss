@@ -26,4 +26,11 @@
       margin-right: 2em;
     }
   }
+
+  &__form {
+    margin: 1rem 0;
+    @include mediaMdUp {
+      margin: 1.5rem 0 3.5rem;
+    }
+  }
 }

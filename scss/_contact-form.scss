@@ -7,7 +7,6 @@
 
    &__line {
       margin: 0.5em 0 0.75em;
-      padding-left: 0.75em;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -15,6 +14,7 @@
       
       @include mediaMdUp {
          margin: 0.5em 0;
+         padding-left: 0.75em;
          flex-direction: row;
          justify-content: flex-end;
          align-items: flex-start;

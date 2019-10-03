@@ -25,28 +25,38 @@
                      <h3 class="typo--main-title">Kontaktní formulář</h3>
                   </legend>
                   <div class="contact-form__line">
-                     <span class="contact-form__line-title">Jméno a příjmení: </span>
-                     <input type="text" name="name-and-surname" placeholder="Jan Novák" class="contact-form__input">
-                     <span class="contact-form__line-option">upravit</span>
+                     <label class="contact-form__line-title" for="name-and-surname">
+                        Jméno a příjmení:
+                     </label>
+                     <input type="text" id="name-and-surname" name="name-and-surname" placeholder="Jan Novák" class="contact-form__input">
+                     <span class="contact-form__line-option">
+                        upravit
+                     </span>
                   </div>
                   <div class="contact-form__line">
-                     <span class="contact-form__line-title">Váš e-mail: </span>
-                     <input type="text" name="mail-address" placeholder="novak@edenred.cz" class="contact-form__input">
+                     <label class="contact-form__line-title" for="mail-address">
+                        Váš e-mail:
+                     </label>
+                     <input type="text" id="mail-address" name="mail-address" placeholder="novak@edenred.cz" class="contact-form__input">
                      <span class="contact-form__line-option"></span>
                   </div>
                   <div class="contact-form__line">
-                     <span class="contact-form__line-title">Vaše zpráva: </span>
-                     <input type="text" name="message" class="contact-form__input contact-form__input--box">
+                     <label class="contact-form__line-title" for="message">
+                        Vaše zpráva:
+                     </label>
+                     <input type="text" name="message" id="message" class="contact-form__input contact-form__input--box">
                      <span class="contact-form__line-option"></span>
                   </div>
                   <div class="contact-form__line">
-                     <span class="contact-form__line-title contact-form__line-title--btn">Odeslat: </span>
+                     <span class="contact-form__line-title contact-form__line-title--btn">
+                        Odeslat:
+                     </span>
                      <span class="contact-form__input contact-form__input--btn">
                         <button type="submit" value="Odeslat" class="btn btn--coloured btn--col-pos-prim btn--sh-pos btn--stretched-width btn--stretched-height">
                            Odeslat
                         </button>
                      </span>
-                     <span class="contact-form__line-option"></span>
+                     <span class="contact-form__line-option"> </span>
                   </div>
                </fieldset>
             </form>
