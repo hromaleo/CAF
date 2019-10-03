@@ -57,12 +57,19 @@
   // Colours
   &--col-inh-alt {
     background-color: inherit;
-    color: $color-alt;
+    color: $color-alt;    
+    &:hover {
+      background-color: $color-alt;
+      color: $color-primary;
+    }
   }
   
   &--col-alt-prim {
     background-color: $color-alt;
     color: $color-primary;
+    &:hover {
+      background-color: $color-alt-darker;
+    }
   }
   
   &--col-add-prim {
@@ -72,7 +79,10 @@
   
   &--col-pos-prim {
     background-color: $color-positive;
-    color: $color-primary;
+    color: $color-primary;    
+    &:hover {
+      background-color: $color-positive-darker;
+    }
   }
 
   // Shadows

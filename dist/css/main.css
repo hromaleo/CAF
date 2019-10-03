@@ -95,7 +95,7 @@ input[type="number"] {
   background-color: #eeeeee; }
 
 .h-bg-medium {
-  background-color: #dcdcdc; }
+  background-color: #d2d2d2; }
 
 .h-bg-dark {
   background-color: #171b27; }
@@ -360,21 +360,28 @@ input[type="number"] {
     border-width: 2px;
     border-style: solid; }
   .btn--bor-medium {
-    border-color: #dcdcdc; }
+    border-color: #d2d2d2; }
   .btn--bor-alt {
     border-color: #d20025; }
   .btn--col-inh-alt {
     background-color: inherit;
     color: #d20025; }
+    .btn--col-inh-alt:hover {
+      background-color: #d20025;
+      color: #ffffff; }
   .btn--col-alt-prim {
     background-color: #d20025;
     color: #ffffff; }
+    .btn--col-alt-prim:hover {
+      background-color: #9b021d; }
   .btn--col-add-prim {
     background-color: #11204c;
     color: #ffffff; }
   .btn--col-pos-prim {
     background-color: #8dd132;
     color: #ffffff; }
+    .btn--col-pos-prim:hover {
+      background-color: #6eab1c; }
   .btn--sh-pos {
     box-shadow: 0px 2px 0px #6eab1c; }
   .btn--shop:before {
@@ -435,7 +442,7 @@ input[type="number"] {
 .main-navbar {
   background-color: #d20025;
   color: #ffffff;
-  border-bottom: 2px solid #9b011c;
+  border-bottom: 2px solid #9b021d;
   position: relative; }
   .main-navbar__inner {
     display: flex;
@@ -512,7 +519,7 @@ input[type="number"] {
       left: 0;
       right: 0;
       top: 50px;
-      border-bottom: 1px solid #dcdcdc; } }
+      border-bottom: 1px solid #d2d2d2; } }
   @media screen and (min-width: 67rem) {
     .secondary-navbar {
       top: 66px; } }
@@ -527,7 +534,7 @@ input[type="number"] {
     padding: 0.25rem 0 0.25rem 0.25rem; }
     @media screen and (min-width: 58rem) {
       .secondary-navbar__section {
-        border-right: 1px solid #dcdcdc;
+        border-right: 1px solid #d2d2d2;
         padding: 0.5rem 0 0.5rem 0.5rem; } }
     @media screen and (min-width: 67rem) {
       .secondary-navbar__section {
@@ -677,7 +684,7 @@ input[type="number"] {
     float: right;
     width: 25%;
     height: 4rem;
-    box-shadow: 0px 2px 0px #9b011c;
+    box-shadow: 0px 2px 0px #9b021d;
     border-radius: 0 3px 3px 0; }
   .search-field__options {
     float: left;
@@ -1125,7 +1132,7 @@ input[type="number"] {
 .card {
   height: 100%;
   width: 100%;
-  border: 2px #dcdcdc solid;
+  border: 2px #d2d2d2 solid;
   border-radius: 3px;
   background: #ffffff;
   display: flex;
@@ -1186,7 +1193,7 @@ input[type="number"] {
       order: 1;
       height: 10rem;
       width: 10rem;
-      border: 2px #dcdcdc solid;
+      border: 2px #d2d2d2 solid;
       display: flex;
       margin-bottom: 1rem; }
     .card--category .card__img {
@@ -1195,7 +1202,7 @@ input[type="number"] {
       margin: auto; }
 
 .balance-card {
-  border: 2px #dcdcdc solid;
+  border: 2px #d2d2d2 solid;
   border-radius: 3px;
   padding: 3rem 2rem 1.5rem;
   display: flex;
@@ -1362,7 +1369,7 @@ input[type="number"] {
         display: initial; } }
   .contact-form__input {
     height: 3rem;
-    border: 1px solid #dcdcdc;
+    border: 1px solid #d2d2d2;
     border-radius: 3px;
     padding: 1em;
     background-color: #eeeeee;
