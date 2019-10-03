@@ -1,7 +1,6 @@
 .vouchers-order {
 
   &__title {
-    display: inline-block;
     float: left;
   }
   
@@ -48,10 +47,6 @@
     font-size: 1rem;
     padding: 0.75em;
     margin-right: 0.5em;
-
-    &:focus {
-      outline: initial;
-    }
   }
 
   &__checkout {

@@ -1461,7 +1461,6 @@ button:hover {
         display: initial; } }
 
 .vouchers-order__title {
-  display: inline-block;
   float: left; }
 
 .vouchers-order__img {
