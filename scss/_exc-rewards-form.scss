@@ -1,0 +1,93 @@
+.exc-rewards-form {
+  margin: 1.5rem 0 1rem;
+  padding: 2rem;
+  font-weight: bold;
+
+  &__line {
+     margin: 1em 0 0.75em;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: stretch;
+     
+     @include mediaMdUp {
+        margin: 1em 0;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-start;
+     }
+
+     &--coloured {
+       color: $color-alt;
+     }
+  }
+  
+  &__line-title {
+     
+     @include mediaMdUp {
+        line-height: 3rem;
+        flex-basis: 170px;
+        flex-shrink: 0;
+     }
+  }
+
+  &__input {
+     height: 3rem;
+     border: $line-thinner solid $color-alt;
+     border-radius: 3px;
+     font-size: 1rem;
+     padding: 1em;
+     background-color: $color-primary;
+     &::-webkit-input-placeholder {
+        color: #000000;
+     }
+     &::-ms-input-placeholder {
+        color: #000000;
+     }
+     &::-moz-placeholder {
+        color: #000000;
+     }
+     &:-moz-placeholder {
+        color: #000000;
+     }
+     // it does not work without separate selectors
+     margin: 0.25rem 0;
+     
+     @include mediaMdUp {       
+        text-align: right;
+        margin: 0;
+        flex-basis: 100%;
+     }
+
+     &--no-change {
+       background-color: inherit;
+       border: none;
+     }
+    
+    &--value {
+       max-width: 7.5rem;
+       @include mediaMdUp {
+         margin-left: auto;
+        }
+      }
+      
+    &--box {
+      min-width: 7.5rem;
+      min-height: 10rem;
+      text-align: initial;
+      font-weight: initial;
+      position: relative;
+    }
+  }
+
+  &__line-option {
+     
+     @include mediaMdUp {
+        margin-left: 1em;
+        flex-basis: 3.5rem;
+        height: 3rem;
+        line-height: 3rem;
+        flex-shrink: 0;
+     }
+  }
+}

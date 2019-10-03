@@ -58,6 +58,24 @@ hr {
 button:hover {
   cursor: pointer; }
 
+input, select {
+  font-weight: inherit;
+  color: inherit; }
+  input:focus, select:focus {
+    outline: initial; }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+input[type="number"] {
+  -moz-appearance: textfield; }
+
 @media screen and (min-width: 37rem) and (min-height: 40rem) {
   .h-fixed {
     position: sticky;
@@ -1500,8 +1518,6 @@ button:hover {
   font-size: 1rem;
   padding: 0.75em;
   margin-right: 0.5em; }
-  .vouchers-order__table-row-input:focus {
-    outline: initial; }
 
 .vouchers-order__checkout {
   display: flex;
@@ -1515,3 +1531,94 @@ button:hover {
   color: #d20025;
   margin-left: 1rem;
   margin-right: 2rem; }
+
+.exc-rewards-mod__selector {
+  min-width: 60%;
+  height: 2.75rem;
+  margin: 1.25rem 0;
+  padding-left: 1.25rem;
+  padding-right: 1rem;
+  border-radius: 3px;
+  border: 1px solid #d20025;
+  background-image: url("../img/arrow-down-red.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 10px 6px;
+  background-origin: content-box; }
+
+.exc-rewards-mod__employee-selected {
+  display: flex;
+  align-items: flex-end;
+  padding-top: 1.5rem; }
+  .exc-rewards-mod__employee-selected:before {
+    content: "";
+    background: url("../img/icon-trash-bin.png") no-repeat center/contain;
+    height: 1.5em;
+    width: 1.5em;
+    margin-right: 2em; }
+
+.exc-rewards-form {
+  margin: 1.5rem 0 1rem;
+  padding: 2rem;
+  font-weight: bold; }
+  .exc-rewards-form__line {
+    margin: 1em 0 0.75em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch; }
+    @media screen and (min-width: 58rem) {
+      .exc-rewards-form__line {
+        margin: 1em 0;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-start; } }
+    .exc-rewards-form__line--coloured {
+      color: #d20025; }
+  @media screen and (min-width: 58rem) {
+    .exc-rewards-form__line-title {
+      line-height: 3rem;
+      flex-basis: 170px;
+      flex-shrink: 0; } }
+  .exc-rewards-form__input {
+    height: 3rem;
+    border: 1px solid #d20025;
+    border-radius: 3px;
+    font-size: 1rem;
+    padding: 1em;
+    background-color: #ffffff;
+    margin: 0.25rem 0; }
+    .exc-rewards-form__input::-webkit-input-placeholder {
+      color: #000000; }
+    .exc-rewards-form__input::-ms-input-placeholder {
+      color: #000000; }
+    .exc-rewards-form__input::-moz-placeholder {
+      color: #000000; }
+    .exc-rewards-form__input:-moz-placeholder {
+      color: #000000; }
+    @media screen and (min-width: 58rem) {
+      .exc-rewards-form__input {
+        text-align: right;
+        margin: 0;
+        flex-basis: 100%; } }
+    .exc-rewards-form__input--no-change {
+      background-color: inherit;
+      border: none; }
+    .exc-rewards-form__input--value {
+      max-width: 7.5rem; }
+      @media screen and (min-width: 58rem) {
+        .exc-rewards-form__input--value {
+          margin-left: auto; } }
+    .exc-rewards-form__input--box {
+      min-width: 7.5rem;
+      min-height: 10rem;
+      text-align: initial;
+      font-weight: initial;
+      position: relative; }
+  @media screen and (min-width: 58rem) {
+    .exc-rewards-form__line-option {
+      margin-left: 1em;
+      flex-basis: 3.5rem;
+      height: 3rem;
+      line-height: 3rem;
+      flex-shrink: 0; } }

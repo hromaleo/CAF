@@ -70,3 +70,25 @@ button {
     cursor: pointer;
   }
 }
+
+input, select {
+  &:focus {
+    outline: initial;
+  }
+  font-weight: inherit;
+  color: inherit;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}

@@ -41,7 +41,7 @@
 
    &__input {
       height: 3rem;
-      border: 1px solid $color-medium;
+      border: $line-thinner solid $color-medium;
       border-radius: 3px;
       padding: 1em;
       background-color: $color-light;
