@@ -206,9 +206,12 @@ button:hover {
   .container__pane-img {
     height: 18rem; }
   .container__center-column {
+    margin: 2rem 0;
     max-width: 47rem;
-    margin: 4rem auto 2rem;
     padding: 0 1.25rem; }
+    @media screen and (min-width: 58rem) {
+      .container__center-column {
+        margin: 4rem auto 2rem; } }
 
 .main-header {
   background-color: #ffffff; }
@@ -1434,16 +1437,28 @@ button:hover {
 
 .toggler-navbar {
   display: flex;
-  justify-content: flex-start; }
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
+  @media screen and (min-width: 58rem) {
+    .toggler-navbar {
+      flex-direction: row; } }
   .toggler-navbar__item {
-    padding-top: 2rem; }
+    padding-bottom: 1em; }
+    @media screen and (min-width: 58rem) {
+      .toggler-navbar__item {
+        padding-top: 2rem; } }
     .toggler-navbar__item--active {
       transform: translateY(-2px);
       border-top: 2px solid #d20025; }
   .toggler-navbar__empty {
+    display: none;
     flex-basis: 3.5rem;
     flex-shrink: 1;
     flex-grow: 0; }
+    @media screen and (min-width: 58rem) {
+      .toggler-navbar__empty {
+        display: initial; } }
 
 .vouchers-order__title {
   display: inline-block;
@@ -1451,9 +1466,11 @@ button:hover {
 
 .vouchers-order__img {
   float: right;
-  margin-left: 3.5rem;
   width: 10rem;
   height: 6.5rem; }
+  @media screen and (min-width: 37rem) {
+    .vouchers-order__img {
+      margin-left: 3.5rem; } }
 
 .vouchers-order__description {
   clear: left; }

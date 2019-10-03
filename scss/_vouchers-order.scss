@@ -7,9 +7,11 @@
   
   &__img {
     float: right;
-    margin-left: 3.5rem;
     width: 10rem;
     height: 6.5rem;
+    @include mediaTiUp {
+      margin-left: 3.5rem;
+    }
   }
   
   &__description {

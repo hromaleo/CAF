@@ -31,14 +31,17 @@
       text-align: right;
     }
   }
-
+  
   &__pane-img {
     height: 18rem;
   }
   
   &__center-column {
+    margin: 2rem 0;
     max-width: map-get($breakpoints, "small");
-    margin: 4rem auto 2rem;
     padding: 0 1.25rem;
+    @include mediaMdUp {
+      margin: 4rem auto 2rem;
+    }
   }
 }
