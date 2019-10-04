@@ -351,6 +351,8 @@ input[type="number"] {
         display: inherit;
         margin-right: 1em; } }
   .btn--constrained-height {
+    min-height: 3.5rem; }
+  .btn--constrained-height-big {
     min-height: 4rem; }
   .btn--stretched-height {
     height: 100%; }

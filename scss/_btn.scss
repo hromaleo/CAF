@@ -29,6 +29,10 @@
 
   // Dimensions
   &--constrained-height {
+    min-height: 3.5rem;
+  }
+
+  &--constrained-height-big {
     min-height: 4rem;
   }
 
