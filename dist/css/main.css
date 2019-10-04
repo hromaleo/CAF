@@ -1475,7 +1475,8 @@ input[type="number"] {
         padding-top: 2rem; } }
     .toggler-navbar__item--active {
       transform: translateY(-2px);
-      border-top: 2px solid #d20025; }
+      border-top: 4px solid #d20025;
+      color: #d20025; }
   .toggler-navbar__empty {
     display: none;
     flex-basis: 3.5rem;

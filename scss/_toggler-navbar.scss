@@ -15,7 +15,8 @@
     
     &--active {
       transform: translateY(-$line-thin);
-      border-top: $line-thin solid $color-alt;
+      border-top: 2*$line-thin solid $color-alt;
+      color: $color-alt;
     }
   }
   
