@@ -109,6 +109,16 @@ input[type="number"] {
 .h-text-center {
   text-align: center; }
 
+.h-li-disc-alt {
+  padding-left: 1em; }
+  .h-li-disc-alt li:before {
+    content: "\2022";
+    color: #d20025;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: -1em;
+    margin-right: 0.5em; }
+
 .h-font-alt {
   font-family: "Gloria Hallelujah"; }
 
@@ -1666,23 +1676,56 @@ input[type="number"] {
         float: left;
         width: 45%; } }
   .tbc-new__table-heading {
-    height: 2.5rem; }
+    height: 1.5rem; }
   .tbc-new__table-row {
-    height: 2.5rem; }
+    height: 3.5rem; }
   .tbc-new__table-row-th {
     font-weight: 400;
     text-align: left; }
     .tbc-new__table-row-th--count {
       text-align: right; }
+  .tbc-new__table-row-count {
+    text-align: right; }
   .tbc-new__table-row-input {
-    float: right;
-    background-color: inherit; }
+    height: 100%;
+    width: 100%;
+    border: 1px solid #d20025;
+    border-radius: 3px;
+    font-size: 1rem;
+    padding: 1em;
+    background-color: #ffffff;
+    float: right; }
+    .tbc-new__table-row-input::-webkit-input-placeholder {
+      color: #d2d2d2;
+      font-style: italic; }
+    .tbc-new__table-row-input::-ms-input-placeholder {
+      color: #d2d2d2;
+      font-style: italic; }
+    .tbc-new__table-row-input::-moz-placeholder {
+      color: #d2d2d2;
+      font-style: italic; }
+    .tbc-new__table-row-input:-moz-placeholder {
+      color: #d2d2d2;
+      font-style: italic; }
+    .tbc-new__table-row-input--float-left {
+      float: left; }
+    .tbc-new__table-row-input--no-change {
+      background-color: inherit;
+      border: none;
+      padding: 0; }
   .tbc-new__btn {
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
     text-align: center; }
     @media screen and (min-width: 58rem) {
       .tbc-new__btn {
+        float: left;
         text-align: initial; } }
     @media screen and (min-width: 67rem) {
       .tbc-new__btn {
+        margin-top: 1.5rem;
+        margin-left: 0.5rem; } }
+    @media screen and (min-width: 67rem) {
+      .tbc-new__btn--float-right {
         float: right; } }
+  .tbc-new__list-item {
+    margin: 1.5em 0; }
