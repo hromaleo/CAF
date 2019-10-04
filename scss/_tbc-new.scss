@@ -1,0 +1,51 @@
+.tbc-new {
+  width: 100%;
+  padding: 2.5rem 3.5rem;
+  overflow: auto;
+
+  &__table {
+    width: 100%;
+
+    @include mediaMdUp {
+      width: 55%;
+    }
+    
+    @include mediaLgUp {
+      float: left;
+      width: 45%;
+    }
+  }
+
+  &__table-heading {
+    height: 2.5rem;
+  }
+  
+  &__table-row {
+    height: 2.5rem;
+  }
+  
+  &__table-row-th {
+    font-weight: 400;
+    text-align: left;
+
+    &--count {
+      text-align: right;
+    }
+  }
+
+  &__table-row-input {
+    float: right;
+    background-color: inherit;
+  }
+  
+  &__btn {
+    margin-top: 1.5rem;
+    text-align: center;
+    @include mediaMdUp {
+      text-align: initial;
+    }
+    @include mediaLgUp {
+      float: right;
+    }
+  }
+}

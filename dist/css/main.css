@@ -172,6 +172,18 @@ input[type="number"] {
 .mLeft32 {
   margin-left: 32px; }
 
+.mTop48 {
+  margin-top: 48px; }
+
+.mRight48 {
+  margin-right: 48px; }
+
+.mBottom48 {
+  margin-bottom: 48px; }
+
+.mLeft48 {
+  margin-left: 48px; }
+
 .mTop64 {
   margin-top: 64px; }
 
@@ -223,6 +235,8 @@ input[type="number"] {
         text-align: right; } }
   .container__pane-img {
     height: 18rem; }
+    .container__pane-img--big {
+      height: 24rem; }
   .container__center-column {
     margin: 2rem 0;
     max-width: 47rem;
@@ -1637,3 +1651,38 @@ input[type="number"] {
       height: 3rem;
       line-height: 3rem;
       flex-shrink: 0; } }
+
+.tbc-new {
+  width: 100%;
+  padding: 2.5rem 3.5rem;
+  overflow: auto; }
+  .tbc-new__table {
+    width: 100%; }
+    @media screen and (min-width: 58rem) {
+      .tbc-new__table {
+        width: 55%; } }
+    @media screen and (min-width: 67rem) {
+      .tbc-new__table {
+        float: left;
+        width: 45%; } }
+  .tbc-new__table-heading {
+    height: 2.5rem; }
+  .tbc-new__table-row {
+    height: 2.5rem; }
+  .tbc-new__table-row-th {
+    font-weight: 400;
+    text-align: left; }
+    .tbc-new__table-row-th--count {
+      text-align: right; }
+  .tbc-new__table-row-input {
+    float: right;
+    background-color: inherit; }
+  .tbc-new__btn {
+    margin-top: 1.5rem;
+    text-align: center; }
+    @media screen and (min-width: 58rem) {
+      .tbc-new__btn {
+        text-align: initial; } }
+    @media screen and (min-width: 67rem) {
+      .tbc-new__btn {
+        float: right; } }
