@@ -1,0 +1,30 @@
+$font-primary:       "Museo Sans", "Raleway", Arial, Helvetica, sans-serif;
+$font-alt:           "Gloria Hallelujah";
+
+$color-primary:         #ffffff;
+$color-alt:             #d20025;
+$color-alt-lighter:     #f6ccd3;
+$color-alt-hover:       #bf0022;
+$color-alt-darker:      #9b021d;
+$color-light:           #eeeeee;
+$color-medium:          #d2d2d2;
+$color-dark:            #171b27;
+$color-additional:      #11204c;
+$color-positive:        #8dd132;
+$color-positive-darker: #6eab1c;
+
+$breakpoints: (
+    "tiny":     37.00rem,
+    "small":    47.00rem,
+    "medium":   58.00rem,
+    "large":    67.00rem,
+    "huge":     83.25rem
+);
+
+$time-quick:    0.1s;
+$time-slow:     0.2s;
+
+$indentValues: (4, 8, 16, 24, 32, 48, 64, 96);
+
+$line-thin:     2px;
+$line-thinner:  1px;

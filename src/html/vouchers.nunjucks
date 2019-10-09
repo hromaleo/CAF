@@ -1,0 +1,139 @@
+{% extends "layout/default.nunjucks" %}
+
+{% block content %}
+<div class="area area--vouchers">
+	<div class="container">
+		<h1 class="area__heading area__heading--underlined">Poukázky Edenred</h1>
+		<nav class="toggler-navbar">
+			<div class="toggler-navbar__item toggler-navbar__item--active">
+				<a href="#" class="toggler-navbar__link">
+					Ticket Multi
+				</a>
+			</div>
+			<div class="toggler-navbar__empty"></div>
+			<div class="toggler-navbar__item">
+				<a href="#" class="toggler-navbar__link">
+					Ticket Academica
+				</a>
+			</div>
+			<div class="toggler-navbar__empty"></div>
+			<div class="toggler-navbar__item">
+				<a href="#" class="toggler-navbar__link">
+					Ticket Medica
+				</a>
+			</div>
+			<div class="toggler-navbar__empty"></div>
+			<div class="toggler-navbar__item">
+				<a href="#" class="toggler-navbar__link">
+					Ticket Holiday
+				</a>
+			</div>
+			<div class="toggler-navbar__empty"></div>
+			<div class="toggler-navbar__item">
+				<a href="#" class="toggler-navbar__link">
+					Ticket Sport &amp; Kultura
+				</a>
+			</div>
+			<div class="toggler-navbar__empty"></div>
+			<div class="toggler-navbar__item">
+				<a href="#" class="toggler-navbar__link">
+					Ticket Compliments
+				</a>
+			</div>
+			<div class="toggler-navbar__empty"></div>
+		</nav>
+		<div class="container__center-column">
+			<div class="vouchers-order">
+				<div class="vouchers-order__title">
+					<h3 class="typo--main-title">
+						Ticket Multi
+					</h3>
+				</div>
+				<div class="vouchers-order__img">
+					<img src="./img/TMULTI-only-one.svg" alt="Ticket Multi">
+				</div>
+				<div class="vouchers-order__description">
+					<p class="typo--plain-text">
+						Ticket Multi dává možnost neomezené volby ze širokého spektra aktivit. Přizpůsobí se každé firmě, každému zaměstnanci. Poukázka Ticket Multi splní všechna přání.
+					</p>
+				</div>
+				<table class="vouchers-order__table mTop24">
+					<tr class="vouchers-order__table-heading">
+						<th class="vouchers-order__table-row-th"> Hodnota </th>
+						<th class="vouchers-order__table-row-th"> Počet </th>
+						<th class="vouchers-order__table-row-th"> Celkem </th>
+					</tr>
+					<tr class="vouchers-order__table-row" data-price="50">
+						<td class="vouchers-order__table-row-value">
+							50 bodů / 50 Kč
+						</td>
+						<td class="vouchers-order__table-row-count">
+							<input type="text" class="vouchers-order__table-row-input">
+							Ks
+						</td>
+						<td class="vouchers-order__table-row-total"></td>
+					</tr>
+					<tr class="vouchers-order__table-row" data-price="100">
+						<td class="vouchers-order__table-row-value">
+							100 bodů / 100 Kč
+						</td>
+						<td class="vouchers-order__table-row-count">
+							<input type=" text" class="vouchers-order__table-row-input">
+							Ks
+						</td>
+						<td class="vouchers-order__table-row-total"></td>
+					</tr>
+					<tr class="vouchers-order__table-row" data-price="200">
+						<td class="vouchers-order__table-row-value">
+							200 bodů / 200 Kč
+						</td>
+						<td class="vouchers-order__table-row-count">
+							<input type="text" class="vouchers-order__table-row-input">
+							Ks
+						</td>
+						<td class="vouchers-order__table-row-total"></td>
+					</tr>
+					<tr class="vouchers-order__table-row" data-price="500">
+						<td class="vouchers-order__table-row-value">
+							500 bodů / 500 Kč
+						</td>
+						<td class="vouchers-order__table-row-count">
+							<input type="text" class="vouchers-order__table-row-input">
+							Ks
+						</td>
+						<td class="vouchers-order__table-row-total"></td>
+					</tr>
+					<tr class="vouchers-order__table-row" data-price="1000">
+						<td class="vouchers-order__table-row-value">
+							1000 bodů / 1000 Kč
+						</td>
+						<td class="vouchers-order__table-row-count">
+							<input type="text" class="vouchers-order__table-row-input">
+							Ks
+						</td>
+						<td class="vouchers-order__table-row-total"></td>
+					</tr>
+				</table>
+				<div class="vouchers-order__checkout">
+					Celkem:
+					<span class="vouchers-order__sum"></span>
+					<div class="vouchers-order__btn">
+						<button type="submit" value="Vložit do košíku" class="btn btn--shop-col btn--col-pos-prim btn--constrained-height">
+							Vložit do košíku
+						</button>
+					</div>
+				</div>
+				<p class="typo--plain-text">
+					Výše dopravného činí 119 Kč s DPH.
+				</p>
+				<p class="typo--plain-text">
+					Ve sportovních, kulturních a vzdělávacích zařízeních, cestovních kancelářích a agenturách, provozovnách poskytujících odbornou péči o tělesnou a duševní pohodu a zdraví nebo ve vybraných předškolních zařízeních.
+				</p>
+				<p class="typo--plain-text">
+					Přehled provozoven <a href="" class="link link--coloured link--underlined">naleznete zde.</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

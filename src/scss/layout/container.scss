@@ -1,0 +1,51 @@
+.container {
+  max-width: map-get($breakpoints, "huge");
+  margin: 0 auto;
+  padding: 0 1rem;
+  
+  &--no-padding {
+    padding: 0;
+    @include mediaMdUp {
+      padding: 0 1rem;
+    }
+  }
+  
+  &--floated-childs {
+    clear: both;
+    overflow: auto;
+  }
+
+  &__content {
+    margin: 2.75rem 0 2rem;
+    @include mediaMdUp {
+      width: 50%;
+      float: left;
+    }
+  }
+  
+  &__pane {
+    margin: 2.75rem 0 2rem;
+    @include mediaMdUp {
+      width: 50%;
+      float: right;
+      text-align: right;
+    }
+  }
+  
+  &__pane-img {
+    height: 18rem;
+
+    &--big {
+      height: 24rem;
+    }
+  }
+  
+  &__center-column {
+    margin: 2rem 0;
+    max-width: map-get($breakpoints, "small");
+    padding: 0 1.25rem;
+    @include mediaMdUp {
+      margin: 4rem auto 2rem;
+    }
+  }
+}

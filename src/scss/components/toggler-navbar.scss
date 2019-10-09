@@ -1,0 +1,33 @@
+.toggler-navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; //because of this, __item--empty needed
+  align-items: center;
+  @include mediaMdUp {
+    flex-direction: row;
+  }
+
+  &__item {
+    padding-bottom: 1em;
+    @include mediaMdUp {
+      padding-top: 2rem;
+    }
+    
+    &--active {
+      transform: translateY(-$line-thin);
+      border-top: 2*$line-thin solid $color-alt;
+      color: $color-alt;
+    }
+  }
+  
+  &__empty { //ensures spacing
+    display: none;    
+    flex-basis: 3.5rem;
+    flex-shrink: 1;
+    flex-grow: 0;
+
+    @include mediaMdUp {
+      display: initial;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{% extends "layout/default.nunjucks" %}
+
+{% block content %}
+<div class="area area--exc-rewards-mod">
+	<div class="container  container--floated-childs">
+		<h1 class="area__heading area__heading--underlined">Modul mimořádných odměn</h1>
+		<div class="container__content">
+			<div class="exc-rewards-mod">
+				<p>
+					<strong>
+						Vyberte zaměstnance, které chcete odměnit
+					</strong>
+				</p>
+				<select name="employee" id="employee-name" class="exc-rewards-mod__selector">
+					<option value="jan-novak">Jan Novák</option>
+					<option value="patrik-helta">Patrik Helta</option>
+					<option value="leos-hromadko">Leoš Hromádko</option>
+				</select>
+				<p class="typo--plain-text">
+					Seznam odměněných zaměstnanců:
+				</p>
+				<hr class="mTop8">
+				<div class="exc-rewards-mod__employee-selected">
+					Petr Čech
+				</div>
+				<div class="exc-rewards-mod__employee-selected">
+					Jana Veselá
+				</div>
+				<div class="exc-rewards-mod__employee-selected">
+					Tomáš Malý
+				</div>
+				<div class="exc-rewards-mod__form">
+					<form action="POST" class="exc-rewards-form h-bg-light">
+						<fieldset>
+							<div class="exc-rewards-form__line">
+								<label for="exc-rewards-form__available" class="exc-rewards-form__line-title">
+									K dispozici máte
+								</label>
+								<span id="exc-rewards-form__available" class="exc-rewards-form__input exc-rewards-form__input--no-change" name="available">
+									5000
+								</span>
+								<span class="exc-rewards-form__line-option">
+									bodů
+								</span>
+							</div>
+							<div class="exc-rewards-form__line exc-rewards-form__line--coloured">
+								<label for="exc-rewards-form__input" class="exc-rewards-form__line-title">
+									Zvolte výši odměny
+								</label>
+								<input id="exc-rewards-form__input" class="exc-rewards-form__input exc-rewards-form__input--value" type="text" value="2000" name="value">
+								</input>
+								<span class="exc-rewards-form__line-option exc-rewards-form__line-option--coloured">
+									bodů
+								</span>
+							</div>
+							<div class="exc-rewards-form__line">
+								<label for="exc-rewards-form__text" class="exc-rewards-form__line-title">
+									Odeslat pochvalu
+								</label>
+								<input id="exc-rewards-form__text" class="exc-rewards-form__input exc-rewards-form__input--box" type="text" placeholder="Vložit text" name="message">
+								</input>
+								<span class="exc-rewards-form__line-option">
+								</span>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+				<div class="exc-rewards-mod__btn">
+					<button type="submit" value="Odeslat odměnu" class="btn btn--constrained-height btn--col-pos-prim btn--sh-pos btn--more-padding">
+						Odeslat odměnu
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

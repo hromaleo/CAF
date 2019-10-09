@@ -1,0 +1,104 @@
+// Helpers
+// Fixed position, useful for header
+.h-fixed {
+	@include mediaTiUp {
+		@media screen and (min-height: 40rem) {
+			position: sticky;
+			top: 0;
+			z-index: 1;
+		}
+	}
+}
+// For floats
+.h-clearfix {
+	clear: both;
+}
+
+// Backgrounds
+.h-bg-prim {
+	background-color: $color-primary;
+}
+
+.h-bg-alt {
+	background-color: $color-alt;
+}
+
+.h-bg-light {
+	background-color: $color-light;
+}
+
+.h-bg-medium {
+	background-color: $color-medium;
+}
+
+.h-bg-dark {
+	background-color: $color-dark;
+}
+
+// Text
+.h-col-prim {
+	color: $color-primary;
+}
+
+.h-col-add {
+	color: $color-additional;
+}
+
+.h-text-center {
+	text-align: center;
+}
+
+// Alternate fonts
+.h-font-alt {
+	font-family: $font-alt;
+}
+
+// Coloured disc list
+.h-li-disc-alt {
+	padding-left: 1em;
+	li:before {
+		content: "\2022";
+		color: $color-alt;
+		font-weight: bold;
+		display: inline-block;
+		margin-left: -1em;
+		margin-right: 0.5em;
+	}
+}
+
+// Margins
+$indentTypes: ("Top", "Right", "Bottom", "Left");
+
+@each $indent in $indentValues {
+	@each $indentType in $indentTypes {
+		.m#{$indentType}#{$indent} {
+			margin-#{to-lower-case($indentType)}: #{$indent}px;
+		}
+	}
+}
+
+// Values with min-width breakpoints
+@each $breakpoint, $value in $breakpoints {
+	@media screen and (min-width: #{$value}) {
+		@each $indent in $indentValues {
+			@each $indentType in $indentTypes {
+				.m#{$indentType}#{$indent}#{$breakpoint} {
+					margin-#{to-lower-case($indentType)}: #{$indent}px;
+				}
+			}
+		}
+	}
+}
+
+// Values with max-width breakpoints
+@each $breakpoint, $value in $breakpoints {
+	@media screen and (max-width: #{$value}) {
+		@each $indent in $indentValues {
+			@each $indentType in $indentTypes {
+				.m#{$indentType}#{$indent}#{$breakpoint}Down {
+					margin-#{to-lower-case($indentType)}: #{$indent}px;
+				}
+			}
+		}
+	}
+}

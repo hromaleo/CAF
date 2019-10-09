@@ -1,0 +1,87 @@
+$gridColumnCount: 12   !default;
+$columnGutter:    1rem !default;
+$columnGutterBig: 2rem !default;
+
+.Grid {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -$columnGutter / 2;
+
+	@include mediaLgUp() {
+		margin: -$columnGutterBig / 2;
+	}
+}
+
+.Grid--center {
+	justify-content: center;
+}
+
+.Grid--middle {
+	align-items: center;
+}
+
+.Grid--bottom {
+	align-items: flex-end;
+}
+
+.Grid-col {
+	display: flex;
+	justify-content: center;
+	box-sizing: border-box;
+	padding: $columnGutter / 2;
+
+	@include mediaLgUp() {
+		padding: $columnGutterBig / 2;
+	}
+}
+
+.Grid--noIndent {
+	margin: 0;
+
+	.Grid-col {
+		padding: 0;
+	}
+}
+
+.Grid--bigSpace {
+	margin-left: -2rem;
+	margin-right: -2rem;
+
+	.Grid-col {
+		margin: 2rem;
+	}
+}
+
+.Grid--smallSpace {
+	margin: -$columnGutter / 2;
+
+	.Grid-col {
+		padding: $columnGutter / 2;
+	}
+}
+
+@for $i from 1 through $gridColumnCount {
+
+	.Grid--#{$i} .Grid-col {
+		width: percentage(1 / $i);
+	}
+
+	.Grid-col--#{$i}-#{$gridColumnCount} {
+		width: percentage($i / $gridColumnCount);
+	}
+}
+
+@each $breakpoint, $value in $breakpoints {
+	@media screen and (min-width: #{$value}) {
+		@for $i from 1 through $gridColumnCount {
+
+			.Grid--#{$i}#{$breakpoint} .Grid-col {
+				width: percentage(1 / $i);
+			}
+
+			.Grid-col--#{$i}-#{$gridColumnCount}#{$breakpoint} {
+				width: percentage($i / $gridColumnCount);
+			}
+		}
+	}
+}

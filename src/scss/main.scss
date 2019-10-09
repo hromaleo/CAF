@@ -1,14 +1,40 @@
-/* Base */
-@import "base/variables";
-@import "base/zIndexes";
+// Base
+@import "base/vars";
 @import "base/mixins";
-@import "normalize.css"; // Goes from npm.
-@import "base/base";
+// @import "normalize.css"; // Goes from npm.
+@import "base/tags";
+@import "base/utils";
+@import "base/typo";
 
-/* Components */
-@import "components/box";
-@import "components/content";
-@import "components/grid";
+// Layout
+@import "layout/container";
+@import "layout/area";
+@import "layout/grid";
 
-/* Helpers */
-@import "base/helpers";
+// Components
+// Main
+@import "components/index";
+@import "components/main-header";
+@import "components/main-navbar";
+@import "components/secondary-navbar";
+@import "components/hero";
+@import "components/main-footer";
+@import "components/secondary-footer";
+// Small
+@import "components/link";
+@import "components/user-balance";
+@import "components/lang-select";
+@import "components/btn";
+@import "components/sidebar";
+@import "components/search-field";
+@import "components/user-goto-profile";
+@import "components/card";
+@import "components/balance-card";
+@import "components/contact-form";
+@import "components/dropdown-list";
+@import "components/contact-box";
+@import "components/toggler-navbar";
+@import "components/vouchers-order";
+@import "components/exc-rewards-mod";
+@import "components/exc-rewards-form";
+@import "components/tbc-new";

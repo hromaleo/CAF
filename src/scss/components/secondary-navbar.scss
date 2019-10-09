@@ -1,0 +1,118 @@
+.secondary-navbar {
+  position: relative;
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity $time-slow, transform $time-slow, visibility 0ms $time-slow;
+  background-color: $color-primary;
+  
+  @include mediaMdUp {
+    position: absolute;
+    display: initial;
+    left: 0;
+    right: 0;
+    top: 50px;
+    border-bottom: 1px solid $color-medium;
+  }
+  @include mediaLgUp {
+    top: 66px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include mediaMdUp {
+      flex-direction: row;
+    }
+  }
+
+  &__section {
+    padding: 0.25rem 0 0.25rem 0.25rem;
+    
+    @include mediaMdUp {
+      border-right: 1px solid $color-medium;
+      padding: 0.5rem 0 0.5rem 0.5rem;
+    }
+    @include mediaLgUp {
+      padding: 0.75rem 0 1rem 1rem;
+    }
+    @include mediaHgUp {
+      padding: 1rem 0 2rem 2rem;
+    }
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  &__section-title {
+    color: $color-alt;
+    display: flex;
+    align-items: center;
+    padding-right: 0.25rem;
+    
+    @include mediaMdUp {
+      min-height: 4em;
+      padding-right: 0.5rem;
+    }
+    @include mediaLgUp {
+      padding-right: 1rem;
+    }
+    @include mediaHgUp {
+      padding-right: 2rem;
+    }
+  }
+  
+  &__section-list {
+    display: flex;
+    flex-wrap: wrap;
+        
+    @include mediaMdUp {
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-rows: repeat(4, minmax(2em, max-content));
+      row-gap: 0.2em;
+    }
+    transition: grid-template-rows $time-slow ease-in;
+  }
+
+  &__item {
+    color: $color-additional;
+    display: flex;
+    align-items: flex-start;
+    padding-right: 0.25rem;
+
+    @include mediaMdUp {
+      padding-right: 0.5rem;
+    }
+    @include mediaLgUp {
+      padding-right: 1rem;
+    }
+    @include mediaHgUp {
+      padding-right: 2rem;
+    }
+    
+    &:before {
+      content: "";
+      background: url("../img/arrow-carousel-right.png") no-repeat left center/contain;
+      flex: 0 0 5px;
+      width: 5px;
+      min-width: 5px;
+      max-width: 5px;
+      height: 7.5px;
+      margin-top: 8px-3.725px;
+      margin-right: 8px;
+    }
+  }
+
+  &--active {
+    visibility: visible;
+    display: initial;
+    opacity: 1;
+    transform: translateY(0);
+    transition: visibility 0ms, opacity $time-slow, transform $time-slow;
+  }
+}

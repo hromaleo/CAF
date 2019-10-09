@@ -1,0 +1,91 @@
+// Main page areas below hero
+.area {
+  padding-bottom: 1rem;
+
+  @include mediaSmUp {
+    padding-bottom: 2rem;
+  }
+  @include mediaHgUp {
+    padding-bottom: 3rem;
+  }
+
+  // all areas top icon
+  &__icon {
+    background-color: $color-alt;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2em 2em;
+    width: 5rem;
+    height: 5rem;
+    margin: 0px auto;
+  }
+
+  // all areas content
+  &__heading {
+    line-height: 1.25em;
+    text-align: center;
+    padding-top: 0.5rem;
+    
+    @include mediaTiUp {
+      padding-top: 1rem;
+    }
+    @include mediaHgUp {
+      padding-top: 3rem;
+    }
+
+    &--underlined {
+      border-bottom: $line-thin solid $color-light;
+      padding-bottom: 0.25rem;
+      
+      @include mediaTiUp {
+        padding-bottom: 0.5rem;
+      }
+      @include mediaHgUp {
+        padding-bottom: 1.5rem;
+      }
+    }
+  }
+
+  &__subheading {
+    line-height: 1.25em;
+    text-align: center;
+  }
+
+  &__price {
+    font-size: 2.75rem;
+    color: $color-alt;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  // User area with balance cards
+  &--user {
+
+    .area__icon {
+      background-image: url("../img/icon-user-conf.png");
+      background-size: 2em 2em;
+    }
+  }
+
+  // Cafeteria options area with cards
+  &--options {
+    border-top: 4px solid $color-alt;
+
+    .area__icon {
+      background-image: url("../img/icon-list.png");
+      background-size: 2em 2em;
+    }
+  }
+
+  // Rewards categories area with cards
+  &--categories {
+
+    .area__icon {
+      display: none;
+    }
+  }
+
+  &--light-bnd {
+    background: $color-light;
+  }
+}

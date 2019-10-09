@@ -1,0 +1,102 @@
+.tbc-new {
+  width: 100%;
+  padding: 2.5rem 3.5rem;
+  overflow: auto;
+
+  &__table {
+    width: 100%;
+
+    @include mediaMdUp {
+      width: 55%;
+    }
+    
+    @include mediaLgUp {
+      float: left;
+      width: 45%;
+    }
+  }
+
+  &__table-heading {
+    height: 1.5rem;
+  }
+  
+  &__table-row {
+    height: 3.5rem;
+  }
+  
+  &__table-row-th {
+    font-weight: 400;
+    text-align: left;
+
+    &--count {
+      text-align: right;
+    }
+  }
+
+  &__table-row-count {
+    text-align: right;
+  }
+
+  &__table-row-input {
+    height: 100%;
+    width: 100%;
+    border: $line-thinner solid $color-alt;
+    border-radius: 3px;
+    font-size: 1rem;
+    padding: 1em;
+    background-color: $color-primary;
+    &::-webkit-input-placeholder {
+      color: $color-medium;
+      font-style: italic;
+    }
+    &::-ms-input-placeholder {
+      color: $color-medium;
+      font-style: italic;
+    }
+    &::-moz-placeholder {
+      color: $color-medium;
+      font-style: italic;
+    }
+    &:-moz-placeholder {
+      color: $color-medium;
+      font-style: italic;
+    }
+    // it does not work without separate selectors
+    float: right;
+    
+    &--float-left {
+      float: left;
+    }
+    
+    &--no-change {
+      background-color: inherit;
+      border: none;
+      padding: 0;
+    }
+  }
+  
+  &__btn {
+    margin-top: 0.5rem;
+    text-align: center;
+    
+    @include mediaMdUp {
+      float: left;
+      text-align: initial;
+    }
+    
+    @include mediaLgUp {
+      margin-top: 1.5rem;
+      margin-left: 0.5rem;
+    }
+
+    &--float-right {
+      @include mediaLgUp {
+        float: right;
+      }
+    }
+  }
+
+  &__list-item {
+    margin: 1.5em 0;
+  }
+}

@@ -1,0 +1,46 @@
+.contact-box {
+  display: inline-block;
+  border: $line-thin solid $color-alt;
+  padding: 1.5rem;
+  
+  @include mediaLgUp {
+    padding: 1.5rem 3.5rem;
+  }
+  @include mediaHgUp {
+    padding: 1.5rem 6.5rem;
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    line-height: 2em;
+    color: $color-alt;
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+
+  &__contact-icon {
+    height: 1.5em;
+    width: 1.5em;
+    display: none;
+
+    &--mail {
+      background: url("../img/icon-mail.png") no-repeat center/contain;
+    }
+    &--phone {
+      background: url("../img/icon-phone.png") no-repeat center/contain;
+    }
+
+    @include mediaMdUp {
+      display: initial;
+    }
+  }
+
+  &__contact-text {
+    white-space: nowrap;
+
+    @include mediaMdUp {
+      margin-left: 1.5em;
+    }
+  }
+}

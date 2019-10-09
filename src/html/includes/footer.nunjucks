@@ -1,0 +1,101 @@
+  <!-- Main footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="main-footer__inner">
+        <div class="main-footer__section main-footer__section--bigger">
+          <div class="main-footer__section-title">Interní benefity</div>
+          <ul class="main-footer__section-list">
+            <li class="main-footer__item">
+              <a href="#" class="link link--underlined-on-hover">Zaměstnanecký program - telefonní operátor</a>
+            </li>
+            <li class="main-footer__item">
+              <a href="#" class="link link--underlined-on-hover">Pitný režim</a>
+            </li>
+            <li class="main-footer__item">
+              <a href="#" class="link link--underlined-on-hover">Soukromé volání z firemních mobilních telefonů</a>
+            </li>
+            <li class="main-footer__item">
+              <a href="#" class="link link--underlined-on-hover">Kvartální odměny</a>
+            </li>
+            <li class="main-footer__item">
+              <a href="#" class="link link--underlined-on-hover">Benefit na dopravu</a>
+            </li>
+            <li class="main-footer__item">
+              <a href="#" class="link link--underlined-on-hover">Odkup vyřazeného firemního majetku</a>
+            </li>
+            <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">Příspěvek na životní
+                pojištění</a></li>
+            <li class="main-footer__item">
+              <a href="contact.html" class="link link--underlined-on-hover">Příspěvek na penzijní připojištění</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="main-footer__section">
+          <div class="main-footer__section-title">Odkazy</div>
+          <ul class="main-footer__section-list">
+            <li class="main-footer__item">
+              <a href="#" class="link link--underlined-on-hover">Jak to funguje?</a>
+            </li>
+            <li class="main-footer__item">
+              <a href="#" class="link link--underlined-on-hover">Pravidla</a>
+            </li>
+            <li class="main-footer__item">
+              <a href="#" class="link link--underlined-on-hover">Převést peníze ze mzdy</a>
+            </li>
+            <li class="main-footer__item"><a href="#" class="link link--underlined-on-hover">FAQ - Nejčastější
+                dotazy</a>
+            </li>
+            <li class="main-footer__item">
+              <a href="#" class="link link--underlined-on-hover">Ankety</a>
+            </li>
+            <li class="main-footer__item">
+              <a href="#" class="link link--underlined-on-hover">Noví partneři</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="main-footer__section">
+          <div class="main-footer__section-title">Cafeterie</div>
+          <ul class="main-footer__section-list">
+            <li class="main-footer__item">
+              <a href="#" class="link link--underlined-on-hover">Můj profil</a>
+            </li>
+            <li class="main-footer__item">
+              <a href="#" class="link link--underlined-on-hover">Aplikace Ticketka</a>
+            </li>
+            <li class="main-footer__item">
+              <a href="#" class="link link--underlined-on-hover">Nákupní košík</a>
+            </li>
+            <li class="main-footer__item">
+              <a href="#" class="link link--underlined-on-hover">Doručení a platba</a>
+            </li>
+            <li class="main-footer__btn">
+              <a href="#" class="link">
+                <div class="btn btn--bordered btn--bor-medium btn--more-padding btn--constrained-height">
+                  Kontaktovat správce
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End main footer -->
+
+  <!-- Secondary footer with &copy -->
+  <footer class="secondary-footer">
+    <div class="container">
+      <div class="secondary-footer__text-line">
+        Copyright &copy; 2015
+        <a href="#" class="link link--underlined link--coloured"> Edenred Benefity Café</a>.
+        Všechna práva vyhrazena.
+      </div>
+      <div class="secondary-footer__logo-line">
+        <span class="secondary-footer__logo-title h-font-alt h-col-add">Powered by</span>
+        <img class="secondary-footer__logo-img" src="./img/edenred-logo.png" alt="Logo Edenred" />
+      </div>
+    </div>
+  </footer>
+  <!-- End secondary footer -->

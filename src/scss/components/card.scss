@@ -1,0 +1,103 @@
+// All top-bottom cards with images, titles, buttons
+.card {
+  height: 100%;
+  width: 100%;
+  border: $line-thin $color-medium solid;
+  border-radius: 3px;
+  background: $color-primary;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  &__img {
+    margin: 1rem;
+  }
+
+  // Big cards with link button
+  &--btn {
+    border: none;
+    min-width: 13rem;
+    max-width: 21rem;
+    min-height: 16.25rem;
+    padding: 0.5rem;
+    
+    @include mediaSmUp {
+      padding: 0.5rem 0.5rem 2rem;
+    }
+    @include mediaMdUp {
+      min-width: 15rem;
+      padding: 1.5rem 1.5rem 2rem;
+    }
+
+    @include mediaLgUp {
+      min-width: 18rem;
+      padding: 2.5rem 2.5rem 2rem;
+    }
+
+    .card__title {
+      color: $color-alt;
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+
+    .card__img {
+      height: 7em;
+      width: 11em;
+    }
+
+    .card__btn {
+      min-width: 100%;
+      @include mediaSmUp {
+        /* hack to move the button out of the card */
+        height: 0;
+        /* end hack */
+      }
+    }
+  }
+
+  // Simple cards without button
+  &--simple {
+    // min-height: 15rem;
+    padding: 2rem 2rem;
+
+    .card__title {
+      order: 2;
+      font-size: 1.125rem; /* 18px */
+      font-weight: bold;
+    }
+
+    .card__img {
+      order: 1;
+      height: 5.5em;
+      width: 5.5em;
+    }
+  }
+
+  // Category card without button, with title below
+  &--category {
+    border: none;
+
+    .card__title {
+      order: 2;
+      text-transform: uppercase;
+      // font-weight: bold;
+    }
+
+    .card__frame {
+      order: 1;
+      height: 10rem;
+      width: 10rem;
+      border: $line-thin $color-medium solid;
+      display: flex;
+      margin-bottom: 1rem;
+    }
+
+    .card__img {
+      height: 4em;
+      width: 4em;
+      margin: auto;
+    }
+  }
+}

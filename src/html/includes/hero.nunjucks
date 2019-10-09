@@ -1,0 +1,98 @@
+  <!--
+    <div class="sidebar sidebar--left">
+      <a href="#" class="link">
+        <div class="btn btn--msg btn--numbered">
+          Zprávy, novinky
+        </div>
+      </a>
+      <a href="#" class="link">
+        <div class="btn btn--msg">
+          Anketa
+        </div>
+      </a>
+      <a href="#" class="link">
+        <div class="btn btn--how">
+          Jak to funguje?
+        </div>
+      </a>
+    </div>-->
+
+  <!-- Hero image with reward search and basic links -->
+  <div class="hero">
+    <div class="hero__content">
+      <h1>Vyberte si <strong>svou odměnu!</strong></h1>
+      <div class="search-field">
+        <input class="search-field__input" type="text" placeholder="hledejte např. fitness Praha" />
+        <div class="search-field__btn">
+          <button type="submit" value="Vyhledat" class="btn btn--search btn--stretched-height btn--stretched-width btn--col-alt-prim">
+            Vyhledat
+          </button>
+        </div>
+        <div class="search-field__options">
+          <span class="search-field__option">
+            <a href="#" class="link link--underlined">Zobrazit katalog</a>
+          </span>
+          <span class="search-field__option">
+            <a href="#" class="link link--underlined">Zobrazit na mapě</a>
+          </span>
+        </div>
+      </div>
+      <h2>Možnosti čerpání benefitů:</h2>
+      <div class="mTop32 mBottom32">
+        <div class="Grid Grid--1 Grid--3small">
+          <div class="Grid-col">
+            <div class="card card--btn">
+              <div class="card__title">
+                Dobijte svou kartu
+              </div>
+              <div class="card__img">
+                <img src="./img/TBC.png" alt="" />
+              </div>
+              <div class="card__btn">
+                <a href="#" class="link">
+                  <div class="btn btn--no-padding btn--constrained-height-big btn--stretched-width btn--col-alt-prim">
+                    Chci body na kartu
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="Grid-col">
+            <div class="card card--btn">
+              <div class="card__title">
+                Vyměňte body za poukázky
+              </div>
+              <div class="card__img">
+                <img src="./img/TMULTI.png" alt="" />
+              </div>
+              <div class="card__btn">
+                <a href="#" class="link">
+                  <div class="btn btn--no-padding btn--constrained-height-big btn--stretched-width btn--col-alt-prim">
+                    Mám zájem o poukázky
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="Grid-col">
+            <div class="card card--btn">
+              <div class="card__title">
+                Prohlédněte si partnerské e-shopy
+              </div>
+              <div class="card__img">
+                <img src="./img/basket.png" alt="" />
+              </div>
+              <div class="card__btn">
+                <a href="#" class="link">
+                  <div class="btn btn--no-padding btn--constrained-height-big btn--stretched-width btn--col-alt-prim">
+                    Zobrazit seznam e-shopů
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End hero image-->

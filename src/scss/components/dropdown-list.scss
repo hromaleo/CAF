@@ -1,0 +1,25 @@
+.dropdown-list {
+   padding-left: 1em;
+   
+   &__item {
+      margin: 1.25em 0;
+      color: $color-alt;
+      list-style-type: initial;
+   }
+
+   &__content {
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(-20px);
+      transition: opacity $time-slow, transform $time-slow, visibility 0ms $time-slow;
+
+      &--active {
+         visibility: visible;
+         display: initial;
+         opacity: 1;
+         transform: translateY(0);
+         transition: visibility 0ms, opacity $time-slow, transform $time-slow
+      }
+   }
+}

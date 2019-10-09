@@ -1,0 +1,50 @@
+    <!-- Main header with company logo and user account values -->
+    <header class="main-header">
+      <div class="container">
+        <div class="main-header__inner">
+          <a href="index.html" class="link">
+            <div class="main-header__logo">
+              <img src="./img/edenred-logo.png" alt="Logo Edenred" class="main-header__img" />
+            </div>
+          </a>
+
+          <div class="main-header__content">
+            <div class="main-header__user-balance">
+              <a href="#" class="link">
+                <div class="user-balance user-balance--constrained-height">
+                  <div class="user-balance__icon"></div>
+                  <div class="user-balance__value">Můj účet: 8256 bodů</div>
+                </div>
+              </a>
+            </div>
+
+            <a href="#" class="link">
+              <span class="main-header__user-name">Jan Novák</span>
+            </a>
+
+            <a href="index.html" class="link link--underlined">
+              <span class="main-header__user-logout">Odhlásit se</span>
+            </a>
+
+            <div class="lang-select">
+              <div class="lang-select__icon"></div>
+              <div class="lang-select__menu">CZ</div>
+            </div>
+
+            <div class="main-header__phone">
+              <div class="main-header__phone-icon"></div>
+              <div class="main-header__phone-number"><a href="tel:800153156">800 153 156</a></div>
+            </div>
+
+            <a href="#" class="link">
+              <div class="main-header__btn">
+                <div class="btn btn--shop btn--constrained-height btn--stretched-width btn--bordered btn--bor-medium">
+                  Košík
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End main header -->

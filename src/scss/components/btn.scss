@@ -1,0 +1,189 @@
+// All buttons, size dependent on container by default (otherwise use specified modifiers), background, colour and font-size inherited by default and no border by default (otherwise defined by modifier)
+.btn {
+  display: inline-flex;
+  display: -ms-inline-flexbox;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  overflow-wrap: break-word;
+  background: inherit;
+  font-size: inherit;
+  color: inherit;
+  border-radius: 3px;
+  border: none;
+  padding: 0 0.5em;
+  
+  @include mediaSmUp {
+    padding: 0 1em;
+    overflow-wrap: initial;
+  }
+
+  &:before {
+    display: none;
+
+    @include mediaSmUp {
+      display: inherit;
+      margin-right: 1em;
+    }
+  }
+
+  // Dimensions
+  &--constrained-height {
+    min-height: 3.5rem;
+  }
+
+  &--constrained-height-big {
+    min-height: 4rem;
+  }
+
+  &--stretched-height {
+    height: 100%;
+  }
+
+  &--stretched-width {
+    width: 100%;
+  }
+
+  // Borders
+  &--bordered {
+    border-width: $line-thin;
+    border-style: solid;
+  }
+
+  &--bor-medium {
+    border-color: $color-medium;
+  }
+
+  &--bor-alt {
+    border-color: $color-alt;
+  }
+
+  // Colours
+  &--col-inh-alt {
+    background-color: inherit;
+    color: $color-alt;    
+    &:hover {
+      background-color: $color-alt;
+      color: $color-primary;
+    }
+  }
+  
+  &--col-alt-prim {
+    background-color: $color-alt;
+    color: $color-primary;
+    &:hover {
+      background-color: $color-alt-darker;
+    }
+  }
+  
+  &--col-add-prim {
+    background-color: $color-additional;
+    color: $color-primary;
+  }
+  
+  &--col-pos-prim {
+    background-color: $color-positive;
+    color: $color-primary;    
+    &:hover {
+      background-color: $color-positive-darker;
+    }
+  }
+
+  // Shadows
+  &--sh-pos {
+    box-shadow: 0px $line-thin 0px $color-positive-darker;
+  }
+
+  // Actual types
+  &--shop {
+    &:before {
+      content: " ";
+      background: url("../img/icon-shop-cart.png") no-repeat center/contain;
+      filter: saturate(0);
+      height: 2em;
+      width: 2em;
+    }
+  }
+
+  &--shop-col {
+    &:before {
+      content: " ";
+      background: url("../img/icon-shop-cart.png") no-repeat center/contain;
+      filter: saturate(0) invert(1);
+      height: 2em;
+      width: 2em;
+    }
+  }
+
+  &--search {
+    &:before {
+      content: " ";
+      background: url("../img/icon-magnifier.png") no-repeat center/contain;
+      filter: saturate(0) invert(1);
+      height: 1em;
+      width: 1em;
+      flex-shrink: 0;
+    }
+  }
+
+  &--msg {
+    &:before {
+      content: " ";
+      background: url("../img/icon-msg.png") no-repeat center/contain;
+      transform: rotate(90deg);
+      height: 1em;
+      width: 1em;
+    }
+  }
+
+  &--how {
+    &:before {
+      content: " ";
+      background: url("../img/icon-mouse.png") no-repeat center/contain;
+      transform: rotate(90deg);
+      height: 1em;
+      width: 1em;
+    }
+  }
+  
+  &--numbered {
+    &:after {
+      content: "6";
+      background: $color-alt;
+      width: 2em;
+      height: 2em;
+      border-radius: 50%;
+      margin-left: 1em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  &--go {    
+    &:before {
+      content: " ";
+      background: url("../img/icon-arrow.png") no-repeat center/contain;
+      height: 1em;
+      width: 1em;
+      flex-shrink: 0;
+    }
+  }
+
+  // General button without special icon, possibly with more text
+  &--no-padding {
+    padding: 0;
+  }
+
+  // General button without special icon, possibly with less text
+  &--more-padding {
+    @include mediaMdUp {
+      padding: 0 2em;
+    }
+  }
+
+  // Big letters
+  &--uppercase {
+    text-transform: uppercase;
+  }
+}

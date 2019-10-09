@@ -5,17 +5,21 @@
 {% extends "layout/default.nunjucks" %}
 
 {% block header %}
-		<div>
-			INDEX HEADER
-		</div>
 {% endblock %}
 
 {% block content %}
-		<div>PAGE CONTENT</div>
+	<div class="h-text-center">
+		<ul class="index">
+			<li><a href="home.html">Domů</a></li>
+			<li><a href="contact.html">Kontakt</a></li>
+			<li><a href="vouchers.html">Poukázky</a></li>
+			<li><a href="e-tickets.html">E-ticket</a></li>
+			<li><a href="exc-rewards-mod.html">Modul mimořádných odměn</a></li>
+			<li><a href="tbc-new.html">Ticket Benefits Card - nová</a></li>
+			<li><a href="tbc-top-up.html">Ticket Benefits Card - dobití</a></li>
+		</ul>
+	</div>
 {% endblock %}
 
 {% block footer %}
-		<div>
-			INDEX FOOTER
-		</div>
 {% endblock %}

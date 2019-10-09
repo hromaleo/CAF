@@ -1,0 +1,6 @@
+{% extends "layout/default.nunjucks" %}
+
+{% block content %}
+	{% include "includes/hero.nunjucks" %}
+	{% include "includes/areas.nunjucks" %}
+{% endblock %}

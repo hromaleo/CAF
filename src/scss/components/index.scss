@@ -1,0 +1,10 @@
+.index {
+	margin: 20vh;
+	li {
+		padding: 0.5rem;
+	}
+	a:hover {
+		background-color: $color-alt;
+		color: $color-primary;
+	}
+}

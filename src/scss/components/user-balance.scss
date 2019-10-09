@@ -1,0 +1,25 @@
+.user-balance {
+  border: $line-thin $color-alt-lighter solid;
+  border-radius: 10em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+  white-space: nowrap;
+
+  &--constrained-height {
+    min-height: 4rem;
+  }
+
+  &__icon {
+    height: 1.5em;
+    width: 1.5em;
+    flex-shrink: 0;
+    background: url("../img/icon-user.png") no-repeat center/contain;
+    margin-right: 1em;
+  }
+
+  &__value {
+    color: $color-alt;
+  }
+}

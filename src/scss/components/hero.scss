@@ -1,0 +1,34 @@
+// Hero image with reward search and basic links
+.hero {
+  background-image: url("../img/hero.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__content {
+    color: $color-primary;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    
+    @include mediaTiUp {
+      padding: 2rem;
+    }
+    @include mediaSmUp {
+      padding: 3rem;
+    }
+    @include mediaMdUp {
+      padding: 4rem;
+    }
+    @include mediaLgUp {
+      padding-bottom: 5rem;
+    }
+    @include mediaHgUp {
+      padding-bottom: 6rem;
+    }
+  }
+}

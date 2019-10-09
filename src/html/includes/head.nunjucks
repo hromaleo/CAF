@@ -6,6 +6,7 @@
 <meta name="author" content="{{ page.author }}">
 <meta name="robots" content="{{ page.robots }}">
 {% block title %}
-		<title>{{ page.title }}</title>
+		<title>{{ page.title }} | {{ includeTitle }}</title>
 {% endblock %}
 <link rel="stylesheet" type="text/css" href="css/main.css">
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Raleway:300,500,700,900&display=swap" rel="stylesheet" />
