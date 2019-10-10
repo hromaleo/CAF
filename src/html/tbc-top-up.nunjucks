@@ -18,7 +18,7 @@
 			</div>
 			<div class="toggler-navbar__empty"></div>
 			<div class="toggler-navbar__item">
-				<a href="#" class="toggler-navbar__link">
+				<a href="tbc-overview.html" class="toggler-navbar__link">
 					Přehled karet
 				</a>
 			</div>
