@@ -11,8 +11,12 @@
   color: inherit;
   border-radius: 3px;
   border: none;
-  padding: 0 0.5em;
-  
+	padding: 0 0.5em;
+
+	&:hover {
+		cursor: pointer;
+	}
+
   @include mediaSmUp {
     padding: 0 1em;
     overflow-wrap: initial;
@@ -61,13 +65,13 @@
   // Colours
   &--col-inh-alt {
     background-color: inherit;
-    color: $color-alt;    
+    color: $color-alt;
     &:hover {
       background-color: $color-alt;
       color: $color-primary;
     }
   }
-  
+
   &--col-alt-prim {
     background-color: $color-alt;
     color: $color-primary;
@@ -75,21 +79,25 @@
       background-color: $color-alt-darker;
     }
   }
-  
+
   &--col-add-prim {
     background-color: $color-additional;
     color: $color-primary;
   }
-  
+
   &--col-pos-prim {
     background-color: $color-positive;
-    color: $color-primary;    
+    color: $color-primary;
     &:hover {
       background-color: $color-positive-darker;
     }
   }
 
   // Shadows
+  &--sh-alt {
+    box-shadow: 0px $line-thin 0px $color-alt-darker;
+	}
+
   &--sh-pos {
     box-shadow: 0px $line-thin 0px $color-positive-darker;
   }
@@ -145,7 +153,7 @@
       width: 1em;
     }
   }
-  
+
   &--numbered {
     &:after {
       content: "6";
@@ -159,13 +167,43 @@
       align-items: center;
     }
   }
-  
-  &--go {    
+
+  &--go {
     &:before {
       content: " ";
       background: url("../img/icon-arrow.png") no-repeat center/contain;
       height: 1em;
       width: 1em;
+      flex-shrink: 0;
+    }
+  }
+
+  &--list {
+    &:before {
+      content: " ";
+      background: url("../img/icon-list.png") no-repeat center/contain;
+      height: 1.5em;
+      width: 1.5em;
+      flex-shrink: 0;
+    }
+  }
+
+  &--tiles {
+    &:before {
+      content: " ";
+      background: url("../img/icon-list.png") no-repeat center/contain;
+      height: 1.5em;
+      width: 1.5em;
+      flex-shrink: 0;
+    }
+  }
+
+  &--map {
+    &:before {
+      content: " ";
+      background: url("../img/icon-map.png") no-repeat center/contain;
+      height: 1.5em;
+      width: 1.5em;
       flex-shrink: 0;
     }
   }

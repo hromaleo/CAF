@@ -65,3 +65,34 @@ function createDropdownListItems() {
 
 document.addEventListener("DOMContentLoaded",
 	createDropdownListItems);
+
+
+function createDropdownMenuBlocks() {
+	const dropdowns = document.querySelectorAll(".aside-menu__block-title");
+
+	for (let i = 0; i < dropdowns.length; i++) {
+		dropdowns[i].addEventListener("click", (e) => {
+			e.preventDefault();
+
+			const target = e.target;
+			const listItem = target.nextElementSibling;
+
+			if (listItem !== null && listItem.classList.contains("aside-menu__content--active")) {
+				listItem.classList.remove("aside-menu__content--active");
+				target.classList.remove("aside-menu__block-title--active");
+			}
+			else {
+				if (listItem !== null) {
+					listItem.classList.add("aside-menu__content--active");
+					target.classList.add("aside-menu__block-title--active");
+				}
+			}
+			return false;
+		})
+	}
+}
+
+
+
+document.addEventListener("DOMContentLoaded",
+	createDropdownMenuBlocks);

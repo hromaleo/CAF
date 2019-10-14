@@ -22,7 +22,9 @@
     <div class="hero__content">
       <h1>Vyberte si <strong>svou odměnu!</strong></h1>
       <div class="search-field">
-        <input class="search-field__input" type="text" placeholder="hledejte např. fitness Praha" />
+        <div class="search-field__block">
+					<input class="search-field__input" type="text" placeholder="hledejte např. fitness Praha" />
+				</div>
         <div class="search-field__btn">
           <button type="submit" value="Vyhledat" class="btn btn--search btn--stretched-height btn--stretched-width btn--col-alt-prim">
             Vyhledat

@@ -25,7 +25,7 @@
     line-height: 1.25em;
     text-align: center;
     padding-top: 0.5rem;
-    
+
     @include mediaTiUp {
       padding-top: 1rem;
     }
@@ -36,7 +36,7 @@
     &--underlined {
       border-bottom: $line-thin solid $color-light;
       padding-bottom: 0.25rem;
-      
+
       @include mediaTiUp {
         padding-bottom: 0.5rem;
       }
@@ -83,7 +83,12 @@
     .area__icon {
       display: none;
     }
-  }
+	}
+
+	// All 3 catalogue pages
+	&--catalogue {
+		padding-top: 1.5rem;
+	}
 
   &--light-bnd {
     background: $color-light;

@@ -1,0 +1,145 @@
+{% extends "layout/default.nunjucks" %} {% block content %}
+<div class="hero">
+	<div class="hero__content hero__content--compressed">
+		<h1>Katalog odměn</h1>
+		<div class="search-field search-field--divided search-field--titled">
+			<div class="search-field__block">
+				<div class="search-field__input-title">Zadejte klíčové slovo</div>
+				<input class="search-field__input" type="text" placeholder="Např. Fitness" />
+			</div>
+			<div class="search-field__block">
+				<div class="search-field__input-title">Zadejte polohu nebo adresu</div>
+				<input class="search-field__input" type="text" placeholder="Např. Praha" />
+			</div>
+			<div class="search-field__btn">
+				<button type="submit" value="Vyhledat" class="btn btn--search btn--stretched-height btn--stretched-width btn--col-alt-prim">
+					Vyhledat
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="toggler-btns h-bg-light">
+	<div class="toggler-btns__btn">
+		<div class="btn btn--stretched-height btn--stretched-width btn--bordered btn--bor-alt btn--col-alt-prim btn--list">
+			Zobrazit seznam
+		</div>
+	</div>
+	<div class="toggler-btns__btn">
+		<div class="btn btn--stretched-height btn--stretched-width btn--bordered btn--bor-alt btn--col-inh-alt btn--tiles">
+			Zobrazit dlaždice
+		</div>
+	</div>
+	<div class="toggler-btns__btn">
+		<div class="btn btn--stretched-height btn--stretched-width btn--bordered btn--bor-alt btn--col-inh-alt btn--map">
+			Zobrazit mapu
+		</div>
+	</div>
+</div>
+<div class="area area--catalogue">
+	<div class="container container--floated-childs">
+		<div class="container__menu">
+			<form class="aside-menu">
+				<fieldset class="aside-menu__block">
+					<legend class="aside-menu__block-title">
+						<span>Kategorie</span>
+						<span class="aside-menu__selected-count">
+							(2/11)
+						</span>
+					</legend>
+					<div class="aside-menu__content">
+						<div class="aside-menu__item">
+							<input type="checkbox" name="category" id="car" class="aside-menu__checkbox">
+							<label for="car" class="aside-menu__label aside-menu__label--dotted aside-menu__label--car">
+								Autoškoly
+							</label>
+						</div>
+						<div class="aside-menu__item">
+							<input type="checkbox" name="category" id="travel" class="aside-menu__checkbox">
+							<label for="travel" class="aside-menu__label aside-menu__label--dotted aside-menu__label--travel">
+								Cestování
+							</label>
+						</div>
+						<div class="aside-menu__item">
+							<input type="checkbox" name="category" id="languages" class="aside-menu__checkbox">
+							<label for="languages" class="aside-menu__label aside-menu__label--dotted aside-menu__label--languages">
+								Jazykové kurzy
+							</label>
+						</div>
+						<div class="aside-menu__item">
+							<input type="checkbox" name="category" id="commute" class="aside-menu__checkbox">
+							<label for="commute" class="aside-menu__label aside-menu__label--dotted aside-menu__label--commute">
+								Doprava
+							</label>
+						</div>
+						<div class="aside-menu__item">
+							<input type="checkbox" name="category" id="optics" class="aside-menu__checkbox">
+							<label for="optics" class="aside-menu__label aside-menu__label--dotted aside-menu__label--optics">
+								Optika
+							</label>
+						</div>
+						<div class="aside-menu__item">
+							<input type="checkbox" name="category" id="sport-culture" class="aside-menu__checkbox">
+							<label for="sport-culture" class="aside-menu__label aside-menu__label--dotted aside-menu__label--sport-culture">
+								Sport &amp; Kultura
+							</label>
+						</div>
+						<div class="aside-menu__item">
+							<input type="checkbox" name="category" id="accomodation" class="aside-menu__checkbox">
+							<label for="accomodation" class="aside-menu__label aside-menu__label--dotted aside-menu__label--accomodation">
+								Ubytování
+							</label>
+						</div>
+					</div>
+					<div class="aside-menu__option">
+						Zobrazit vše
+					</div>
+				</fieldset>
+				<fieldset class="aside-menu__block">
+					<legend class="aside-menu__block-title">
+						<span>Možnost platby</span>
+						<span class="aside-menu__selected-count">
+							(0/6)
+						</span>
+					</legend>
+					<div class="aside-menu__content">
+						<div class="aside-menu__item">
+							<input type="checkbox" name="category" id="t-multi" class="aside-menu__checkbox">
+							<label for="t-multi" class="aside-menu__label">
+								Ticket Multi
+							</label>
+						</div>
+						<div class="aside-menu__item">
+							<input type="checkbox" name="category" id="t-holiday" class="aside-menu__checkbox">
+							<label for="t-holiday" class="aside-menu__label">
+								Ticket Holiday
+							</label>
+						</div>
+						<div class="aside-menu__item">
+							<input type="checkbox" name="category" id="t-sport-culture" class="aside-menu__checkbox">
+							<label for="t-sport-culture" class="aside-menu__label">
+								Ticket Sport &amp; Kultura
+							</label>
+						</div>
+						<div class="aside-menu__item">
+							<input type="checkbox" name="category" id="t-medica" class="aside-menu__checkbox">
+							<label for="t-medica" class="aside-menu__label">
+								Ticket Medica
+							</label>
+						</div>
+					</div>
+					<div class="aside-menu__option">
+						Zobrazit vše
+					</div>
+				</fieldset>
+				<div class="btn btn--col-alt-prim btn--stretched-width btn--constrained-height btn--sh-alt">
+					Upravit výsledky
+				</div>
+			</form>
+		</div>
+		<div class="container__bulk">
+
+		</div>
+	</div>
+</div>
+{% endblock %}

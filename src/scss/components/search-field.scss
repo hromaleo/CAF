@@ -1,62 +1,106 @@
 .search-field {
-  width: 20rem;
-  margin: 0.5em 0;
-  
-  @include mediaTiUp {
-    width: 60vw;
-    margin: 1.25em 2em;
-  }
-  @include mediaHgUp {
-    width: 48rem;
-    margin: 1.25em 2em 3em;
-  }
+	width: 20rem;
+	margin: 0.5em 0;
 
-  &__input {
-    float: left;
-    width: 75%;
-    height: 4rem;
-    box-shadow: 0px $line-thin 0px #000;
-    border-radius: 3px 0 0 3px;
-    padding: 1.5em;
-    &::-webkit-input-placeholder {
-      color: #ccc;
-      font-style: italic;
-    }
-    &::-ms-input-placeholder {
-      color: #ccc;
-      font-style: italic;
-    }
-    &::-moz-placeholder {
-      color: #ccc;
-      font-style: italic;
-    }
-    &:-moz-placeholder {
-      color: #ccc;
-      font-style: italic;
-    }
-    // it does not work without separate selectors
-  }
+	@include mediaTiUp {
+		width: 60vw;
+		margin: 1.25em 2em;
+	}
+	@include mediaHgUp {
+		width: 48rem;
+		margin: 1.25em 2em 2.75em;
+	}
 
-  &__btn {
-    float: right;
-    width: 25%;
-    height: 4rem;
-    box-shadow: 0px $line-thin
-     0px $color-alt-darker;
-    border-radius: 0 3px 3px 0;
-  }
+	&--divided {
 
-  &__options {
-    float: left;
-    margin: 1em 0;
-    display: none;
-  
-    @include mediaTiUp {
-      display: inherit;
-    }
-  }
-  
-  &__option {
-    padding-right: 2em;
-  }
+		@include mediaHgUp {
+			width: 54rem;
+		}
+
+		.search-field__block {
+			width: 37.5%;
+			padding-right: 0.25em;
+
+			@include mediaMdUp {
+				width: 40%;
+				padding-right: 0.5em;
+			}
+		}
+
+		.search-field__input {
+			border-radius: 3px;
+		}
+
+		.search-field__btn {
+			border-radius: 3px;
+
+			@include mediaMdUp {
+				width: 20%;
+			}
+		}
+	}
+
+	&--titled {
+		display: flex;
+		align-items: flex-end;
+	}
+
+	&__block {
+		float: left;
+		width: 75%;
+	}
+
+	&__input-title {
+		text-align: left;
+		margin-bottom: 0.5em;
+	}
+
+	&__input {
+		width: 100%;
+		height: 4rem;
+		color: $color-dark;
+		box-shadow: 0px $line-thin 0px #000;
+		border-radius: 3px 0 0 3px;
+		padding: 1.5em;
+		&::-webkit-input-placeholder {
+			color: #ccc;
+			font-style: italic;
+		}
+		&::-ms-input-placeholder {
+			color: #ccc;
+			font-style: italic;
+		}
+		&::-moz-placeholder {
+			color: #ccc;
+			font-style: italic;
+		}
+		&:-moz-placeholder {
+			color: #ccc;
+			font-style: italic;
+		}
+		// it does not work without separate selectors
+	}
+
+	&__btn {
+		float: right;
+		width: 25%;
+		height: 4rem;
+		background-color: $color-alt;
+		box-shadow: 0px $line-thin 0px $color-alt-darker;
+		border-radius: 0 3px 3px 0;
+	}
+
+	&__options {
+		float: left;
+		margin: 1em 0;
+		display: none;
+
+		@include mediaTiUp {
+			display: inherit;
+		}
+	}
+
+	&__option {
+		padding-right: 2em;
+	}
 }

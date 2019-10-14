@@ -291,355 +291,149 @@
 		
 
 		
-	  <!--
-    <div class="sidebar sidebar--left">
-      <a href="#" class="link">
-        <div class="btn btn--msg btn--numbered">
-          Zprávy, novinky
-        </div>
-      </a>
-      <a href="#" class="link">
-        <div class="btn btn--msg">
-          Anketa
-        </div>
-      </a>
-      <a href="#" class="link">
-        <div class="btn btn--how">
-          Jak to funguje?
-        </div>
-      </a>
-    </div>-->
-
-  <!-- Hero image with reward search and basic links -->
-  <div class="hero">
-    <div class="hero__content">
-      <h1>Vyberte si <strong>svou odměnu!</strong></h1>
-      <div class="search-field">
-        <div class="search-field__block">
-					<input class="search-field__input" type="text" placeholder="hledejte např. fitness Praha" />
+<div class="hero">
+	<div class="hero__content hero__content--compressed">
+		<h1>Katalog odměn</h1>
+		<div class="search-field search-field--divided search-field--titled">
+			<div class="search-field__block">
+				<div class="search-field__input-title">Zadejte klíčové slovo</div>
+				<input class="search-field__input" type="text" placeholder="Např. Fitness" />
+			</div>
+			<div class="search-field__block">
+				<div class="search-field__input-title">Zadejte polohu nebo adresu</div>
+				<input class="search-field__input" type="text" placeholder="Např. Praha" />
+			</div>
+			<div class="search-field__btn">
+				<button type="submit" value="Vyhledat" class="btn btn--search btn--stretched-height btn--stretched-width btn--col-alt-prim">
+					Vyhledat
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="toggler-btns h-bg-light">
+	<div class="toggler-btns__btn">
+		<div class="btn btn--stretched-height btn--stretched-width btn--bordered btn--bor-alt btn--col-alt-prim btn--list">
+			Zobrazit seznam
+		</div>
+	</div>
+	<div class="toggler-btns__btn">
+		<div class="btn btn--stretched-height btn--stretched-width btn--bordered btn--bor-alt btn--col-inh-alt btn--tiles">
+			Zobrazit dlaždice
+		</div>
+	</div>
+	<div class="toggler-btns__btn">
+		<div class="btn btn--stretched-height btn--stretched-width btn--bordered btn--bor-alt btn--col-inh-alt btn--map">
+			Zobrazit mapu
+		</div>
+	</div>
+</div>
+<div class="area area--catalogue">
+	<div class="container container--floated-childs">
+		<div class="container__menu">
+			<form class="aside-menu">
+				<fieldset class="aside-menu__block">
+					<legend class="aside-menu__block-title">
+						<span>Kategorie</span>
+						<span class="aside-menu__selected-count">
+							(2/11)
+						</span>
+					</legend>
+					<div class="aside-menu__content">
+						<div class="aside-menu__item">
+							<input type="checkbox" name="category" id="car" class="aside-menu__checkbox">
+							<label for="car" class="aside-menu__label aside-menu__label--dotted aside-menu__label--car">
+								Autoškoly
+							</label>
+						</div>
+						<div class="aside-menu__item">
+							<input type="checkbox" name="category" id="travel" class="aside-menu__checkbox">
+							<label for="travel" class="aside-menu__label aside-menu__label--dotted aside-menu__label--travel">
+								Cestování
+							</label>
+						</div>
+						<div class="aside-menu__item">
+							<input type="checkbox" name="category" id="languages" class="aside-menu__checkbox">
+							<label for="languages" class="aside-menu__label aside-menu__label--dotted aside-menu__label--languages">
+								Jazykové kurzy
+							</label>
+						</div>
+						<div class="aside-menu__item">
+							<input type="checkbox" name="category" id="commute" class="aside-menu__checkbox">
+							<label for="commute" class="aside-menu__label aside-menu__label--dotted aside-menu__label--commute">
+								Doprava
+							</label>
+						</div>
+						<div class="aside-menu__item">
+							<input type="checkbox" name="category" id="optics" class="aside-menu__checkbox">
+							<label for="optics" class="aside-menu__label aside-menu__label--dotted aside-menu__label--optics">
+								Optika
+							</label>
+						</div>
+						<div class="aside-menu__item">
+							<input type="checkbox" name="category" id="sport-culture" class="aside-menu__checkbox">
+							<label for="sport-culture" class="aside-menu__label aside-menu__label--dotted aside-menu__label--sport-culture">
+								Sport &amp; Kultura
+							</label>
+						</div>
+						<div class="aside-menu__item">
+							<input type="checkbox" name="category" id="accomodation" class="aside-menu__checkbox">
+							<label for="accomodation" class="aside-menu__label aside-menu__label--dotted aside-menu__label--accomodation">
+								Ubytování
+							</label>
+						</div>
+					</div>
+					<div class="aside-menu__option">
+						Zobrazit vše
+					</div>
+				</fieldset>
+				<fieldset class="aside-menu__block">
+					<legend class="aside-menu__block-title">
+						<span>Možnost platby</span>
+						<span class="aside-menu__selected-count">
+							(0/6)
+						</span>
+					</legend>
+					<div class="aside-menu__content">
+						<div class="aside-menu__item">
+							<input type="checkbox" name="category" id="t-multi" class="aside-menu__checkbox">
+							<label for="t-multi" class="aside-menu__label">
+								Ticket Multi
+							</label>
+						</div>
+						<div class="aside-menu__item">
+							<input type="checkbox" name="category" id="t-holiday" class="aside-menu__checkbox">
+							<label for="t-holiday" class="aside-menu__label">
+								Ticket Holiday
+							</label>
+						</div>
+						<div class="aside-menu__item">
+							<input type="checkbox" name="category" id="t-sport-culture" class="aside-menu__checkbox">
+							<label for="t-sport-culture" class="aside-menu__label">
+								Ticket Sport &amp; Kultura
+							</label>
+						</div>
+						<div class="aside-menu__item">
+							<input type="checkbox" name="category" id="t-medica" class="aside-menu__checkbox">
+							<label for="t-medica" class="aside-menu__label">
+								Ticket Medica
+							</label>
+						</div>
+					</div>
+					<div class="aside-menu__option">
+						Zobrazit vše
+					</div>
+				</fieldset>
+				<div class="btn btn--col-alt-prim btn--stretched-width btn--constrained-height btn--sh-alt">
+					Upravit výsledky
 				</div>
-        <div class="search-field__btn">
-          <button type="submit" value="Vyhledat" class="btn btn--search btn--stretched-height btn--stretched-width btn--col-alt-prim">
-            Vyhledat
-          </button>
-        </div>
-        <div class="search-field__options">
-          <span class="search-field__option">
-            <a href="#" class="link link--underlined">Zobrazit katalog</a>
-          </span>
-          <span class="search-field__option">
-            <a href="#" class="link link--underlined">Zobrazit na mapě</a>
-          </span>
-        </div>
-      </div>
-      <h2>Možnosti čerpání benefitů:</h2>
-      <div class="mTop32 mBottom32">
-        <div class="Grid Grid--1 Grid--3small">
-          <div class="Grid-col">
-            <div class="card card--btn">
-              <div class="card__title">
-                Dobijte svou kartu
-              </div>
-              <div class="card__img">
-                <img src="./img/TBC.png" alt="" />
-              </div>
-              <div class="card__btn">
-                <a href="tbc-top-up.html" class="link">
-                  <div class="btn btn--no-padding btn--constrained-height-big btn--stretched-width btn--col-alt-prim">
-                    Chci body na kartu
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="Grid-col">
-            <div class="card card--btn">
-              <div class="card__title">
-                Vyměňte body za poukázky
-              </div>
-              <div class="card__img">
-                <img src="./img/TMULTI.png" alt="" />
-              </div>
-              <div class="card__btn">
-                <a href="vouchers.html" class="link">
-                  <div class="btn btn--no-padding btn--constrained-height-big btn--stretched-width btn--col-alt-prim">
-                    Mám zájem o poukázky
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="Grid-col">
-            <div class="card card--btn">
-              <div class="card__title">
-                Prohlédněte si partnerské e-shopy
-              </div>
-              <div class="card__img">
-                <img src="./img/basket.png" alt="" />
-              </div>
-              <div class="card__btn">
-                <a href="#" class="link">
-                  <div class="btn btn--no-padding btn--constrained-height-big btn--stretched-width btn--col-alt-prim">
-                    Zobrazit seznam e-shopů
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End hero image-->
-	  <!-- User area with account balance -->
-  <div class="area area--user">
-    <div class="area__icon"></div>
-    <div class="container">
-      <h2 class="area__heading">Hodnoty vašich benefitů</h2>
-      <div class="area__price">8256 Kč</div>
-      <div class="mTop32 mBottom32">
-        <div class="Grid Grid--1 Grid--2small Grid--3large">
-          <div class="Grid-col">
-            <div class="balance-card balance-card--insurance">
-              <div class="balance-card__title">Penzijní připojištění</div>
-              <div class="balance-card__value">0 Kč</div>
-              <div class="balance-card__exp-date">
-                expirace do: 20. 12. 2015
-              </div>
-            </div>
-          </div>
-          <div class="Grid-col">
-            <div class="balance-card balance-card--travel">
-              <div class="balance-card__title">Příspěvek na cestování</div>
-              <div class="balance-card__value">5000 Kč</div>
-              <div class="balance-card__exp-date">
-                expirace do: 20. 12. 2015
-              </div>
-            </div>
-          </div>
-          <div class="Grid-col">
-            <div class="balance-card balance-card--meals">
-              <div class="balance-card__title">Příspěvek na stravenky</div>
-              <div class="balance-card__value">3000 Kč</div>
-              <div class="balance-card__exp-date">
-                expirace do: 20. 12. 2015
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="h-text-center">
-        <a href="#" class="link">
-          <div class="user-goto-profile">
-            <span class="link link--underlined">Zobrazit všechny benefity v profilu</span>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-  <!-- End user area -->
+			</form>
+		</div>
+		<div class="container__bulk">
 
-  <!-- Options area with carousel -->
-  <div class="area area--options area--light-bnd">
-    <div class="area__icon"></div>
-    <div class="container">
-      <h2 class="area__heading">Možnosti Cafeterie</h2>
-      <div class="mTop32 mBottom32">
-        <div class="Grid Grid--1 Grid--2tiny Grid--3small Grid--4medium Grid--smallSpace">
-          <div class="Grid-col">
-            <div class="card card--simple">
-              <div class="card__title">
-                <a href="#" class="link link--underlined">Převést peníze ze mzdy</a>
-              </div>
-              <div class="card__img">
-                <img src="./img/transfer-money.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="Grid-col">
-            <div class="card card--simple">
-              <div class="card__title">
-                <a href="#" class="link link--underlined">Stravenky</a>
-              </div>
-              <div class="card__img">
-                <img src="./img/vouchers.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="Grid-col">
-            <div class="card card--simple">
-              <div class="card__title">
-                <a href="exc.rewards-mod.html" class="link link--underlined">Modul mimořádných odměn</a>
-              </div>
-              <div class="card__img">
-                <img src="./img/transfer-from-hr.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="Grid-col">
-            <div class="card card--simple">
-              <div class="card__title">
-                <a href="#" class="link link--underlined">Finanční benefity</a>
-              </div>
-              <div class="card__img">
-                <img src="./img/pig.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- End options area -->
-
-  <!-- Rewards categories area -->
-  <div class="area area--categories">
-    <div class="area__icon"></div>
-    <div class="container">
-      <h2 class="area__heading">Kategorie odměn</h2>
-      <h4 class="area__subheading">
-        Vyberte si Vaši odměnu a pokračujte dále
-      </h4>
-      <div class="mTop32 mBottom32">
-        <div class="Grid Grid--2 Grid--3tiny Grid--4small Grid--5medium Grid--6large Grid--7huge">
-          <div class="Grid-col">
-            <a href="#" class="link">
-              <div class="card card--category">
-                <div class="card__title">Autoškoly</div>
-                <div class="card__frame">
-                  <div class="card__img">
-                    <img src="./img/icon-car.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="Grid-col">
-            <a href="#" class="link">
-              <div class="card card--category">
-                <div class="card__title">Cestování</div>
-                <div class="card__frame">
-                  <div class="card__img">
-                    <img src="./img/icon-aircraft.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="Grid-col">
-            <a href="#" class="link">
-              <div class="card card--category">
-                <div class="card__title">Jazykové kurzy</div>
-                <div class="card__frame">
-                  <div class="card__img">
-                    <img src="./img/icon-cartoon.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="Grid-col">
-            <a href="#" class="link">
-              <div class="card card--category">
-                <div class="card__title">Doprava</div>
-                <div class="card__frame">
-                  <div class="card__img">
-                    <img src="./img/icon-train.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="Grid-col">
-            <a href="#" class="link">
-              <div class="card card--category">
-                <div class="card__title">Optika</div>
-                <div class="card__frame">
-                  <div class="card__img">
-                    <img src="./img/icon-eye.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="Grid-col">
-            <a href="#" class="link">
-              <div class="card card--category">
-                <div class="card__title">Sport&amp;Kultura</div>
-                <div class="card__frame">
-                  <div class="card__img">
-                    <img src="./img/icon-play-ball.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="Grid-col">
-            <a href="#" class="link">
-              <div class="card card--category">
-                <div class="card__title">Ubytování</div>
-                <div class="card__frame">
-                  <div class="card__img">
-                    <img src="./img/icon-house.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="Grid-col">
-            <a href="#" class="link">
-              <div class="card card--category">
-                <div class="card__title">Vzdělávání</div>
-                <div class="card__frame">
-                  <div class="card__img">
-                    <img src="./img/icon-scholar.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="Grid-col">
-            <a href="#" class="link">
-              <div class="card card--category">
-                <div class="card__title">Wellness</div>
-                <div class="card__frame">
-                  <div class="card__img">
-                    <img src="./img/icon-wellness.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="Grid-col">
-            <a href="#" class="link">
-              <div class="card card--category">
-                <div class="card__title">Zážitky</div>
-                <div class="card__frame">
-                  <div class="card__img">
-                    <img src="./img/icon-tent.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="Grid-col">
-            <a href="#" class="link">
-              <div class="card card--category">
-                <div class="card__title">Zdravotní péče</div>
-                <div class="card__frame">
-                  <div class="card__img">
-                    <img src="./img/icon-health.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End rewards categories -->
+		</div>
+	</div>
+</div>
 
 
 		
