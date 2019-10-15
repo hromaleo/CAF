@@ -13,7 +13,12 @@
   &--floated-childs {
     clear: both;
     overflow: auto;
-  }
+	}
+
+	&--flex {
+		display: flex;
+		justify-content: stretch;
+	}
 
   &__content {
     margin: 2.75rem 0 2rem;
@@ -50,17 +55,15 @@
 	}
 
 	&__menu {
-
-		@include mediaMdUp {
+		margin: 1.5rem 1.5rem 1.5rem 0;
+		@include mediaTiUp {
 			width: 16rem;
-			float: left;
+			flex-shrink: 0;
 		}
 	}
 
 	&__bulk {
-
-		@include mediaMdUp {
-			float: right;
-		}
+		margin: 1.5rem 0;
+		flex-basis: 100%;
 	}
 }

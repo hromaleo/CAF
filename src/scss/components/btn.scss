@@ -52,6 +52,11 @@
   &--bordered {
     border-width: $line-thin;
     border-style: solid;
+	}
+
+  &--bordered-thin {
+    border-width: $line-thinner;
+    border-style: solid;
   }
 
   &--bor-medium {
@@ -204,6 +209,16 @@
       background: url("../img/icon-map.png") no-repeat center/contain;
       height: 1.5em;
       width: 1.5em;
+      flex-shrink: 0;
+    }
+  }
+
+  &--next {
+    &:before {
+      content: ">";
+      height: 1.5em;
+			width: 0.5em;
+			margin-right: 0.25em;
       flex-shrink: 0;
     }
   }

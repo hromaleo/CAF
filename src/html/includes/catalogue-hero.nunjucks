@@ -1,0 +1,20 @@
+<div class="hero">
+	<div class="hero__content hero__content--compressed">
+		<h1>Katalog odměn</h1>
+		<div class="search-field search-field--divided search-field--titled">
+			<div class="search-field__block">
+				<div class="search-field__input-title">Zadejte klíčové slovo</div>
+				<input class="search-field__input" type="text" placeholder="Např. Fitness" />
+			</div>
+			<div class="search-field__block">
+				<div class="search-field__input-title">Zadejte polohu nebo adresu</div>
+				<input class="search-field__input" type="text" placeholder="Např. Praha" />
+			</div>
+			<div class="search-field__btn">
+				<button type="submit" value="Vyhledat" class="btn btn--search btn--stretched-height btn--stretched-width btn--col-alt-prim">
+					Vyhledat
+				</button>
+			</div>
+		</div>
+	</div>
+</div>

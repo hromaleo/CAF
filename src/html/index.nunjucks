@@ -19,6 +19,7 @@
 			<li><a href="tbc-top-up.html">Ticket Benefits Card - dobití</a></li>
 			<li><a href="tbc-overview.html">Ticket Benefits Card - přehled</a></li>
 			<li><a href="catalogue-list.html">Katalog odměn - seznam</a></li>
+			<li><a href="catalogue-tiles.html">Katalog odměn - dlaždice</a></li>
 		</ul>
 	</div>
 {% endblock %}

@@ -1,0 +1,277 @@
+<div class="Grid-col">
+	<div class="catalogue-item">
+		<div class="catalogue-item__text">
+			<div class="catalogue-item__title">
+				<span class="catalogue-item__name">CK Fischer</span>
+				<span class="catalogue-item__category catalogue-item__category--travel">Cestování</span>
+			</div>
+			<div class="catalogue-item__img">
+				<img src="img/CK-fish.png" alt="Logo CK Fischer">
+			</div>
+			<div class="catalogue-item__detail">
+				<span class="catalogue-item__contact">Kontakt:</span>
+				<span class="catalogue-item__contact">Na&nbsp;Strži&nbsp;65/1702, 140&nbsp;62, Praha&nbsp;4</span>
+				<span class="catalogue-item__contact"><a href="tel:+420800121010">+420 800 121 010</a></span>
+				<span class="catalogue-item__contact"><a href="http://www.fischer.cz" target="_blank">www.fischer.cz</a></span>
+			</div>
+			<div class="catalogue-item__detail">
+				<span class="catalogue-item__distance">Vzdálenost: 15 km</span>
+			</div>
+		</div>
+		<div class="catalogue-item__btn">
+			<div class="btn btn--sh-pos btn--col-pos-prim btn--constrained-height">
+				Zobrazit detail
+			</div>
+		</div>
+	</div>
+</div>
+<div class="Grid-col">
+	<div class="catalogue-item">
+		<div class="catalogue-item__text">
+			<div class="catalogue-item__title">
+				<span class="catalogue-item__name">Fitness Galaxie</span>
+				<span class="catalogue-item__category catalogue-item__category--sport-culture"></span>
+				<span class="catalogue-item__category catalogue-item__category--accomodation"></span>
+				<span class="catalogue-item__category catalogue-item__category--brown"></span>
+				<span class="catalogue-item__category catalogue-item__category--dark-green"></span>
+				<span class="catalogue-item__category catalogue-item__category--light-green"></span>
+			</div>
+			<div class="catalogue-item__img">
+				<img src="img/fit-galaxie.png" alt="Logo Fitness Galaxie">
+			</div>
+			<div class="catalogue-item__detail">
+				<span class="catalogue-item__contact">Kontakt:</span>
+				<span class="catalogue-item__contact">Arkalycká&nbsp;877/1, Praha&nbsp;4&nbsp;-&nbsp;Háje</span>
+				<span class="catalogue-item__contact"><a href="tel:+420608874300">+420 608 874 300</a></span>
+				<span class="catalogue-item__contact"><a href="mailto:info@fitnessgalaxie.cz" target="_blank">info@fitnessgalaxie.cz</a></span>
+			</div>
+			<div class="catalogue-item__detail">
+				<span class="catalogue-item__distance">Vzdálenost: 15 km</span>
+			</div>
+		</div>
+		<div class="catalogue-item__btn">
+			<div class="btn btn--sh-pos btn--col-pos-prim btn--constrained-height">
+				Zobrazit detail
+			</div>
+		</div>
+	</div>
+</div>
+<div class="Grid-col">
+	<div class="catalogue-item">
+		<div class="catalogue-item__text">
+			<div class="catalogue-item__title">
+				<span class="catalogue-item__name">Eiffel Optic</span>
+				<span class="catalogue-item__category catalogue-item__category--optics">Optika</span>
+			</div>
+			<div class="catalogue-item__img">
+				<img src="img/eiffel.png" alt="Logo Eiffel Optic">
+			</div>
+			<div class="catalogue-item__detail">
+				<span class="catalogue-item__contact">Kontakt:</span>
+				<span class="catalogue-item__contact">Ječná&nbsp;507/6, 120&nbsp;00, Praha&nbsp;2</span>
+				<span class="catalogue-item__contact"><a href="mailto:zakaznickyservis@eiffeloptic.cz">+420 800 121 010</a></span>
+				<span class="catalogue-item__contact"><a href="http://www.eiffel-optic.cz" target="_blank">www.eiffel-optic.cz</a></span>
+			</div>
+			<div class="catalogue-item__detail">
+				<span class="catalogue-item__distance">Vzdálenost: 15 km</span>
+			</div>
+		</div>
+		<div class="catalogue-item__btn">
+			<div class="btn btn--sh-pos btn--col-pos-prim btn--constrained-height">
+				Zobrazit detail
+			</div>
+		</div>
+	</div>
+</div>
+<div class="Grid-col">
+	<div class="catalogue-item">
+		<div class="catalogue-item__text">
+			<div class="catalogue-item__title">
+				<span class="catalogue-item__name">Jipka</span>
+				<span class="catalogue-item__category catalogue-item__category--education">Vzdělávání</span>
+			</div>
+			<div class="catalogue-item__img">
+				<img src="img/jipka.png" alt="Logo Jipka">
+			</div>
+			<div class="catalogue-item__detail">
+				<span class="catalogue-item__contact">Kontakt:</span>
+				<span class="catalogue-item__contact">Národní 416/37, 110&nbsp;00, Praha&nbsp;1</span>
+				<span class="catalogue-item__contact"><a href="tel:+420224210422">+420 224 210 422</a></span>
+				<span class="catalogue-item__contact"><a href="mailto:vyuka@jipka.cz" target="_blank">vyuka@jipka.cz</a></span>
+			</div>
+			<div class="catalogue-item__detail">
+				<span class="catalogue-item__distance">Vzdálenost: 15 km</span>
+			</div>
+		</div>
+		<div class="catalogue-item__btn">
+			<div class="btn btn--sh-pos btn--col-pos-prim btn--constrained-height">
+				Zobrazit detail
+			</div>
+		</div>
+	</div>
+</div>
+<div class="Grid-col">
+	<div class="catalogue-item">
+		<div class="catalogue-item__text">
+			<div class="catalogue-item__title">
+				<span class="catalogue-item__name">Horázný autoškola</span>
+				<span class="catalogue-item__category catalogue-item__category--car">Autoškoly</span>
+			</div>
+			<div class="catalogue-item__img">
+				<img src="img/horazny.png" alt="Logo Horázný Autoškola">
+			</div>
+			<div class="catalogue-item__detail">
+				<span class="catalogue-item__contact">Kontakt:</span>
+				<span class="catalogue-item__contact">Ondříčkova&nbsp;9, Praha&nbsp;3</span>
+				<span class="catalogue-item__contact"><a href="tel:+420737 282 929">+420 737 282 929</a></span>
+				<span class="catalogue-item__contact"><a href="http://www.ridicak.cz" target="_blank">www.ridicak.cz</a></span>
+			</div>
+			<div class="catalogue-item__detail">
+				<span class="catalogue-item__distance">Vzdálenost: 15 km</span>
+			</div>
+		</div>
+		<div class="catalogue-item__btn">
+			<div class="btn btn--sh-pos btn--col-pos-prim btn--constrained-height">
+				Zobrazit detail
+			</div>
+		</div>
+	</div>
+</div>
+<div class="Grid-col">
+	<div class="catalogue-item">
+		<div class="catalogue-item__text">
+			<div class="catalogue-item__title">
+				<span class="catalogue-item__name">Hotel.cz</span>
+				<span class="catalogue-item__category catalogue-item__category--accomodation">Ubytování</span>
+			</div>
+			<div class="catalogue-item__img">
+				<img src="img/hotelcz.png" alt="Logo Hotel.cz">
+			</div>
+			<div class="catalogue-item__detail">
+				<span class="catalogue-item__contact">Kontakt:</span>
+				<span class="catalogue-item__contact"><a href="tel:+420222539539">+420 222 539 539</a></span>
+				<span class="catalogue-item__contact"><a href="http://www.hotel.cz" target="_blank">www.hotel.cz</a></span>
+			</div>
+			<div class="catalogue-item__detail">
+				<span class="catalogue-item__distance">Vzdálenost: 15 km</span>
+			</div>
+		</div>
+		<div class="catalogue-item__btn">
+			<div class="btn btn--sh-pos btn--col-pos-prim btn--constrained-height">
+				Zobrazit detail
+			</div>
+		</div>
+	</div>
+</div>
+<div class="Grid-col">
+	<div class="catalogue-item">
+		<div class="catalogue-item__text">
+			<div class="catalogue-item__title">
+				<span class="catalogue-item__name">CK Fischer</span>
+				<span class="catalogue-item__category catalogue-item__category--travel">Cestování</span>
+			</div>
+			<div class="catalogue-item__img">
+				<img src="img/CK-fish.png" alt="Logo CK Fischer">
+			</div>
+			<div class="catalogue-item__detail">
+				<span class="catalogue-item__contact">Kontakt:</span>
+				<span class="catalogue-item__contact">Na&nbsp;Strži&nbsp;65/1702, 140&nbsp;62, Praha&nbsp;4</span>
+				<span class="catalogue-item__contact"><a href="tel:+420800121010">+420 800 121 010</a></span>
+				<span class="catalogue-item__contact"><a href="http://www.fischer.cz" target="_blank">www.fischer.cz</a></span>
+			</div>
+			<div class="catalogue-item__detail">
+				<span class="catalogue-item__distance">Vzdálenost: 15 km</span>
+			</div>
+		</div>
+		<div class="catalogue-item__btn">
+			<div class="btn btn--sh-pos btn--col-pos-prim btn--constrained-height">
+				Zobrazit detail
+			</div>
+		</div>
+	</div>
+</div>
+<div class="Grid-col">
+	<div class="catalogue-item">
+		<div class="catalogue-item__text">
+			<div class="catalogue-item__title">
+				<span class="catalogue-item__name">Fitness Galaxie</span>
+				<span class="catalogue-item__category catalogue-item__category--sport-culture"></span>
+				<span class="catalogue-item__category catalogue-item__category--accomodation"></span>
+				<span class="catalogue-item__category catalogue-item__category--brown"></span>
+				<span class="catalogue-item__category catalogue-item__category--dark-green"></span>
+				<span class="catalogue-item__category catalogue-item__category--light-green"></span>
+			</div>
+			<div class="catalogue-item__img">
+				<img src="img/fit-galaxie.png" alt="Logo Fitness Galaxie">
+			</div>
+			<div class="catalogue-item__detail">
+				<span class="catalogue-item__contact">Kontakt:</span>
+				<span class="catalogue-item__contact">Arkalycká&nbsp;877/1, Praha&nbsp;4&nbsp;-&nbsp;Háje</span>
+				<span class="catalogue-item__contact"><a href="tel:+420608874300">+420 608 874 300</a></span>
+				<span class="catalogue-item__contact"><a href="mailto:info@fitnessgalaxie.cz" target="_blank">info@fitnessgalaxie.cz</a></span>
+			</div>
+			<div class="catalogue-item__detail">
+				<span class="catalogue-item__distance">Vzdálenost: 15 km</span>
+			</div>
+		</div>
+		<div class="catalogue-item__btn">
+			<div class="btn btn--sh-pos btn--col-pos-prim btn--constrained-height">
+				Zobrazit detail
+			</div>
+		</div>
+	</div>
+</div>
+<div class="Grid-col">
+	<div class="catalogue-item">
+		<div class="catalogue-item__text">
+			<div class="catalogue-item__title">
+				<span class="catalogue-item__name">Eiffel Optic</span>
+				<span class="catalogue-item__category catalogue-item__category--optics">Optika</span>
+			</div>
+			<div class="catalogue-item__img">
+				<img src="img/eiffel.png" alt="Logo Eiffel Optic">
+			</div>
+			<div class="catalogue-item__detail">
+				<span class="catalogue-item__contact">Kontakt:</span>
+				<span class="catalogue-item__contact">Ječná&nbsp;507/6, 120&nbsp;00, Praha&nbsp;2</span>
+				<span class="catalogue-item__contact"><a href="mailto:zakaznickyservis@eiffeloptic.cz">+420 800 121 010</a></span>
+				<span class="catalogue-item__contact"><a href="http://www.eiffel-optic.cz" target="_blank">www.eiffel-optic.cz</a></span>
+			</div>
+			<div class="catalogue-item__detail">
+				<span class="catalogue-item__distance">Vzdálenost: 15 km</span>
+			</div>
+		</div>
+		<div class="catalogue-item__btn">
+			<div class="btn btn--sh-pos btn--col-pos-prim btn--constrained-height">
+				Zobrazit detail
+			</div>
+		</div>
+	</div>
+</div>
+<div class="Grid-col">
+	<div class="catalogue-item">
+		<div class="catalogue-item__text">
+			<div class="catalogue-item__title">
+				<span class="catalogue-item__name">Jipka</span>
+				<span class="catalogue-item__category catalogue-item__category--education">Vzdělávání</span>
+			</div>
+			<div class="catalogue-item__img">
+				<img src="img/jipka.png" alt="Logo Jipka">
+			</div>
+			<div class="catalogue-item__detail">
+				<span class="catalogue-item__contact">Kontakt:</span>
+				<span class="catalogue-item__contact">Národní&nbsp;416/37, 110&nbsp;00, Praha&nbsp;1</span>
+				<span class="catalogue-item__contact"><a href="tel:+420224210422">+420 224 210 422</a></span>
+				<span class="catalogue-item__contact"><a href="mailto:vyuka@jipka.cz" target="_blank">vyuka@jipka.cz</a></span>
+			</div>
+			<div class="catalogue-item__detail">
+				<span class="catalogue-item__distance">Vzdálenost: 15 km</span>
+			</div>
+		</div>
+		<div class="catalogue-item__btn">
+			<div class="btn btn--sh-pos btn--col-pos-prim btn--constrained-height">
+				Zobrazit detail
+			</div>
+		</div>
+	</div>
+</div>

@@ -86,8 +86,34 @@
 	}
 
 	// All 3 catalogue pages
-	&--catalogue {
-		padding-top: 1.5rem;
+	&--catalogue-list {
+		.catalogue-item {
+			&__img {
+				display: none;
+			}
+		}
+	}
+	&--catalogue-tiles {
+		.catalogue-item {
+			display: inline-block;
+
+			&__title {
+				justify-content: flex-end;
+			}
+
+			&__name {
+				margin-right: auto;
+			}
+
+			&__contact {
+				white-space: normal;
+				display: block;
+
+				&:after {
+					display: none;
+				}
+			}
+		}
 	}
 
   &--light-bnd {

@@ -1,0 +1,202 @@
+.catalogue-item {
+	// margin-bottom: 1.5rem;
+	padding: 1rem;
+	width: 100%;
+	border: $line-thinner solid $color-medium;
+	overflow: auto;
+
+	@include mediaMdUp {
+		padding: 0.5rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	@include mediaLgUp {
+		padding: 1rem;
+	}
+
+	@include mediaHgUp {
+		padding: 2rem;
+	}
+
+	&__text {
+		font-size: 0.95rem;
+	}
+
+	&__title {
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-bottom: 1em;
+
+		@include mediaTiUp {
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	&__name {
+		font-size: 1.25em;
+		display: block;
+
+		@include mediaTiUp {
+			margin-right: 0.5em;
+			display: initial;
+		}
+
+		@include mediaSmUp {
+			margin-right: 1em;
+		}
+	}
+
+	&__category {
+		font-size: 0.75em;
+		display: inline-flex;
+		flex-direction: row;
+		align-items: center;
+
+		&:before {
+			content: "";
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			margin-right: 0.75em;
+		}
+
+		&--car {
+			color: $color-orange;
+			&:before {
+				background-color: $color-orange;
+			}
+		}
+		&--travel {
+			color: $color-yellow;
+			&:before {
+				background-color: $color-yellow;
+			}
+		}
+		&--languages {
+			color: $color-purple;
+			&:before {
+				background-color: $color-purple;
+			}
+		}
+		&--commute {
+			color: $color-grey;
+			&:before {
+				background-color: $color-grey;
+			}
+		}
+		&--optics {
+			color: $color-black;
+			&:before {
+				background-color: $color-black;
+			}
+		}
+		&--sport-culture {
+			color: $color-pink;
+			&:before {
+				background-color: $color-pink;
+			}
+		}
+		&--accomodation {
+			color: $color-red;
+			&:before {
+				background-color: $color-red;
+			}
+		}
+		&--education {
+			color: $color-blue;
+			&:before {
+				background-color: $color-blue;
+			}
+		}
+		&--brown {
+			color: $color-brown;
+			&:before {
+				background-color: $color-brown;
+			}
+		}
+		&--dark-green {
+			color: $color-dark-green;
+			&:before {
+				background-color: $color-dark-green;
+			}
+		}
+		&--light-green {
+			color: $color-light-green;
+			&:before {
+				background-color: $color-light-green;
+			}
+		}
+	}
+
+	&__img {
+		float: left;
+		box-sizing: content-box;
+		width: 9rem;
+		height: 9rem;
+		padding: 0.5rem;
+		border: $line-thinner solid $color-medium;
+		border-radius: 3px;
+		margin-right: 0.5rem;
+		margin-bottom: 0;
+
+		@include mediaMdUp {
+			width: 4rem;
+			height: 4rem;
+			margin-bottom: 5rem;
+		}
+
+		@include mediaLgUp {
+			width: 7rem;
+			height: 7rem;
+			margin-right: 1rem;
+			margin-bottom: 2rem;
+		}
+
+		@include mediaHgUp {
+			width: 9rem;
+			height: 9rem;
+			margin-right: 2rem;
+			margin-bottom: 0;
+		}
+	}
+
+	&__detail {
+		margin-bottom: 0.25em;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__contact {
+
+		@include mediaSmUp {
+			white-space: nowrap;
+		}
+
+		&:after {
+			content: "|";
+			margin: 0 0.75em;
+		}
+
+		&:first-child {
+			font-weight: bold;
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	&__distance {
+		font-style: italic;
+	}
+
+	&__btn {
+		@include mediaMdUp {
+			margin-top: 0.5em;
+		}
+	}
+}

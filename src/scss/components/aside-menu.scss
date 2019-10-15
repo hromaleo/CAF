@@ -1,7 +1,13 @@
 .aside-menu {
+	background-color: $color-primary;
 	border: $line-thinner solid $color-medium;
 	border-radius: 3px;
 	padding: 1.5rem;
+	position: sticky;
+	top: 1.5rem;
+	@media screen and (min-height: 40rem) {
+		top: 12.5rem;
+	}
 
 	&__block-title {
 		color: $color-alt;
@@ -33,7 +39,7 @@
 			&:after {
 				transform: rotateZ(180deg);
 			}
-	}
+		}
 	}
 
 	&__selected-count {
@@ -76,33 +82,66 @@
 
 		&--dotted:before {
 			content: "";
-			display: inline-block;
 			width: 10px;
 			height: 10px;
 			border-radius: 50%;
 			margin-right: 0.5em;
 		}
 
-		&--car:before {
-			background-color: $color-orange;
+		&--car {
+			&:before {
+				background-color: $color-orange;
+			}
 		}
-		&--travel:before {
-			background-color: $color-yellow;
+		&--travel {
+			&:before {
+				background-color: $color-yellow;
+			}
 		}
-		&--languages:before {
-			background-color: $color-purple;
+		&--languages {
+			&:before {
+				background-color: $color-purple;
+			}
 		}
-		&--commute:before {
-			background-color: $color-grey;
+		&--commute {
+			&:before {
+				background-color: $color-grey;
+			}
 		}
-		&--optics:before {
-			background-color: $color-black;
+		&--optics {
+			&:before {
+				background-color: $color-black;
+			}
 		}
-		&--sport-culture:before {
-			background-color: $color-pink;
+		&--sport-culture {
+			&:before {
+				background-color: $color-pink;
+			}
 		}
-		&--accomodation:before {
-			background-color: $color-red;
+		&--accomodation {
+			&:before {
+				background-color: $color-red;
+			}
+		}
+		&--education {
+			&:before {
+				background-color: $color-blue;
+			}
+		}
+		&--brown {
+			&:before {
+				background-color: $color-brown;
+			}
+		}
+		&--dark-green {
+			&:before {
+				background-color: $color-dark-green;
+			}
+		}
+		&--light-green {
+			&:before {
+				background-color: $color-light-green;
+			}
 		}
 	}
 
