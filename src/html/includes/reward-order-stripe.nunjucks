@@ -1,0 +1,21 @@
+<div class="reward-order-stripe">
+	<div class="reward-order-stripe__item">
+		<label class="reward-order-stripe__title" for="count">
+			Počet
+		</label>
+		<input type="number" id="count" class="reward-order-stripe__input">
+		<span class="reward-order-stripe__caption">Ks</span>
+	</div>
+	<div class="reward-order-stripe__item">
+		<label class="reward-order-stripe__title" for="value">
+			Hodnota
+		</label>
+		<input type="number" id="value" class="reward-order-stripe__input reward-order-stripe__input--dropdown">
+		<span class="reward-order-stripe__caption">Kč</span>
+	</div>
+	<div class="reward-order-stripe__item reward-order-stripe__item--btn">
+		<button class="btn btn--shop-col btn--col-pos-prim btn--sh-pos btn--constrained-height">
+			Objednat odměnu
+		</button>
+	</div>
+</div>

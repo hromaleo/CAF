@@ -215,10 +215,22 @@
 
   &--next {
     &:before {
-      content: ">";
-      height: 1.5em;
-			width: 0.5em;
-			margin-right: 0.25em;
+			content: " ";
+			background: url("../img/arrow-carousel-right.png") no-repeat center/contain;
+      height: 1em;
+			width: 0.75em;
+			margin-right: 1em;
+      flex-shrink: 0;
+		}
+	}
+
+  &--previous {
+    &:before {
+			content: " ";
+			background: url("../img/arrow-carousel-left.png") no-repeat center/contain;
+      height: 1em;
+			width: 0.75em;
+			margin-right: 1em;
       flex-shrink: 0;
     }
   }

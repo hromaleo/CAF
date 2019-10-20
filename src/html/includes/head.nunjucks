@@ -10,3 +10,4 @@
 {% endblock %}
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Raleway:300,500,700,900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://use.typekit.net/ccx6eux.css">

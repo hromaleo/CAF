@@ -15,15 +15,11 @@
     overflow: auto;
 	}
 
-	&--flex {
-		display: flex;
-		justify-content: stretch;
-	}
 
   &__content {
-    margin: 2.75rem 0 2rem;
+		margin: 2.75rem 0 2rem;
     @include mediaMdUp {
-      width: 50%;
+			width: 50%;
       float: left;
     }
   }
@@ -38,27 +34,63 @@
   }
 
   &__pane-img {
-    height: 18rem;
+		height: 18rem;
 
     &--big {
-      height: 24rem;
+			height: 24rem;
     }
   }
 
   &__center-column {
-    margin: 2rem 0;
+		margin: 2rem 0;
     max-width: map-get($breakpoints, "small");
     padding: 0 1.25rem;
     @include mediaMdUp {
-      margin: 4rem auto 2rem;
+			margin: 4rem auto 2rem;
     }
+	}
+
+	&--flex {
+		display: flex;
+		flex-direction: column;
+
+		@include mediaMdUp {
+			flex-direction: row;
+			justify-content: stretch;
+		}
 	}
 
 	&__menu {
 		margin: 1.5rem 1.5rem 1.5rem 0;
-		@include mediaTiUp {
+		@include mediaMdUp {
 			width: 16rem;
 			flex-shrink: 0;
+		}
+	}
+
+	&__menu-img {
+		position: relative;
+		border: $line-thinner solid $color-medium;
+		border-radius: 4px;
+		width: 100%;
+		padding-top: 25%;
+		@include mediaTiUp {
+			padding-top: 20%;
+		}
+		@include mediaSmUp {
+			padding-top: 15%;
+		}
+		@include mediaMdUp {
+			padding-top: 100%;
+		}
+
+		> div {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: 0.5em;
 		}
 	}
 

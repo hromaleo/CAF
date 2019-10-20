@@ -1,0 +1,70 @@
+<div class="toggler-payment">
+	<div class="toggler-payment__title">
+		Vybrat platbu
+	</div>
+	<div class="toggler-payment__menu">
+		<div class="toggler-payment__item">
+			<img src="img/t-holiday.svg" alt="Ticket Holiday">
+			<div class="toggler-payment__info">
+				i
+				<div class="toggler-payment__tooltip">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illo mollitia repudiandae porro ipsum praesentium at voluptatibus earum dolorum velit.
+				</div>
+			</div>
+		</div>
+		<div class="toggler-payment__item toggler-payment__item--selected">
+			<img src="img/t-compliments.svg" alt="Ticket Compliments">
+			<div class="toggler-payment__info">
+				i
+				<div class="toggler-payment__tooltip">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illo mollitia repudiandae porro ipsum praesentium at voluptatibus earum dolorum velit.
+				</div>
+			</div>
+		</div>
+		<div class="toggler-payment__item toggler-payment__item--unavailable">
+			<img src="img/t-academica.svg" alt="Ticket Adademica">
+			<div class="toggler-payment__info">
+				i
+				<div class="toggler-payment__tooltip">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illo mollitia repudiandae porro ipsum praesentium at voluptatibus earum dolorum velit.
+				</div>
+			</div>
+		</div>
+		<div class="toggler-payment__item toggler-payment__item--unavailable">
+			<img src="img/t-multi.svg" alt="Ticket Multi">
+			<div class="toggler-payment__info">
+				i
+				<div class="toggler-payment__tooltip">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illo mollitia repudiandae porro ipsum praesentium at voluptatibus earum dolorum velit.
+				</div>
+			</div>
+		</div>
+		<div class="toggler-payment__item toggler-payment__item--unavailable">
+			<img src="img/t-medica.svg" alt="Ticket Medica">
+			<div class="toggler-payment__info">
+				i
+				<div class="toggler-payment__tooltip">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illo mollitia repudiandae porro ipsum praesentium at voluptatibus earum dolorum velit.
+				</div>
+			</div>
+		</div>
+		<div class="toggler-payment__item toggler-payment__item--unavailable">
+			<img src="img/TBC.png" alt="TBC">
+			<div class="toggler-payment__info">
+				i
+				<div class="toggler-payment__tooltip">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illo mollitia repudiandae porro ipsum praesentium at voluptatibus earum dolorum velit.
+				</div>
+			</div>
+		</div>
+		<div class="toggler-payment__item toggler-payment__item--unavailable">
+			<img src="img/e-ticket-logo.svg" alt="E-Ticket">
+			<div class="toggler-payment__info">
+				i
+				<div class="toggler-payment__tooltip">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illo mollitia repudiandae porro ipsum praesentium at voluptatibus earum dolorum velit.
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

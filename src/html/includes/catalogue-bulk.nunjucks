@@ -19,9 +19,11 @@
 			</div>
 		</div>
 		<div class="catalogue-item__btn">
-			<div class="btn btn--sh-pos btn--col-pos-prim btn--constrained-height">
-				Zobrazit detail
-			</div>
+			<a href="catalogue-detail.html" class="link">
+				<div class="btn btn--sh-pos btn--col-pos-prim btn--constrained-height">
+					Zobrazit detail
+				</div>
+			</a>
 		</div>
 	</div>
 </div>

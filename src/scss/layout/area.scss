@@ -44,7 +44,17 @@
         padding-bottom: 1.5rem;
       }
     }
-  }
+	}
+
+	&__heading-btn {
+		font-size: initial;
+		line-height: initial;
+		text-transform: initial;
+		font-weight: initial;
+		@include mediaTiUp {
+			position: absolute;
+		}
+	}
 
   &__subheading {
     line-height: 1.25em;
@@ -98,7 +108,7 @@
 			display: inline-block;
 
 			&__title {
-				justify-content: flex-end;
+				justify-content: space-between;
 			}
 
 			&__name {
@@ -116,7 +126,13 @@
 		}
 	}
 
-  &--light-bnd {
+	&--catalogue-detail {
+		.area__heading {
+			text-transform: uppercase;
+		}
+	}
+
+	  &--light-bnd {
     background: $color-light;
   }
 }

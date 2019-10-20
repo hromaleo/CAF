@@ -292,75 +292,151 @@
 		
 
 		
-<div class="area area--exc-rewards-mod">
-	<div class="container  container--floated-childs">
-		<h1 class="area__heading area__heading--underlined">Modul mimořádných odměn</h1>
-		<div class="container__content">
-			<div class="exc-rewards-mod">
-				<p>
-					<strong>
-						Vyberte zaměstnance, které chcete odměnit
-					</strong>
-				</p>
-				<select name="employee" id="employee-name" class="exc-rewards-mod__selector">
-					<option value="jan-novak">Jan Novák</option>
-					<option value="patrik-helta">Patrik Helta</option>
-					<option value="leos-hromadko">Leoš Hromádko</option>
-				</select>
-				<p class="typo--plain-text">
-					Seznam odměněných zaměstnanců:
-				</p>
-				<hr class="mTop8">
-				<div class="exc-rewards-mod__employee-selected">
-					Petr Čech
+<div class="area area--catalogue-detail area--btn-in-heading">
+	<div class="container">
+		<h1 class="area__heading area__heading--underlined">
+			<div class="area__heading-btn">
+				<a href="catalogue-list.html" class="link">
+					<div class="btn btn--bordered-thin btn--bor-medium btn--col-inh-alt btn--previous btn--constrained-height btn--more-padding">
+						Zpět na katalog
+					</div>
+				</a>
+			</div>
+			CK Fischer
+		</h1>
+	</div>
+	<div class="container container--flex">
+		<div class="container__menu">
+			<div class="container__menu-img">
+				<div>
+					<img src="img/CK-fish.png" alt="Logo CK Fischer">
 				</div>
-				<div class="exc-rewards-mod__employee-selected">
-					Jana Veselá
+			</div>
+		</div>
+		<div class="container__bulk">
+			<div class="catalogue-item catalogue-item--detail">
+				<div class="catalogue-item__title">
+					<div class="catalogue-item__name">
+						CK Fischer
+					</div>
+					<div class="catalogue-item__category catalogue-item__category--travel">
+						Cestování
+					</div>
 				</div>
-				<div class="exc-rewards-mod__employee-selected">
-					Tomáš Malý
+				<div class="catalogue-item__text">
+					<div class="catalogue-item__detail">
+						<span class="catalogue-item__contact">Kontakt</span>
+						<span class="catalogue-item__contact">Na&nbsp;Strži&nbsp;65/1702, 140&nbsp;62, Praha&nbsp;4</span>
+						<span class="catalogue-item__contact"><a href="tel:+420800121010">+420 800 121 010</a></span>
+						<span class="catalogue-item__contact"><a href="http://www.fischer.cz" target="_blank">www.fischer.cz</a></span>
+					</div>
+					<div class="catalogue-item__detail">
+						<span class="catalogue-item__contact">Typ provozovny</span>
+						<span class="catalogue-item__contact">Cestovní kancelář</span>
+					</div>
+					<div class="catalogue-item__detail">
+						<span class="catalogue-item__contact">Aktivity:</span>
+						<span class="catalogue-item__contact">Cestovní ruch, zájezdy</span>
+					</div>
 				</div>
-				<div class="exc-rewards-mod__form">
-					<form action="POST" class="exc-rewards-form h-bg-light">
-						<fieldset>
-							<div class="exc-rewards-form__line">
-								<label for="exc-rewards-form__available" class="exc-rewards-form__line-title">
-									K dispozici máte
-								</label>
-								<span id="exc-rewards-form__available" class="exc-rewards-form__input exc-rewards-form__input--no-change" name="available">
-									5000
-								</span>
-								<span class="exc-rewards-form__line-option">
-									bodů
-								</span>
-							</div>
-							<div class="exc-rewards-form__line exc-rewards-form__line--coloured">
-								<label for="exc-rewards-form__input" class="exc-rewards-form__line-title">
-									Zvolte výši odměny
-								</label>
-								<input id="exc-rewards-form__input" class="exc-rewards-form__input exc-rewards-form__input--value" type="text" value="2000" name="value">
-								</input>
-								<span class="exc-rewards-form__line-option exc-rewards-form__line-option--coloured">
-									bodů
-								</span>
-							</div>
-							<div class="exc-rewards-form__line">
-								<label for="exc-rewards-form__text" class="exc-rewards-form__line-title">
-									Odeslat pochvalu
-								</label>
-								<input id="exc-rewards-form__text" class="exc-rewards-form__input exc-rewards-form__input--box" type="text" placeholder="Vložit text" name="message">
-								</input>
-								<span class="exc-rewards-form__line-option">
-								</span>
-							</div>
-						</fieldset>
-					</form>
+				<div class="catalogue-item__map">
+					<img src="img/map-small.png" alt="Umístění na mapě">
 				</div>
-				<div class="exc-rewards-mod__btn">
-					<button type="submit" value="Odeslat odměnu" class="btn btn--constrained-height btn--col-pos-prim btn--sh-pos btn--more-padding">
-						Odeslat odměnu
-					</button>
+			</div>
+			<div class="mTop32">
+				<div class="toggler-payment">
+	<div class="toggler-payment__title">
+		Vybrat platbu
+	</div>
+	<div class="toggler-payment__menu">
+		<div class="toggler-payment__item">
+			<img src="img/t-holiday.svg" alt="Ticket Holiday">
+			<div class="toggler-payment__info">
+				i
+				<div class="toggler-payment__tooltip">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illo mollitia repudiandae porro ipsum praesentium at voluptatibus earum dolorum velit.
 				</div>
+			</div>
+		</div>
+		<div class="toggler-payment__item toggler-payment__item--selected">
+			<img src="img/t-compliments.svg" alt="Ticket Compliments">
+			<div class="toggler-payment__info">
+				i
+				<div class="toggler-payment__tooltip">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illo mollitia repudiandae porro ipsum praesentium at voluptatibus earum dolorum velit.
+				</div>
+			</div>
+		</div>
+		<div class="toggler-payment__item toggler-payment__item--unavailable">
+			<img src="img/t-academica.svg" alt="Ticket Adademica">
+			<div class="toggler-payment__info">
+				i
+				<div class="toggler-payment__tooltip">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illo mollitia repudiandae porro ipsum praesentium at voluptatibus earum dolorum velit.
+				</div>
+			</div>
+		</div>
+		<div class="toggler-payment__item toggler-payment__item--unavailable">
+			<img src="img/t-multi.svg" alt="Ticket Multi">
+			<div class="toggler-payment__info">
+				i
+				<div class="toggler-payment__tooltip">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illo mollitia repudiandae porro ipsum praesentium at voluptatibus earum dolorum velit.
+				</div>
+			</div>
+		</div>
+		<div class="toggler-payment__item toggler-payment__item--unavailable">
+			<img src="img/t-medica.svg" alt="Ticket Medica">
+			<div class="toggler-payment__info">
+				i
+				<div class="toggler-payment__tooltip">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illo mollitia repudiandae porro ipsum praesentium at voluptatibus earum dolorum velit.
+				</div>
+			</div>
+		</div>
+		<div class="toggler-payment__item toggler-payment__item--unavailable">
+			<img src="img/TBC.png" alt="TBC">
+			<div class="toggler-payment__info">
+				i
+				<div class="toggler-payment__tooltip">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illo mollitia repudiandae porro ipsum praesentium at voluptatibus earum dolorum velit.
+				</div>
+			</div>
+		</div>
+		<div class="toggler-payment__item toggler-payment__item--unavailable">
+			<img src="img/e-ticket-logo.svg" alt="E-Ticket">
+			<div class="toggler-payment__info">
+				i
+				<div class="toggler-payment__tooltip">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illo mollitia repudiandae porro ipsum praesentium at voluptatibus earum dolorum velit.
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+			</div>
+			<div class="mTop16">
+				<div class="reward-order-stripe">
+	<div class="reward-order-stripe__item">
+		<label class="reward-order-stripe__title" for="count">
+			Počet
+		</label>
+		<input type="number" id="count" class="reward-order-stripe__input">
+		<span class="reward-order-stripe__caption">Ks</span>
+	</div>
+	<div class="reward-order-stripe__item">
+		<label class="reward-order-stripe__title" for="value">
+			Hodnota
+		</label>
+		<input type="number" id="value" class="reward-order-stripe__input reward-order-stripe__input--dropdown">
+		<span class="reward-order-stripe__caption">Kč</span>
+	</div>
+	<div class="reward-order-stripe__item reward-order-stripe__item--btn">
+		<button class="btn btn--shop-col btn--col-pos-prim btn--sh-pos btn--constrained-height">
+			Objednat odměnu
+		</button>
+	</div>
+</div>
 			</div>
 		</div>
 	</div>

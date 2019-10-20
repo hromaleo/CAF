@@ -57,8 +57,11 @@
 
 	&__item {
 		height: 2.25em;
-		display: flex;
+		display: inline-flex;
 		align-items: center;
+		@include mediaMdUp {
+			display: flex;
+		}
 	}
 
 	&__checkbox {

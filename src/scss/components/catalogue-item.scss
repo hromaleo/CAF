@@ -1,5 +1,4 @@
 .catalogue-item {
-	// margin-bottom: 1.5rem;
 	padding: 1rem;
 	width: 100%;
 	border: $line-thinner solid $color-medium;
@@ -132,7 +131,6 @@
 	}
 
 	&__img {
-		float: left;
 		box-sizing: content-box;
 		width: 9rem;
 		height: 9rem;
@@ -141,6 +139,10 @@
 		border-radius: 3px;
 		margin-right: 0.5rem;
 		margin-bottom: 0;
+
+		@include mediaTiUp {
+			float: left;
+		}
 
 		@include mediaMdUp {
 			width: 4rem;
@@ -197,6 +199,52 @@
 	&__btn {
 		@include mediaMdUp {
 			margin-top: 0.5em;
+		}
+	}
+
+	&__map {
+		width: 20rem;
+		height: 7rem;
+		@include mediaTiUp {
+			float: right;
+		}
+		@include mediaSmUp {
+			width: 30rem;
+			height: 11.5rem;
+		}
+		@include mediaMdUp {
+			width: 20rem;
+			height: 7rem;
+		}
+		@include mediaLgUp {
+			width: 30rem;
+			height: 11.5rem;
+		}
+	}
+
+	&--detail {
+		padding: 0 0.5rem;
+		border: none;
+		display: block;
+
+		.catalogue-item__title {
+			width: 100%;
+			justify-content: space-between;
+		}
+
+		.catalogue-item__text {
+			float: left;
+		}
+
+		.catalogue-item__detail {
+			margin-bottom: 1.5em;
+		}
+
+		.catalogue-item__contact {
+			display: block;
+			&:after {
+				display: none;
+			}
 		}
 	}
 }

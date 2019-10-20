@@ -1,0 +1,64 @@
+{% extends "layout/default.nunjucks" %}
+
+{% block content %}
+<div class="area area--catalogue-detail area--btn-in-heading">
+	<div class="container">
+		<h1 class="area__heading area__heading--underlined">
+			<div class="area__heading-btn">
+				<a href="catalogue-list.html" class="link">
+					<div class="btn btn--bordered-thin btn--bor-medium btn--col-inh-alt btn--previous btn--constrained-height btn--more-padding">
+						Zpět na katalog
+					</div>
+				</a>
+			</div>
+			CK Fischer
+		</h1>
+	</div>
+	<div class="container container--flex">
+		<div class="container__menu">
+			<div class="container__menu-img">
+				<div>
+					<img src="img/CK-fish.png" alt="Logo CK Fischer">
+				</div>
+			</div>
+		</div>
+		<div class="container__bulk">
+			<div class="catalogue-item catalogue-item--detail">
+				<div class="catalogue-item__title">
+					<div class="catalogue-item__name">
+						CK Fischer
+					</div>
+					<div class="catalogue-item__category catalogue-item__category--travel">
+						Cestování
+					</div>
+				</div>
+				<div class="catalogue-item__text">
+					<div class="catalogue-item__detail">
+						<span class="catalogue-item__contact">Kontakt</span>
+						<span class="catalogue-item__contact">Na&nbsp;Strži&nbsp;65/1702, 140&nbsp;62, Praha&nbsp;4</span>
+						<span class="catalogue-item__contact"><a href="tel:+420800121010">+420 800 121 010</a></span>
+						<span class="catalogue-item__contact"><a href="http://www.fischer.cz" target="_blank">www.fischer.cz</a></span>
+					</div>
+					<div class="catalogue-item__detail">
+						<span class="catalogue-item__contact">Typ provozovny</span>
+						<span class="catalogue-item__contact">Cestovní kancelář</span>
+					</div>
+					<div class="catalogue-item__detail">
+						<span class="catalogue-item__contact">Aktivity:</span>
+						<span class="catalogue-item__contact">Cestovní ruch, zájezdy</span>
+					</div>
+				</div>
+				<div class="catalogue-item__map">
+					<img src="img/map-small.png" alt="Umístění na mapě">
+				</div>
+			</div>
+			<div class="mTop32">
+				{% include "includes/toggler-payment.nunjucks" %}
+			</div>
+			<div class="mTop16">
+				{% include "includes/reward-order-stripe.nunjucks" %}
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
