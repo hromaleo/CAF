@@ -2,39 +2,73 @@
 {% block content %}
 <div class="area area--shop">
 	<div class="container">
-		<div class="message-stripe message-stripe--error">
-			Nemáte dostatečnou částku na účtu
-		</div>
-		<h1 class="area__heading area__heading--underlined area__heading--no-top-indent">
+		<h1 class="area__heading area__heading--underlined">
 			<div class="area__heading-btn">
 				<a href="catalogue-list.html" class="link">
 					<div class="btn btn--bordered-thin btn--bor-medium btn--col-inh-alt btn--previous btn--constrained-height btn--more-padding">
-						Zpět k nakupování
+						Krok zpět
 					</div>
 				</a>
 			</div>
 			Nákupní košík
 		</h1>
 		<div class="shopping-steps">
-			<div class="shopping-steps__item shopping-steps__item--cart shopping-steps__item--active">
+			<div class="shopping-steps__item shopping-steps__item--cart">
 				<div class="shopping-steps__circle shopping-steps__circle--active">
 					<div class="shopping-steps__img shopping-steps__img--cart shopping-steps__img--active"></div>
 				</div>
 			</div>
 			<div class="shopping-steps__line"></div>
 			<div class="shopping-steps__item shopping-steps__item--info">
-				<div class="shopping-steps__circle">
-					<div class="shopping-steps__img shopping-steps__img--info"></div>
+				<div class="shopping-steps__circle shopping-steps__circle--active">
+					<div class="shopping-steps__img shopping-steps__img--info shopping-steps__img--active"></div>
 				</div>
 			</div>
 			<div class="shopping-steps__line"></div>
-			<div class="shopping-steps__item shopping-steps__item--summary">
-				<div class="shopping-steps__circle">
-					<div class="shopping-steps__img shopping-steps__img--summary"></div>
+			<div class="shopping-steps__item shopping-steps__item--summary shopping-steps__item--active">
+				<div class="shopping-steps__circle shopping-steps__circle--active">
+					<div class="shopping-steps__img shopping-steps__img--summary shopping-steps__img--active"></div>
 				</div>
 			</div>
 		</div>
-		<table class="table table--stretched table--more-padding mTop48">
+
+		<h3 class="typo--main-title">Dodací adresa</h3>
+		<div class="data-table mTop32">
+			<div class="data-table__row">
+				<span class="data-table__cell">Jméno a příjmení</span>
+				<span class="data-table__cell data-table__cell--bold">Jan Novák</span>
+			</div>
+			<div class="data-table__row">
+				<span class="data-table__cell">Váš e-mail</span>
+				<span class="data-table__cell data-table__cell--bold">novak@edenred.cz</span>
+			</div>
+			<div class="data-table__row">
+				<span class="data-table__cell">Ulice a č.p.</span>
+				<span class="data-table__cell data-table__cell--bold">Ulice 123</span>
+			</div>
+			<div class="data-table__row">
+				<span class="data-table__cell">Město</span>
+				<span class="data-table__cell data-table__cell--bold">Praha</span>
+			</div>
+			<div class="data-table__row">
+				<span class="data-table__cell">PSČ</span>
+				<span class="data-table__cell data-table__cell--bold">123 00</span>
+			</div>
+			<div class="data-table__row">
+				<span class="data-table__cell">Země</span>
+				<span class="data-table__cell data-table__cell--bold">Česká republika</span>
+			</div>
+			<div class="data-table__row">
+				<span class="data-table__cell">Telefonní číslo</span>
+				<span class="data-table__cell data-table__cell--bold">+420 987 654 321</span>
+			</div>
+			<div class="data-table__row">
+				<span class="data-table__cell">Firma</span>
+				<span class="data-table__cell data-table__cell--bold">Edenred</span>
+			</div>
+		</div>
+
+		<table class="table table--stretched mTop48">
 			<tr class="table__row table__row--heading">
 				<td class="table__row-th">Vybraná odměna</td>
 				<td class="table__row-th">Hodnota</td>
@@ -42,7 +76,7 @@
 				<td class="table__row-th">Celkem</td>
 			</tr>
 			<tr class="table__row" data-price="5000" data-count="1">
-				<td class="table__row-item table__row-item--removeable">
+				<td class="table__row-item">
 					<div class="table__item-content">
 						<div class="table__item-img">
 							<img src="./img/CK-Fish.png" alt="Logo CK Fischer">
@@ -54,7 +88,7 @@
 					5000 bodů / 5000 Kč
 				</td>
 				<td class="table__row-count">
-					<input type="number" class="table__row-input" value="1">
+					<span type="number" class="table__row-input table__row-input--no-change">1</span>
 					Ks
 				</td>
 				<td class="table__row-total">
@@ -62,7 +96,7 @@
 				</td>
 			</tr>
 			<tr class="table__row table__row--regular-end" data-price="5000" data-count="2">
-				<td class="table__row-item table__row-item--removeable">
+				<td class="table__row-item">
 					<div class="table__item-content">
 						<div class="table__item-img">
 							<img src="./img/icon-play-ball.png" alt="Playing ball">
@@ -74,7 +108,7 @@
 					5000 bodů / 5000 Kč
 				</td>
 				<td class="table__row-count">
-					<input type="number" class="table__row-input" value="2">
+					<span type="number" class="table__row-input table__row-input--no-change">2</span>
 					Ks
 				</td>
 				<td class="table__row-total">
@@ -82,8 +116,7 @@
 				</td>
 			</tr>
 			<tr class="table__row table__row--additional">
-				<td class="table__row-info">
-					Máte nedostatek bodů? <a href="#" class="link link--underlined link--coloured">Nabijte si účet</a>
+				<td>
 				</td>
 				<td></td>
 				<td class="h-text-right"><span class="mRight16">Celkem: </span></td>
@@ -92,14 +125,10 @@
 		</table>
 
 		<div>
-			<div class="btn btn--bordered btn--bor-alt btn--col-inh-alt btn--constrained-height btn--stretched-width-tiny btn--empty">Vyprázdnit košík</div>
 			<div class="h-float-right-tiny mTop16tinyDown">
 				<span class="mLeft32tiny">
-					<div class="btn btn--bordered btn--bor-alt btn--col-inh-alt btn--constrained-height btn--stretched-width-tiny btn--rerun">Přepočítat cenu</div>
-				</span>
-				<span class="mLeft32tiny">
 					<a href="shopping-info.html" class="link">
-						<div class="btn btn--col-pos-prim btn--sh-pos btn--constrained-height btn--stretched-width-tiny btn--more-padding btn--confirm-col">Pokračovat dále</div>
+						<div class="btn btn--col-pos-prim btn--sh-pos btn--constrained-height btn--stretched-width-tiny btn--more-padding btn--confirm-col">Závazně objednat</div>
 					</a>
 				</span>
 			</div>

@@ -70,7 +70,7 @@
 		align-items: center;
 		color: $color-alt;
 		text-decoration: underline;
-		&:before {
+		&--removeable:before {
 			position: absolute;
 			left: 0;
 			content: "";
@@ -126,9 +126,16 @@
     font-size: 1rem;
     padding: 0.75em;
 		margin-right: 0.5em;
+
 		@include mediaTiUp {
 			width: 4rem;
 			height: 3.5rem;
+		}
+
+		&--no-change {
+			background-color: inherit;
+			color: initial;
+			border: none;
 		}
 	}
 }
