@@ -31,7 +31,11 @@
     }
     @include mediaHgUp {
       padding-top: 3rem;
-    }
+		}
+
+		&--no-top-indent {
+			padding-top: 0;
+		}
 
     &--underlined {
       border-bottom: $line-thin solid $color-light;
@@ -51,7 +55,7 @@
 		line-height: initial;
 		text-transform: initial;
 		font-weight: initial;
-		@include mediaTiUp {
+		@include mediaSmUp {
 			position: absolute;
 		}
 	}
@@ -132,7 +136,7 @@
 		}
 	}
 
-	  &--light-bnd {
+	&--light-bnd {
     background: $color-light;
   }
 }

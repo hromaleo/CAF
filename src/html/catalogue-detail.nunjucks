@@ -1,7 +1,7 @@
 {% extends "layout/default.nunjucks" %}
 
 {% block content %}
-<div class="area area--catalogue-detail area--btn-in-heading">
+<div class="area area--catalogue-detail">
 	<div class="container">
 		<h1 class="area__heading area__heading--underlined">
 			<div class="area__heading-btn">

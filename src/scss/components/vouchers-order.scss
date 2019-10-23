@@ -3,7 +3,7 @@
   &__title {
     float: left;
   }
-  
+
   &__img {
     float: right;
     width: 10rem;
@@ -12,41 +12,9 @@
       margin-left: 3.5rem;
     }
   }
-  
+
   &__description {
     clear: left;
-  }
-
-  &__table {
-    width: 100%;
-    text-align: left;
-    border-collapse: collapse;
-  }
-
-  &__table-heading {
-    height: 5rem;
-    border-bottom: $line-thin solid $color-light;
-  }
-  
-  &__table-row {
-    height: 6.5rem;
-    border-bottom: $line-thin solid $color-light;
-  }
-  
-  &__table-row-th {
-    font-weight: 400;
-  }
-
-  &__table-row-input {
-    width: 4rem;
-    height: 3.5rem;
-    border: 1px solid $color-alt;
-    border-radius: 3px;
-    text-align: right;
-    color: $color-alt;
-    font-size: 1rem;
-    padding: 0.75em;
-    margin-right: 0.5em;
   }
 
   &__checkout {

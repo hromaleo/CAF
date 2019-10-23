@@ -1,7 +1,14 @@
 .index {
-	margin: 20vh;
-	li {
-		padding: 0.5rem;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	@include mediaLgUp {
+		justify-content: center;
+		li {
+			padding: 0.5rem;
+		}
 	}
 	a:hover {
 		background-color: $color-alt;

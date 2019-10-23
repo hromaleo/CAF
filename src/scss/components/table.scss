@@ -1,0 +1,134 @@
+.table {
+	text-align: left;
+	border-collapse: collapse;
+
+	&--stretched {
+		width: 100%;
+	}
+
+	&--more-padding { 		// Left and right padding of first and last cell in a row
+		.table__row {
+			> th:first-child, > td:first-child {
+				padding-left: 1.5rem;
+			}
+			@include mediaMdUp {
+				> th:first-child, > td:first-child {
+					padding-left: 6rem;
+				}
+			}
+		}
+	}
+
+  &__row {
+		height: 6.5rem;
+		border-bottom: $line-thinner solid $color-light;
+		// Heading row
+		&--heading {
+			font-weight: 400;
+			height: 5rem;
+			border-bottom: $line-thin solid $color-light;
+		}
+		// Last regular data row row has thicker underline too
+		&--regular-end {
+			border-bottom: $line-thin solid $color-light;
+		}
+		// Left and right padding of first and last cell in a row
+		> th:first-child, > td:first-child {
+			padding-left: 0.5rem;
+		}
+		> th:last-child, > td:last-child {
+			padding-right: 0.5rem;
+		}
+		@include mediaSmUp {
+			> th:first-child, > td:first-child {
+				padding-left: 3.5rem;
+			}
+			> th:last-child, > td:last-child {
+				padding-right: 3.5rem;
+			}
+		}
+		// Special additional row
+		&--additional {
+			height: 6rem;
+			border-bottom: none;
+			> th:first-child, > td:first-child {
+				padding-left: 0 !important;
+			}
+		}
+  }
+
+	&__row-th {
+		font-weight: inherit;
+	}
+
+	&__row-item {
+		position: relative;
+	}
+
+	&__item-content {
+		display: flex;
+		align-items: center;
+		color: $color-alt;
+		text-decoration: underline;
+		&:before {
+			position: absolute;
+			left: 0;
+			content: "";
+			background: url("../img/icon-trash-bin.png") no-repeat center/contain;
+			height: 1.5em;
+			width: 1.5em;
+		}
+	}
+
+	&__item-img {
+		display: none;
+		border: $line-thinner solid $color-medium;
+		border-radius: 1px;
+		width: 4.5rem;
+		height: 4.5rem;
+		flex-shrink: 0;
+		padding: 0.5em;
+		@include mediaTiUp {
+			display: initial;
+		}
+	}
+
+	&__item-name {
+		margin-left: 0.5em;
+		@include mediaMdUp {
+			text-align: right;
+			flex-grow: 0.2;
+		}
+	}
+
+	&__row-info {
+		&:before {
+			content: "i";
+			display: inline-block;
+			text-align: center;
+			width: 1.75em;
+			height: 1.75em;
+			line-height: 1.75em;
+			margin-right: 0.5em;
+			border-radius: 50%;
+			color: $color-primary;
+			background-color: $color-alt;
+		}
+	}
+
+  &__row-input {
+    width: 3rem;
+    height: 2.5rem;
+    border: 1px solid $color-alt;
+    border-radius: 3px;
+    text-align: right;
+    color: $color-alt;
+    font-size: 1rem;
+    padding: 0.75em;
+		margin-right: 0.5em;
+		@include mediaTiUp {
+			width: 4rem;
+			height: 3.5rem;
+		}
+	}
+}

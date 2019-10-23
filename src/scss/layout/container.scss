@@ -44,8 +44,8 @@
   &__center-column {
 		margin: 2rem 0;
     max-width: map-get($breakpoints, "small");
-    padding: 0 1.25rem;
     @include mediaMdUp {
+			padding: 0 1.25rem;
 			margin: 4rem auto 2rem;
     }
 	}

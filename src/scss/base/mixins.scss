@@ -48,6 +48,14 @@
 	}
 }
 
+@mixin mediaTiDown {
+	@if map-get($breakpoints, "tiny") != null {
+		@media screen and (max-width: map-get($breakpoints, "tiny")) {
+			@content;
+		}
+	}
+}
+
 /* Clearfix */
 @mixin clearfix {
 

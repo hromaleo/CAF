@@ -203,9 +203,9 @@
 	}
 
 	&__map {
-		width: 20rem;
-		height: 7rem;
 		@include mediaTiUp {
+			width: 20rem;
+			height: 7rem;
 			float: right;
 		}
 		@include mediaSmUp {

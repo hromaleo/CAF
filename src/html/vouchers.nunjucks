@@ -57,61 +57,61 @@
 						Ticket Multi dává možnost neomezené volby ze širokého spektra aktivit. Přizpůsobí se každé firmě, každému zaměstnanci. Poukázka Ticket Multi splní všechna přání.
 					</p>
 				</div>
-				<table class="vouchers-order__table mTop24">
-					<tr class="vouchers-order__table-heading">
-						<th class="vouchers-order__table-row-th"> Hodnota </th>
-						<th class="vouchers-order__table-row-th"> Počet </th>
-						<th class="vouchers-order__table-row-th"> Celkem </th>
+				<table class="table table--stretched mTop24">
+					<tr class="table__row">
+						<th class="table__row-th"> Hodnota </th>
+						<th class="table__row-th"> Počet </th>
+						<th class="table__row-th"> Celkem </th>
 					</tr>
-					<tr class="vouchers-order__table-row" data-price="50">
-						<td class="vouchers-order__table-row-value">
+					<tr class="table__row" data-price="50">
+						<td class="table__row-value">
 							50 bodů / 50 Kč
 						</td>
-						<td class="vouchers-order__table-row-count">
-							<input type="text" class="vouchers-order__table-row-input">
+						<td class="table__row-count">
+							<input type="text" class="table__row-input">
 							Ks
 						</td>
-						<td class="vouchers-order__table-row-total"></td>
+						<td class="table__row-total"></td>
 					</tr>
-					<tr class="vouchers-order__table-row" data-price="100">
-						<td class="vouchers-order__table-row-value">
+					<tr class="table__row" data-price="100">
+						<td class="table__row-value">
 							100 bodů / 100 Kč
 						</td>
-						<td class="vouchers-order__table-row-count">
-							<input type=" text" class="vouchers-order__table-row-input">
+						<td class="table__row-count">
+							<input type=" text" class="table__row-input">
 							Ks
 						</td>
-						<td class="vouchers-order__table-row-total"></td>
+						<td class="table__row-total"></td>
 					</tr>
-					<tr class="vouchers-order__table-row" data-price="200">
-						<td class="vouchers-order__table-row-value">
+					<tr class="table__row" data-price="200">
+						<td class="table__row-value">
 							200 bodů / 200 Kč
 						</td>
-						<td class="vouchers-order__table-row-count">
-							<input type="text" class="vouchers-order__table-row-input">
+						<td class="table__row-count">
+							<input type="text" class="table__row-input">
 							Ks
 						</td>
-						<td class="vouchers-order__table-row-total"></td>
+						<td class="table__row-total"></td>
 					</tr>
-					<tr class="vouchers-order__table-row" data-price="500">
-						<td class="vouchers-order__table-row-value">
+					<tr class="table__row" data-price="500">
+						<td class="table__row-value">
 							500 bodů / 500 Kč
 						</td>
-						<td class="vouchers-order__table-row-count">
-							<input type="text" class="vouchers-order__table-row-input">
+						<td class="table__row-count">
+							<input type="text" class="table__row-input">
 							Ks
 						</td>
-						<td class="vouchers-order__table-row-total"></td>
+						<td class="table__row-total"></td>
 					</tr>
-					<tr class="vouchers-order__table-row" data-price="1000">
-						<td class="vouchers-order__table-row-value">
+					<tr class="table__row" data-price="1000">
+						<td class="table__row-value">
 							1000 bodů / 1000 Kč
 						</td>
-						<td class="vouchers-order__table-row-count">
-							<input type="text" class="vouchers-order__table-row-input">
+						<td class="table__row-count">
+							<input type="text" class="table__row-input">
 							Ks
 						</td>
-						<td class="vouchers-order__table-row-total"></td>
+						<td class="table__row-total"></td>
 					</tr>
 				</table>
 				<div class="vouchers-order__checkout">

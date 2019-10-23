@@ -1,0 +1,84 @@
+.shopping-steps {
+	margin: 1.25rem auto 3.25rem;
+	max-width: 28rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+
+		&--active {
+			color: $color-alt;
+		}
+
+		&:after {
+			position: absolute;
+			bottom: 0;
+			text-align: center;
+			transform: translateY(3em);
+			@include mediaTiUp {
+				width: max-content;
+				transform: translateY(2em);
+			}
+		}
+
+		&--cart:after {
+			content: "Souhrn košíku";
+		}
+
+		&--info:after {
+			content: "Doplnění údajů";
+		}
+
+		&--summary:after {
+			content: "Shrnutí objednávky";
+		}
+	}
+
+	&__circle {
+		height: 60px;
+		width: 60px;
+		border-radius: 50%;
+		border: $line-thin solid $color-alt;
+		display: flex;
+
+		&--active {
+			background-color: $color-alt;
+		}
+	}
+
+	&__img {
+		width: 50%;
+		height: 50%;
+		margin: auto;
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+
+		&--cart {
+			background-image: url("../img/icon-shop-cart.png");
+		}
+
+		&--info {
+			background-image: url("../img/icon-pencil.png");
+		}
+
+		&--summary {
+			background-image: url("../img/icon-confirm.png");
+		}
+
+		&--active {
+			filter: saturate(0) invert(1);
+		}
+	}
+
+	&__line {
+		height: $line-thinner;
+		width: 100%;
+		background-color: $color-medium;
+	}
+}
