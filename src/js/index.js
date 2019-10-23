@@ -35,8 +35,6 @@ function createDropdownSecNav() {
 	}
 }
 
-document.addEventListener("DOMContentLoaded", createDropdownSecNav);
-
 function createDropdownListItems() {
 	const dropdowns = document.querySelectorAll(".dropdown-list__link");
 
@@ -60,11 +58,6 @@ function createDropdownListItems() {
 		})
 	}
 }
-
-
-
-document.addEventListener("DOMContentLoaded",
-	createDropdownListItems);
 
 
 function createDropdownMenuBlocks() {
@@ -92,7 +85,8 @@ function createDropdownMenuBlocks() {
 	}
 }
 
-
-
-document.addEventListener("DOMContentLoaded",
-	createDropdownMenuBlocks);
+document.addEventListener("DOMContentLoaded", () => {
+	createDropdownSecNav();
+	createDropdownListItems();
+	createDropdownMenuBlocks();
+});

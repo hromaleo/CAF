@@ -1,13 +1,14 @@
 # TODO list
 
-- ~Nastudovat si readme file našeho devstacku.~
-- ~Nastudovat si Nunjucks template system.~
 - Průběžně se učit dále Nunjucks.
-- ~Přesunout SCSS z etc/old do nového src/scss/.~
-- ~Přesunout JS do nového src/js/index.js.~
-- ~Rozřezat původní index.html do šablon a udělat z něj rozcestník.~
-- ~Obsah jednotlivých stránek přesunout do samostatných nunjucks souborů.~
 - **Nakódovat další stránky.**
+- Připravit responsivní tabulku. Dát všemu table -> tbody -> tr -> td vlastnost display: block a pomocí data atributů přidat název sloupce (content: attr(....)).
+- Nainstalovat Linux subsystem for Windows. A do něj Node version manager (nvm) a přes nvm nainstalovat nodejs.
+- Najít npm balíček pro modály, který podporuje IE11. Bez jquery, pozor na React.
+- Opravit tlačítka v IE11.
+- V catalogue-list.html nefunguje v Edge a IE11 levé menu.
+
+- Laragon pro Apache/PHP.
 
 Pokud budeš chtít přijít na jiné myšlenky:
 
