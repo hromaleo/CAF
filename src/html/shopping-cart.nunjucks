@@ -1,6 +1,6 @@
 {% extends "layout/default.nunjucks" %}
 {% block content %}
-<div class="area area--shop area--btn-in-heading">
+<div class="area area--shop">
 	<div class="container">
 		<div class="message-stripe message-stripe--error">
 			Nemáte dostatečnou částku na účtu
@@ -90,6 +90,7 @@
 				<td class="table__row-total h-col-alt">15 000 bodů / 15 000 Kč</td>
 			</tr>
 		</table>
+
 		<div>
 			<div class="btn btn--bordered btn--bor-alt btn--col-inh-alt btn--constrained-height btn--stretched-width-tiny btn--empty">Vyprázdnit košík</div>
 			<div class="h-float-right-tiny mTop16tinyDown">
@@ -97,10 +98,13 @@
 					<div class="btn btn--bordered btn--bor-alt btn--col-inh-alt btn--constrained-height btn--stretched-width-tiny btn--rerun">Přepočítat cenu</div>
 				</span>
 				<span class="mLeft32tiny">
-					<div class="btn btn--col-pos-prim btn--sh-pos btn--constrained-height btn--stretched-width-tiny btn--more-padding btn--confirm-col">Pokračovat dále</div>
+					<a href="shopping-info.html" class="link">
+						<div class="btn btn--col-pos-prim btn--sh-pos btn--constrained-height btn--stretched-width-tiny btn--more-padding btn--confirm-col">Pokračovat dále</div>
+					</a>
 				</span>
 			</div>
 			<div class="h-clearfix"></div>
+
 		</div>
 	</div>
 </div>

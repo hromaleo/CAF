@@ -71,9 +71,9 @@ button {
   }
 }
 
-input, select {
+input, select, textarea {
   &:focus {
-    outline: initial;
+    outline-color: $color-alt;
   }
   font-weight: inherit;
   color: inherit;

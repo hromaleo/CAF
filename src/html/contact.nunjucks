@@ -3,130 +3,130 @@
 {% block content %}
 <div class="area area--contact">
 	<div class="container container--floated-childs">
-			<h1 class="area__heading area__heading--underlined">Kontaktujte nás</h1>
-			<div class="container__content">
-				<p class="typo--plain-text">
-						Administrátorem Benefity Café je klientské oddělení. V případě dotazů je kontaktujte na e-mailu <a href="mailto:podpora@benefitycafe.cz&subject=Dotaz%20z%20Cafeterie" class="link link--coloured link--underlined">podpora@benefitycafe.cz</a> nebo na telefonním čísle <a href="tel:+420840111305" class="link link--coloured">+420 840 111 305</a>. Dotazy týkající se pravidel zaměstnaneckých benefitů směřujte na personální oddělení.
-				</p>
-				<form class="contact-form" action="#" target="_self" method="POST">
-						<fieldset>
-							<legend class="contact-form__legend">
-									<h3 class="typo--main-title">Kontaktní formulář</h3>
-							</legend>
-							<div class="contact-form__line">
-									<label class="contact-form__line-title" for="name-and-surname">
-										Jméno a příjmení:
-									</label>
-									<input type="text" id="name-and-surname" name="name-and-surname" placeholder="Jan Novák" class="contact-form__input">
-									<span class="contact-form__line-option">
-										upravit
-									</span>
-							</div>
-							<div class="contact-form__line">
-									<label class="contact-form__line-title" for="mail-address">
-										Váš e-mail:
-									</label>
-									<input type="text" id="mail-address" name="mail-address" placeholder="novak@edenred.cz" class="contact-form__input">
-									<span class="contact-form__line-option"></span>
-							</div>
-							<div class="contact-form__line">
-									<label class="contact-form__line-title" for="message">
-										Vaše zpráva:
-									</label>
-									<input type="text" name="message" id="message" class="contact-form__input contact-form__input--box">
-									<span class="contact-form__line-option"></span>
-							</div>
-							<div class="contact-form__line">
-									<span class="contact-form__line-title contact-form__line-title--btn">
-										Odeslat:
-									</span>
-									<span class="contact-form__input contact-form__input--btn">
-										<button type="submit" value="Odeslat" class="btn btn--coloured btn--col-pos-prim btn--sh-pos btn--stretched-width btn--stretched-height">
-												Odeslat
-										</button>
-									</span>
-									<span class="contact-form__line-option"> </span>
-							</div>
-						</fieldset>
-				</form>
-			</div>
-			<div class="container__pane">
-				<div class="contact-box">
-						<div class="contact-box__contact">
-							<div class="contact-box__contact-icon contact-box__contact-icon--mail"></div>
-							<div class="contact-box__contact-text">
-									<a href="mailto:podpora@benefitycafe.cz&subject=Dotaz%20z%20Cafeterie" class="link link--coloured">
-										podpora@benefitycafe.cz
-									</a>
-							</div>
-						</div>
-						<div class="contact-box__contact">
-							<div class="contact-box__contact-icon contact-box__contact-icon--phone"></div>
-							<div class="contact-box__contact-text">
-									<a href="tel:+420840111305" class="link link--coloured">
-										+420 840 111 305
-									</a>
-							</div>
-						</div>
+		<h1 class="area__heading area__heading--underlined">Kontaktujte nás</h1>
+		<div class="container__content">
+			<p class="typo--plain-text">
+				Administrátorem Benefity Café je klientské oddělení. V případě dotazů je kontaktujte na e-mailu <a href="mailto:podpora@benefitycafe.cz&subject=Dotaz%20z%20Cafeterie" class="link link--coloured link--underlined">podpora@benefitycafe.cz</a> nebo na telefonním čísle <a href="tel:+420840111305" class="link link--coloured">+420 840 111 305</a>. Dotazy týkající se pravidel zaměstnaneckých benefitů směřujte na personální oddělení.
+			</p>
+			<form class="contact-form" action="#" target="_self" method="POST">
+				<fieldset>
+					<legend class="contact-form__legend">
+						<h3 class="typo--main-title">Kontaktní formulář</h3>
+					</legend>
+					<div class="contact-form__line">
+						<label class="contact-form__line-title" for="name-and-surname">
+							Jméno a příjmení:
+						</label>
+						<input type="text" id="name-and-surname" name="name-and-surname" placeholder="Jan Novák" class="contact-form__input contact-form__input--closed">
+						<span class="contact-form__line-option contact-form__line-option--underlined contact-form__line-option--coloured">
+							upravit
+						</span>
+					</div>
+					<div class="contact-form__line">
+						<label class="contact-form__line-title" for="mail-address">
+							Váš e-mail:
+						</label>
+						<input type="text" id="mail-address" name="mail-address" placeholder="novak@edenred.cz" class="contact-form__input contact-form__input--closed">
+						<span class="contact-form__line-option"></span>
+					</div>
+					<div class="contact-form__line">
+						<label class="contact-form__line-title" for="message">
+							Vaše zpráva:
+						</label>
+						<textarea name="message" id="message" class="contact-form__input contact-form__input--box"></textarea>
+						<span class="contact-form__line-option"></span>
+					</div>
+					<div class="contact-form__line">
+						<span class="contact-form__line-title contact-form__line-title--btn">
+							Odeslat:
+						</span>
+						<span class="contact-form__input contact-form__input--btn">
+							<button type="submit" value="Odeslat" class="btn btn--coloured btn--col-pos-prim btn--sh-pos btn--stretched-width btn--stretched-height">
+								Odeslat
+							</button>
+						</span>
+						<span class="contact-form__line-option contact-form__line-option--no-grow"> </span>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+		<div class="container__pane">
+			<div class="contact-box">
+				<div class="contact-box__contact">
+					<div class="contact-box__contact-icon contact-box__contact-icon--mail"></div>
+					<div class="contact-box__contact-text">
+						<a href="mailto:podpora@benefitycafe.cz&subject=Dotaz%20z%20Cafeterie" class="link link--coloured">
+							podpora@benefitycafe.cz
+						</a>
+					</div>
+				</div>
+				<div class="contact-box__contact">
+					<div class="contact-box__contact-icon contact-box__contact-icon--phone"></div>
+					<div class="contact-box__contact-text">
+						<a href="tel:+420840111305" class="link link--coloured">
+							+420 840 111 305
+						</a>
+					</div>
 				</div>
 			</div>
-			<div class="h-clearfix"></div>
-			<hr class="divider divider--no-menu">
-			<div class="container__content">
-				<h3 class="typo--main-title">Často kladené dotazy</h3>
-				<ul class="dropdown-list">
-						<li class="dropdown-list__item">
-							<a href="#" class="dropdown-list__link link link--underlined">
-									Jak si mohu změnit heslo?
-							</a>
-							<div class="dropdown-list__content">
-									<p class="typo--plain-text">Nothing here. See third link.</p>
-							</div>
-						</li>
-						<li class="dropdown-list__item">
-							<a href="#" class="dropdown-list__link link link--underlined">
-									Co musí obsahovat nové heslo?
-							</a>
-							<div class="dropdown-list__content">
-									<p class="typo--plain-text">Nothing here. See third link.</p>
-							</div>
-						</li>
-						<li class="dropdown-list__item">
-							<a href="#" class="dropdown-list__link link link--underlined">
-									Kde si mohu zadat / změnit doručovací adresu a e-mail?
-							</a>
-							<div class="dropdown-list__content">
-									<p class="typo--plain-text">
-										Doručovací adresu a e-mail je možné změnit v sekci "Můj profil". V záložce "Adresy" si zvolíte "Přidat doručovací adresu" a po vyplnění formuláře budou vaše doručovací adresa a e-mail zadány / změněny. Vaše objednávky a notifikace vám budou zasílány na novou doručovací adresu a e-mail.
-									</p>
-							</div>
-						</li>
-						<li class="dropdown-list__item">
-							<a href="#" class="dropdown-list__link link link--underlined">
-									Kde najdu své body?
-							</a>
-							<div class="dropdown-list__content">
-									<p class="typo--plain-text">Nothing here. See third link.</p>
-							</div>
-						</li>
-						<li class="dropdown-list__item">
-							<a href="#" class="dropdown-list__link link link--underlined">
-									Jak využít slevy?
-							</a>
-							<div class="dropdown-list__content">
-									<p class="typo--plain-text">Nothing here. See third link.</p>
-							</div>
-						</li>
-				</ul>
-				<p class="typo--plain-text">
-						Nenašli jste odpověď na váš dotaz?
-				</p>
-				<a href="#" class="link">
-						<div class="btn btn--constrained-height btn--go btn--bordered btn--bor-alt btn--col-inh-alt btn--uppercase">
-							Přejít na FAQ - nejčastější dotazy
-						</div>
-				</a>
-			</div>
+		</div>
+		<div class="h-clearfix"></div>
+		<hr class="divider divider--no-menu">
+		<div class="container__content">
+			<h3 class="typo--main-title">Často kladené dotazy</h3>
+			<ul class="dropdown-list">
+				<li class="dropdown-list__item">
+					<a href="#" class="dropdown-list__link link link--underlined">
+						Jak si mohu změnit heslo?
+					</a>
+					<div class="dropdown-list__content">
+						<p class="typo--plain-text">Nothing here. See third link.</p>
+					</div>
+				</li>
+				<li class="dropdown-list__item">
+					<a href="#" class="dropdown-list__link link link--underlined">
+						Co musí obsahovat nové heslo?
+					</a>
+					<div class="dropdown-list__content">
+						<p class="typo--plain-text">Nothing here. See third link.</p>
+					</div>
+				</li>
+				<li class="dropdown-list__item">
+					<a href="#" class="dropdown-list__link link link--underlined">
+						Kde si mohu zadat / změnit doručovací adresu a e-mail?
+					</a>
+					<div class="dropdown-list__content">
+						<p class="typo--plain-text">
+							Doručovací adresu a e-mail je možné změnit v sekci "Můj profil". V záložce "Adresy" si zvolíte "Přidat doručovací adresu" a po vyplnění formuláře budou vaše doručovací adresa a e-mail zadány / změněny. Vaše objednávky a notifikace vám budou zasílány na novou doručovací adresu a e-mail.
+						</p>
+					</div>
+				</li>
+				<li class="dropdown-list__item">
+					<a href="#" class="dropdown-list__link link link--underlined">
+						Kde najdu své body?
+					</a>
+					<div class="dropdown-list__content">
+						<p class="typo--plain-text">Nothing here. See third link.</p>
+					</div>
+				</li>
+				<li class="dropdown-list__item">
+					<a href="#" class="dropdown-list__link link link--underlined">
+						Jak využít slevy?
+					</a>
+					<div class="dropdown-list__content">
+						<p class="typo--plain-text">Nothing here. See third link.</p>
+					</div>
+				</li>
+			</ul>
+			<p class="typo--plain-text">
+				Nenašli jste odpověď na váš dotaz?
+			</p>
+			<a href="#" class="link">
+				<div class="btn btn--constrained-height btn--go btn--bordered btn--bor-alt btn--col-inh-alt btn--uppercase">
+					Přejít na FAQ - nejčastější dotazy
+				</div>
+			</a>
+		</div>
 	</div>
 </div>
 {% endblock %}
