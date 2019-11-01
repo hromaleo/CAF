@@ -37,7 +37,6 @@
 			height: 3rem;
 			border: $line-thinner solid $color-medium;
 			border-radius: 3px;
-			padding: 1em;
 			background-color: $color-primary;
       &::-webkit-input-placeholder {
 				color: #9e9e9e;
@@ -72,13 +71,6 @@
 				@include mediaMdUp {
 					margin-left: auto;
 					flex-basis: 7.5rem;
-				}
-			}
-
-			&--closed {
-				background-color: $color-light;
-				&:focus {
-					outline: initial;
 				}
 			}
    	}

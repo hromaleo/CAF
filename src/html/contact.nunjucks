@@ -1,3 +1,4 @@
+{% set includeTitle = "Kontakt" %}
 {% extends "layout/default.nunjucks" %}
 
 {% block content %}
@@ -14,38 +15,47 @@
 						<h3 class="typo--main-title">Kontaktní formulář</h3>
 					</legend>
 					<div class="contact-form__line">
-						<label class="contact-form__line-title" for="name-and-surname">
-							Jméno a příjmení:
-						</label>
-						<input type="text" id="name-and-surname" name="name-and-surname" placeholder="Jan Novák" class="contact-form__input contact-form__input--closed">
-						<span class="contact-form__line-option contact-form__line-option--underlined contact-form__line-option--coloured">
-							upravit
-						</span>
+						<div class="contact-form__line-title">
+							<label for="name-and-surname">Jméno a příjmení:</label>
+						</div>
+						<div class="contact-form__input contact-form__input--closed">
+							<input type="text" id="name-and-surname" name="name-and-surname" placeholder="Jan Novák" disabled>
+						</div>
+						<div class="contact-form__line-option contact-form__line-option--underlined contact-form__line-option--coloured">
+							<span class="link">upravit</span>
+						</div>
 					</div>
 					<div class="contact-form__line">
-						<label class="contact-form__line-title" for="mail-address">
-							Váš e-mail:
-						</label>
-						<input type="text" id="mail-address" name="mail-address" placeholder="novak@edenred.cz" class="contact-form__input contact-form__input--closed">
-						<span class="contact-form__line-option"></span>
+						<div class="contact-form__line-title">
+							<label for="mail-address">Váš e-mail:</label>
+						</div>
+						<div class="contact-form__input contact-form__input--closed">
+							<input type="text" id="mail-address" name="mail-address" placeholder="novak@edenred.cz" disabled>
+						</div>
+						<div class="contact-form__line-option">
+						</div>
 					</div>
 					<div class="contact-form__line">
-						<label class="contact-form__line-title" for="message">
-							Vaše zpráva:
-						</label>
-						<textarea name="message" id="message" class="contact-form__input contact-form__input--box"></textarea>
-						<span class="contact-form__line-option"></span>
+						<div class="contact-form__line-title">
+							<label for="message">Vaše zpráva:</label>
+						</div>
+						<div class="contact-form__input contact-form__input--box">
+							<textarea name="message" id="message"></textarea>
+						</div>
+						<div class="contact-form__line-option">
+						</div>
 					</div>
 					<div class="contact-form__line">
-						<span class="contact-form__line-title contact-form__line-title--btn">
-							Odeslat:
-						</span>
-						<span class="contact-form__input contact-form__input--btn">
+						<div class="contact-form__line-title contact-form__line-title--btn">
+							<span>Odeslat:</span>
+						</div>
+						<div class="contact-form__input contact-form__input--btn">
 							<button type="submit" value="Odeslat" class="btn btn--coloured btn--col-pos-prim btn--sh-pos btn--stretched-width btn--stretched-height">
 								Odeslat
 							</button>
-						</span>
-						<span class="contact-form__line-option contact-form__line-option--no-grow"> </span>
+						</div>
+						<div class="contact-form__line-option contact-form__line-option--no-grow">
+						</div>
 					</div>
 				</fieldset>
 			</form>

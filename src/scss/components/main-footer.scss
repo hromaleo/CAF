@@ -2,7 +2,7 @@
   background-color: $color-dark;
   color: $color-primary;
   padding: 0.5rem 0;
-  
+
   @include mediaSmUp {
     padding: 2rem 0;
   }
@@ -23,9 +23,9 @@
     }
   }
 
-  &__section { 
+  &__section {
     padding: 0.25rem 0;
-    
+
     @include mediaSmUp {
       padding: 0;
       flex-basis: 50%;
@@ -42,14 +42,14 @@
     font-weight: bold;
     display: flex;
     align-items: center;
-    
+
     @include mediaSmUp {
       min-height: 4rem;
     }
   }
 
   &__section-list {
-    
+
     @include mediaSmUp {
       display: grid;
       grid-template-rows: repeat(6, minmax(2em, max-content));
@@ -57,11 +57,11 @@
       grid-auto-flow: column;
     }
   }
-  
+
   &__item {
     display: flex;
     align-items: flex-start;
-    padding: 0.25em 0;
+    padding: 0.5em 0;
 
     @include mediaSmUp {
       padding: 0;
@@ -73,7 +73,7 @@
     @include mediaHgUp {
       padding-right: 2em;
     }
-    
+
     &:before {
       content: "";
       background: url("../img/arrow-footer.png") no-repeat left center/contain;

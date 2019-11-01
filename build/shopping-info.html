@@ -5,12 +5,12 @@
 		<meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="">
-<meta name="keywords" content="">
-<meta name="author" content="">
-<meta name="robots" content="">
+<meta name="description" content="Leomil&#39;s CAF">
+<meta name="keywords" content="project, devstack">
+<meta name="author" content="bpromotion">
+<meta name="robots" content="noindex, nofollow">
 
-		<title> | </title>
+		<title>CAF | Nákup - info</title>
 
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Raleway:300,500,700,900&display=swap" rel="stylesheet" />
@@ -155,9 +155,9 @@
                 <div class="secondary-navbar__section">
                   <div class="secondary-navbar__section-title">Možnosti Cafeterie</div>
                   <ul class="secondary-navbar__section-list">
-                    <li class="secondary-navbar__item"><a href="#" class="secondary-navbar__link link link--underlined-on-hover">Nová karta</a>
+                    <li class="secondary-navbar__item"><a href="tbc-new.html" class="secondary-navbar__link link link--underlined-on-hover">Nová karta</a>
                     </li>
-                    <li class="secondary-navbar__item"><a href="#" class="secondary-navbar__link link link--underlined-on-hover">Dobití karty</a>
+                    <li class="secondary-navbar__item"><a href="tbc-top-up.html" class="secondary-navbar__link link link--underlined-on-hover">Dobití karty</a>
                     </li>
                     <li class="secondary-navbar__item"><a href="#" class="secondary-navbar__link link link--underlined-on-hover">Znovuvydání karty</a>
                     </li>
@@ -166,15 +166,15 @@
                 <div class="secondary-navbar__section">
                   <div class="secondary-navbar__section-title">Možnosti Cafeterie</div>
                   <ul class="secondary-navbar__section-list">
-                    <li class="secondary-navbar__item"><a href="#" class="secondary-navbar__link link link--underlined-on-hover">Co je e-ticket</a>
+                    <li class="secondary-navbar__item"><a href="e-tickets.html" class="secondary-navbar__link link link--underlined-on-hover">Co je e-ticket</a>
                     </li>
-                    <li class="secondary-navbar__item"><a href="#" class="secondary-navbar__link link link--underlined-on-hover">Katalog odměn</a>
+                    <li class="secondary-navbar__item"><a href="catalogue-list.html" class="secondary-navbar__link link link--underlined-on-hover">Katalog odměn</a>
                     </li>
                 </div>
                 <div class="secondary-navbar__section">
                   <div class="secondary-navbar__section-title">Možnosti Cafeterie</div>
                   <ul class="secondary-navbar__section-list">
-                    <li class="secondary-navbar__item"><a href="#" class="secondary-navbar__link link link--underlined-on-hover">Ticket Multi</a>
+                    <li class="secondary-navbar__item"><a href="vouchers.html" class="secondary-navbar__link link link--underlined-on-hover">Ticket Multi</a>
                     </li>
                     <li class="secondary-navbar__item"><a href="#" class="secondary-navbar__link link link--underlined-on-hover">Ticket Academica</a>
                     </li>
@@ -330,62 +330,82 @@
 					<h3 class="typo--main-title">Dodací adresa</h3>
 				</legend>
 				<div class="contact-form__line">
-					<label class="contact-form__line-title" for="name-and-surname">
-						Jméno a příjmení*
-					</label>
-					<input type="text" id="name-and-surname" name="name-and-surname" placeholder="Jan Novák" class="contact-form__input contact-form__input--closed">
-					<span class="contact-form__line-option contact-form__line-option--coloured contact-form__line-option--underlined">
-						upravit
-					</span>
+					<div class="contact-form__line-title">
+						<label for="name-and-surname">Jméno a příjmení*</label>
+					</div>
+					<div class="contact-form__input">
+						<input type="text" id="name-and-surname" name="name-and-surname" placeholder="Jan Novák" disabled>
+					</div>
+					<div class="contact-form__line-option contact-form__line-option--coloured contact-form__line-option--underlined">
+						<span class="link">upravit</span>
+					</div>
 				</div>
 				<div class="contact-form__line">
-					<label class="contact-form__line-title" for="mail-address">
-						Váš e-mail*
-					</label>
-					<input type="text" id="mail-address" name="mail-address" placeholder="novak@edenred.cz" class="contact-form__input contact-form__input--closed">
-					<span class="contact-form__line-option"></span>
+					<div class="contact-form__line-title">
+						<label for="mail-address">Váš e-mail*</label>
+					</div>
+					<div class="contact-form__input">
+						<input type="text" id="mail-address" name="mail-address" placeholder="novak@edenred.cz" disabled>
+					</div>
+					<div class="contact-form__line-option"></div>
 				</div>
 				<div class="contact-form__line">
-					<label class="contact-form__line-title" for="street">
-						Ulice a č.p.*
-					</label>
-					<input type="text" id="street" name="street" class="contact-form__input">
-					<span class="contact-form__line-option"></span>
+					<div class="contact-form__line-title">
+						<label for="street">Ulice a č.p.*</label>
+					</div>
+					<div class="contact-form__input">
+						<input type="text" id="street" name="street">
+					</div>
+					<div class="contact-form__line-option"></div>
 				</div>
 				<div class="contact-form__line">
-					<label class="contact-form__line-title" for="town">
-						Město*
-					</label>
-					<input type="text" id="town" name="town" class="contact-form__input">
-					<span class="contact-form__line-option"></span>
+					<div class="contact-form__line-title">
+						<label for="town">Město*</label>
+					</div>
+					<div class="contact-form__input">
+						<input type="text" id="town" name="town">
+					</div>
+					<div class="contact-form__line-option"></div>
 				</div>
 				<div class="contact-form__line">
-					<label class="contact-form__line-title" for="postcode">
-						PSČ*
-					</label>
-					<input type="text" id="postcode" name="postcode" class="contact-form__input">
-					<span class="contact-form__line-option contact-form__line-option--coloured"><em>X Špatně vložený formát PSČ. Vkládejte ve formátu XXX XX</em></span>
+					<div class="contact-form__line-title">
+						<label for="postcode">PSČ*</label>
+					</div>
+					<div class="contact-form__input">
+						<input type="text" id="postcode" name="postcode">
+					</div>
+					<div class="contact-form__line-option contact-form__line-option--coloured">
+						<span><em>&times; Špatně vložený formát PSČ. Vkládejte ve formátu XXX XX</em></span>
+					</div>
 				</div>
 				<div class="contact-form__line">
-					<label class="contact-form__line-title" for="state">
-						Země*
-					</label>
-					<input type="text" id="state" name="state" class="contact-form__input">
-					<span class="contact-form__line-option"></span>
+					<div class="contact-form__line-title">
+						<label for="state">Země*</label>
+					</div>
+					<div class="contact-form__input">
+						<input type="text" id="state" name="state">
+					</div>
+					<div class="contact-form__line-option"></div>
 				</div>
 				<div class="contact-form__line">
-					<label class="contact-form__line-title" for="phone-number">
-						Telefonní číslo
-					</label>
-					<input type="text" id="phone-number" name="phone-number" class="contact-form__input">
-					<span class="contact-form__line-option"></span>
+					<div class="contact-form__line-title">
+						<label for="phone-number">Telefonní číslo</label>
+					</div>
+					<div class="contact-form__input">
+						<input type="text" id="phone-number" name="phone-number">
+					</div>
+					<div class="contact-form__line-option"></div>
 				</div>
 				<div class="contact-form__line">
-					<label class="contact-form__line-title" for="company">
-						Firma
-					</label>
-					<input type="text" id="company" name="company" class="contact-form__input">
-					<span class="contact-form__line-option">V případě, že je místo doručení adresa vaší společnosti, vyplňte prosím název společnosti</span>
+					<div class="contact-form__line-title">
+						<label for="company">Firma</label>
+					</div>
+					<div class="contact-form__input">
+						<input type="text" id="company" name="company">
+					</div>
+					<div class="contact-form__line-option">
+						<span>V případě, že je místo doručení adresa vaší společnosti, vyplňte prosím název společnosti</span>
+					</div>
 				</div>
 			</fieldset>
 		</form>
@@ -476,13 +496,13 @@
               <a href="#" class="link link--underlined-on-hover">Aplikace Ticketka</a>
             </li>
             <li class="main-footer__item">
-              <a href="#" class="link link--underlined-on-hover">Nákupní košík</a>
+              <a href="shopping-cart.html" class="link link--underlined-on-hover">Nákupní košík</a>
             </li>
             <li class="main-footer__item">
               <a href="#" class="link link--underlined-on-hover">Doručení a platba</a>
             </li>
             <li class="main-footer__btn">
-              <a href="#" class="link">
+              <a href="contact.html" class="link">
                 <div class="btn btn--bordered btn--bor-medium btn--more-padding btn--constrained-height">
                   Kontaktovat správce
                 </div>

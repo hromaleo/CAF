@@ -1,3 +1,4 @@
+{% set includeTitle = "Katalog - detail" %}
 {% extends "layout/default.nunjucks" %}
 
 {% block content %}

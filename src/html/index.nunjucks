@@ -2,6 +2,8 @@
  # First, we will extend default page layout which contains doctype, <html>, <head>, <body> and page structure.
  # Page structure is divided into header, content and footer blocks. You can change the blocks as you wish though.
  #}
+{% set includeTitle = "Rozcestník" %}
+
 {% extends "layout/default.nunjucks" %}
 
 {% block header %}
@@ -13,7 +15,7 @@
 	<li><a href="contact.html">Kontakt</a></li>
 	<li><a href="vouchers.html">Poukázky</a></li>
 	<li><a href="e-tickets.html">E-ticket</a></li>
-	<li><a href="exc-rewards-mod.html">Modul mimořádných odměn</a></li>
+	<li><a href="exc-rewards.html">Modul mimořádných odměn</a></li>
 	<li><a href="tbc-new.html">Ticket Benefits Card - nová</a></li>
 	<li><a href="tbc-top-up.html">Ticket Benefits Card - dobití</a></li>
 	<li><a href="tbc-overview.html">Ticket Benefits Card - přehled</a></li>

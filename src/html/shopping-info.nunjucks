@@ -1,3 +1,4 @@
+{% set includeTitle = "Nákup - info" %}
 {% extends "layout/default.nunjucks" %}
 {% block content %}
 <div class="area area--shop">
@@ -38,62 +39,82 @@
 					<h3 class="typo--main-title">Dodací adresa</h3>
 				</legend>
 				<div class="contact-form__line">
-					<label class="contact-form__line-title" for="name-and-surname">
-						Jméno a příjmení*
-					</label>
-					<input type="text" id="name-and-surname" name="name-and-surname" placeholder="Jan Novák" class="contact-form__input contact-form__input--closed">
-					<span class="contact-form__line-option contact-form__line-option--coloured contact-form__line-option--underlined">
-						upravit
-					</span>
+					<div class="contact-form__line-title">
+						<label for="name-and-surname">Jméno a příjmení*</label>
+					</div>
+					<div class="contact-form__input">
+						<input type="text" id="name-and-surname" name="name-and-surname" placeholder="Jan Novák" disabled>
+					</div>
+					<div class="contact-form__line-option contact-form__line-option--coloured contact-form__line-option--underlined">
+						<span class="link">upravit</span>
+					</div>
 				</div>
 				<div class="contact-form__line">
-					<label class="contact-form__line-title" for="mail-address">
-						Váš e-mail*
-					</label>
-					<input type="text" id="mail-address" name="mail-address" placeholder="novak@edenred.cz" class="contact-form__input contact-form__input--closed">
-					<span class="contact-form__line-option"></span>
+					<div class="contact-form__line-title">
+						<label for="mail-address">Váš e-mail*</label>
+					</div>
+					<div class="contact-form__input">
+						<input type="text" id="mail-address" name="mail-address" placeholder="novak@edenred.cz" disabled>
+					</div>
+					<div class="contact-form__line-option"></div>
 				</div>
 				<div class="contact-form__line">
-					<label class="contact-form__line-title" for="street">
-						Ulice a č.p.*
-					</label>
-					<input type="text" id="street" name="street" class="contact-form__input">
-					<span class="contact-form__line-option"></span>
+					<div class="contact-form__line-title">
+						<label for="street">Ulice a č.p.*</label>
+					</div>
+					<div class="contact-form__input">
+						<input type="text" id="street" name="street">
+					</div>
+					<div class="contact-form__line-option"></div>
 				</div>
 				<div class="contact-form__line">
-					<label class="contact-form__line-title" for="town">
-						Město*
-					</label>
-					<input type="text" id="town" name="town" class="contact-form__input">
-					<span class="contact-form__line-option"></span>
+					<div class="contact-form__line-title">
+						<label for="town">Město*</label>
+					</div>
+					<div class="contact-form__input">
+						<input type="text" id="town" name="town">
+					</div>
+					<div class="contact-form__line-option"></div>
 				</div>
 				<div class="contact-form__line">
-					<label class="contact-form__line-title" for="postcode">
-						PSČ*
-					</label>
-					<input type="text" id="postcode" name="postcode" class="contact-form__input">
-					<span class="contact-form__line-option contact-form__line-option--coloured"><em>X Špatně vložený formát PSČ. Vkládejte ve formátu XXX XX</em></span>
+					<div class="contact-form__line-title">
+						<label for="postcode">PSČ*</label>
+					</div>
+					<div class="contact-form__input">
+						<input type="text" id="postcode" name="postcode">
+					</div>
+					<div class="contact-form__line-option contact-form__line-option--coloured">
+						<span><em>&times; Špatně vložený formát PSČ. Vkládejte ve formátu XXX XX</em></span>
+					</div>
 				</div>
 				<div class="contact-form__line">
-					<label class="contact-form__line-title" for="state">
-						Země*
-					</label>
-					<input type="text" id="state" name="state" class="contact-form__input">
-					<span class="contact-form__line-option"></span>
+					<div class="contact-form__line-title">
+						<label for="state">Země*</label>
+					</div>
+					<div class="contact-form__input">
+						<input type="text" id="state" name="state">
+					</div>
+					<div class="contact-form__line-option"></div>
 				</div>
 				<div class="contact-form__line">
-					<label class="contact-form__line-title" for="phone-number">
-						Telefonní číslo
-					</label>
-					<input type="text" id="phone-number" name="phone-number" class="contact-form__input">
-					<span class="contact-form__line-option"></span>
+					<div class="contact-form__line-title">
+						<label for="phone-number">Telefonní číslo</label>
+					</div>
+					<div class="contact-form__input">
+						<input type="text" id="phone-number" name="phone-number">
+					</div>
+					<div class="contact-form__line-option"></div>
 				</div>
 				<div class="contact-form__line">
-					<label class="contact-form__line-title" for="company">
-						Firma
-					</label>
-					<input type="text" id="company" name="company" class="contact-form__input">
-					<span class="contact-form__line-option">V případě, že je místo doručení adresa vaší společnosti, vyplňte prosím název společnosti</span>
+					<div class="contact-form__line-title">
+						<label for="company">Firma</label>
+					</div>
+					<div class="contact-form__input">
+						<input type="text" id="company" name="company">
+					</div>
+					<div class="contact-form__line-option">
+						<span>V případě, že je místo doručení adresa vaší společnosti, vyplňte prosím název společnosti</span>
+					</div>
 				</div>
 			</fieldset>
 		</form>

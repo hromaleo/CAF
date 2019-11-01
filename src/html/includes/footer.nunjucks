@@ -65,13 +65,13 @@
               <a href="#" class="link link--underlined-on-hover">Aplikace Ticketka</a>
             </li>
             <li class="main-footer__item">
-              <a href="#" class="link link--underlined-on-hover">Nákupní košík</a>
+              <a href="shopping-cart.html" class="link link--underlined-on-hover">Nákupní košík</a>
             </li>
             <li class="main-footer__item">
               <a href="#" class="link link--underlined-on-hover">Doručení a platba</a>
             </li>
             <li class="main-footer__btn">
-              <a href="#" class="link">
+              <a href="contact.html" class="link">
                 <div class="btn btn--bordered btn--bor-medium btn--more-padding btn--constrained-height">
                   Kontaktovat správce
                 </div>

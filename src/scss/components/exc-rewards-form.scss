@@ -8,7 +8,7 @@
      flex-direction: column;
      justify-content: flex-start;
      align-items: stretch;
-     
+
      @include mediaMdUp {
         margin: 1em 0;
         flex-direction: row;
@@ -20,9 +20,9 @@
        color: $color-alt;
      }
   }
-  
+
   &__line-title {
-     
+
      @include mediaMdUp {
         line-height: 3rem;
         flex-basis: 170px;
@@ -35,7 +35,6 @@
      border: $line-thinner solid $color-alt;
      border-radius: 3px;
      font-size: 1rem;
-     padding: 1em;
      background-color: $color-primary;
      &::-webkit-input-placeholder {
         color: #000000;
@@ -51,25 +50,24 @@
      }
      // it does not work without separate selectors
      margin: 0.25rem 0;
-     
-     @include mediaMdUp {       
+
+     @include mediaMdUp {
         text-align: right;
         margin: 0;
         flex-basis: 100%;
+        margin-left: auto;
      }
 
      &--no-change {
        background-color: inherit;
        border: none;
+       max-width: 7.5rem;
      }
-    
+
     &--value {
        max-width: 7.5rem;
-       @include mediaMdUp {
-         margin-left: auto;
-        }
       }
-      
+
     &--box {
       min-width: 7.5rem;
       min-height: 10rem;
@@ -80,7 +78,7 @@
   }
 
   &__line-option {
-     
+
      @include mediaMdUp {
         margin-left: 1em;
         flex-basis: 3.5rem;

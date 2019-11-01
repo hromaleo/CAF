@@ -1,0 +1,83 @@
+{% set includeTitle = "Modul mimořádných odměn" %}
+{% extends "layout/default.nunjucks" %}
+
+{% block content %}
+<div class="area area--exc-rewards">
+	<div class="container  container--floated-childs">
+		<h1 class="area__heading area__heading--underlined">Modul mimořádných odměn</h1>
+		<div class="container__content">
+			<div class="exc-rewards">
+				<p>
+					<strong>
+						Vyberte zaměstnance, které chcete odměnit
+					</strong>
+				</p>
+				<div class="exc-rewards__selector">
+					<select name="employee" id="employee-name">
+						<option value="jan-novak">Jan Novák</option>
+						<option value="patrik-helta">Patrik Helta</option>
+						<option value="leos-hromadko">Leoš Hromádko</option>
+					</select>
+				</div>
+				<p class="typo--plain-text">
+					Seznam odměněných zaměstnanců:
+				</p>
+				<hr class="mTop8">
+				<div class="exc-rewards__employee-selected">
+					Petr Čech
+				</div>
+				<div class="exc-rewards__employee-selected">
+					Jana Veselá
+				</div>
+				<div class="exc-rewards__employee-selected">
+					Tomáš Malý
+				</div>
+				<div class="exc-rewards__form">
+					<form action="POST" class="exc-rewards-form h-bg-light">
+						<fieldset>
+							<div class="exc-rewards-form__line">
+								<div class="exc-rewards-form__line-title">
+									<label for="exc-rewards-form__available">K dispozici máte</label>
+								</div>
+								<div class="exc-rewards-form__input exc-rewards-form__input--no-change">
+									<input id="exc-rewards-form__available" type="text" value="5000" name="available"></input>
+								</div>
+								<div class="exc-rewards-form__line-option">
+									<span>bodů</span>
+								</div>
+							</div>
+							<div class="exc-rewards-form__line exc-rewards-form__line--coloured">
+								<div class="exc-rewards-form__line-title">
+									<label for="exc-rewards-form__input">Zvolte výši odměny</label>
+								</div>
+								<div class="exc-rewards-form__input exc-rewards-form__input--value">
+									<input id="exc-rewards-form__input" type="text" value="2000" name="value"></input>
+								</div>
+								<div class="exc-rewards-form__line-option exc-rewards-form__line-option--coloured">
+									<span>bodů</span>
+								</div>
+							</div>
+							<div class="exc-rewards-form__line">
+								<div class="exc-rewards-form__line-title">
+									<label for="exc-rewards-form__text">Odeslat pochvalu</label>
+								</div>
+								<div class="exc-rewards-form__input exc-rewards-form__input--box">
+									<textarea id="exc-rewards-form__text" placeholder="Vložit text" name="message"></textarea>
+								</div>
+								<div class="exc-rewards-form__line-option">
+									<span></span>
+								</div>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+				<div class="exc-rewards__btn">
+					<button type="submit" value="Odeslat odměnu" class="btn btn--constrained-height btn--col-pos-prim btn--sh-pos btn--more-padding">
+						Odeslat odměnu
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

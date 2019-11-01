@@ -1,3 +1,4 @@
+{% set includeTitle = "TBC - přehled" %}
 {% extends "layout/default.nunjucks" %}
 
 {% block content %}
@@ -40,35 +41,39 @@
 			<h3 class="typo--main-title">Přehled karet</h3>
 			<div class="tbc-new tbc-new--no-side-padding">
 				<table class="tbc-new__table tbc-new__table--full">
-					<tr class="tbc-new__table-heading tbc-new__table-heading--underlined">
-						<th class="tbc-new__table-row-th">Číslo karty</th>
-						<th class="tbc-new__table-row-th">Validní do</th>
-						<th class="tbc-new__table-row-th">Držitel karty</th>
-						<th class="tbc-new__table-row-th">Stav</th>
-						<th class="tbc-new__table-row-th">Zůstatek</th>
-						<th class="tbc-new__table-row-th tbc-new__table-row-th--option">Volba</th>
-					</tr>
-					<tr class="tbc-new__table-row tbc-new__table-row--underlined">
-						<td class="tbc-new__table-row-value tbc-new__table-row-value--coloured">8010125557</td>
-						<td class="tbc-new__table-row-value">31. 12. 2017</td>
-						<td class="tbc-new__table-row-value">Jan Novák</td>
-						<td class="tbc-new__table-row-value tbc-new__table-row-value--warn">Vydaná</td>
-						<td class="tbc-new__table-row-value"><span class="h-text-center">-</span></td>
-						<td class="tbc-new__table-row-value"><a href="#" class="link link--coloured link--underlined">Aktivovat</a></td>
-					</tr>
-					<tr class="tbc-new__table-row tbc-new__table-row--underlined" data-balance="5000">
-						<td class="tbc-new__table-row-value tbc-new__table-row-value--coloured">8010125557</td>
-						<td class="tbc-new__table-row-value">31. 12. 2017</td>
-						<td class="tbc-new__table-row-value">Jan Novák</td>
-						<td class="tbc-new__table-row-value tbc-new__table-row-value--info">Aktivovaná</td>
-						<td class="tbc-new__table-row-value">5000 Kč</td>
-						<td class="tbc-new__table-row-value"></td>
-					</tr>
+					<thead>
+						<tr class="tbc-new__table-heading tbc-new__table-heading--underlined">
+							<th class="tbc-new__table-row-th">Číslo karty</th>
+							<th class="tbc-new__table-row-th">Validní do</th>
+							<th class="tbc-new__table-row-th">Držitel karty</th>
+							<th class="tbc-new__table-row-th">Stav</th>
+							<th class="tbc-new__table-row-th">Zůstatek</th>
+							<th class="tbc-new__table-row-th tbc-new__table-row-th--option">Volba</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="tbc-new__table-row tbc-new__table-row--underlined">
+							<td class="tbc-new__table-row-value tbc-new__table-row-value--coloured">8010125557</td>
+							<td class="tbc-new__table-row-value">31. 12. 2017</td>
+							<td class="tbc-new__table-row-value">Jan Novák</td>
+							<td class="tbc-new__table-row-value tbc-new__table-row-value--warn">Vydaná</td>
+							<td class="tbc-new__table-row-value"><span class="h-text-center">-</span></td>
+							<td class="tbc-new__table-row-value"><a href="#" class="link link--coloured link--underlined">Aktivovat</a></td>
+						</tr>
+						<tr class="tbc-new__table-row tbc-new__table-row--underlined" data-balance="5000">
+							<td class="tbc-new__table-row-value tbc-new__table-row-value--coloured">8010125557</td>
+							<td class="tbc-new__table-row-value">31. 12. 2017</td>
+							<td class="tbc-new__table-row-value">Jan Novák</td>
+							<td class="tbc-new__table-row-value tbc-new__table-row-value--info">Aktivovaná</td>
+							<td class="tbc-new__table-row-value">5000 Kč</td>
+							<td class="tbc-new__table-row-value"></td>
+						</tr>
+					</tbody>
 				</table>
 			</div>
 		</div>
 		<div class="container__pane">
-			<div class="container__pane-img--big">
+			<div class="container__pane-img container__pane-img--big">
 				<img src="./img/TBC.svg" alt="Ticket Benefits Card">
 			</div>
 		</div>

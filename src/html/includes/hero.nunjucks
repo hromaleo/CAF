@@ -32,7 +32,7 @@
         </div>
         <div class="search-field__options">
           <span class="search-field__option">
-            <a href="#" class="link link--underlined">Zobrazit katalog</a>
+            <a href="catalogue-list.html" class="link link--underlined">Zobrazit katalog</a>
           </span>
           <span class="search-field__option">
             <a href="#" class="link link--underlined">Zobrazit na mapě</a>

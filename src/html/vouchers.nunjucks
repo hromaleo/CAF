@@ -1,3 +1,4 @@
+{% set includeTitle = "Poukázky" %}
 {% extends "layout/default.nunjucks" %}
 
 {% block content %}
@@ -58,61 +59,65 @@
 					</p>
 				</div>
 				<table class="table table--stretched mTop24">
-					<tr class="table__row">
-						<th class="table__row-th"> Hodnota </th>
-						<th class="table__row-th"> Počet </th>
-						<th class="table__row-th"> Celkem </th>
-					</tr>
-					<tr class="table__row" data-price="50">
-						<td class="table__row-value">
-							50 bodů / 50 Kč
-						</td>
-						<td class="table__row-count">
-							<input type="text" class="table__row-input">
-							Ks
-						</td>
-						<td class="table__row-total"></td>
-					</tr>
-					<tr class="table__row" data-price="100">
-						<td class="table__row-value">
-							100 bodů / 100 Kč
-						</td>
-						<td class="table__row-count">
-							<input type=" text" class="table__row-input">
-							Ks
-						</td>
-						<td class="table__row-total"></td>
-					</tr>
-					<tr class="table__row" data-price="200">
-						<td class="table__row-value">
-							200 bodů / 200 Kč
-						</td>
-						<td class="table__row-count">
-							<input type="text" class="table__row-input">
-							Ks
-						</td>
-						<td class="table__row-total"></td>
-					</tr>
-					<tr class="table__row" data-price="500">
-						<td class="table__row-value">
-							500 bodů / 500 Kč
-						</td>
-						<td class="table__row-count">
-							<input type="text" class="table__row-input">
-							Ks
-						</td>
-						<td class="table__row-total"></td>
-					</tr>
-					<tr class="table__row" data-price="1000">
-						<td class="table__row-value">
-							1000 bodů / 1000 Kč
-						</td>
-						<td class="table__row-count">
-							<input type="text" class="table__row-input">
-							Ks
-						</td>
-						<td class="table__row-total"></td>
-					</tr>
+					<thead>
+						<tr class="table__row">
+							<th class="table__row-th"> Hodnota </th>
+							<th class="table__row-th"> Počet </th>
+							<th class="table__row-th"> Celkem </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="table__row" data-price="50">
+							<td class="table__row-value">
+								50 bodů / 50 Kč
+							</td>
+							<td class="table__row-count">
+								<input type="text" class="table__row-input">
+								Ks
+							</td>
+							<td class="table__row-total"></td>
+						</tr>
+						<tr class="table__row" data-price="100">
+							<td class="table__row-value">
+								100 bodů / 100 Kč
+							</td>
+							<td class="table__row-count">
+								<input type=" text" class="table__row-input">
+								Ks
+							</td>
+							<td class="table__row-total"></td>
+						</tr>
+						<tr class="table__row" data-price="200">
+							<td class="table__row-value">
+								200 bodů / 200 Kč
+							</td>
+							<td class="table__row-count">
+								<input type="text" class="table__row-input">
+								Ks
+							</td>
+							<td class="table__row-total"></td>
+						</tr>
+						<tr class="table__row" data-price="500">
+							<td class="table__row-value">
+								500 bodů / 500 Kč
+							</td>
+							<td class="table__row-count">
+								<input type="text" class="table__row-input">
+								Ks
+							</td>
+							<td class="table__row-total"></td>
+						</tr>
+						<tr class="table__row" data-price="1000">
+							<td class="table__row-value">
+								1000 bodů / 1000 Kč
+							</td>
+							<td class="table__row-count">
+								<input type="text" class="table__row-input">
+								Ks
+							</td>
+							<td class="table__row-total"></td>
+						</tr>
+					</tbody>
 				</table>
 				<div class="vouchers-order__checkout">
 					Celkem:

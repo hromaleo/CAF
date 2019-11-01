@@ -1,3 +1,4 @@
+{% set includeTitle = "Domů" %}
 {% extends "layout/default.nunjucks" %}
 
 {% block content %}

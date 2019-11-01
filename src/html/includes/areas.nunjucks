@@ -76,7 +76,7 @@
           <div class="Grid-col">
             <div class="card card--simple">
               <div class="card__title">
-                <a href="exc.rewards-mod.html" class="link link--underlined">Modul mimořádných odměn</a>
+                <a href="exc-rewards.html" class="link link--underlined">Modul mimořádných odměn</a>
               </div>
               <div class="card__img">
                 <img src="./img/transfer-from-hr.png" alt="" />

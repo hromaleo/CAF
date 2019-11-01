@@ -1,17 +1,11 @@
-.exc-rewards-mod {
+.exc-rewards {
   &__selector {
-    min-width: 60%;
+    max-width: 60%;
     height: 2.75rem;
     margin: 1.25rem 0;
-    padding-left: 1.25rem;
-    padding-right: 1rem;
     border-radius: 3px;
     border: $line-thinner solid $color-alt;
-    background-image: url("../img/arrow-down-red.png");
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: 10px 6px;
-    background-origin: content-box;
+    font-size: 0.75rem;
   }
 
   &__employee-selected {

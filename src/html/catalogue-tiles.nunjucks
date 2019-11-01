@@ -1,3 +1,4 @@
+{% set includeTitle = "Katalog - dlaždice" %}
 {% extends "layout/default.nunjucks" %}
 {% block content %}
 

@@ -14,10 +14,10 @@
 	"author": "Patrik Helta",
 	"license": "ISC",
 	"browserslist": [
-    "last 3 version",
-    "> 2%",
-    "ie 11"
-  ],
+		"last 3 version",
+		"> 2%",
+		"ie 11"
+	],
 	"devDependencies": {
 		"@babel/cli": "^7.5.5",
 		"@babel/core": "^7.5.5",
