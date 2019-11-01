@@ -83,11 +83,18 @@ input, select, textarea {
 	&:focus {
 		outline-color: $color-alt;
 	}
-
+  
 	&[disabled] {
-		background-color: $color-light;
+    background-color: $color-light;
 		cursor: not-allowed;
 	}
+}
+
+input[type="checkbox"] {
+  padding: 0;
+  &:focus {
+    outline: none;
+  }
 }
 
 select {

@@ -53,20 +53,20 @@
 					</thead>
 					<tbody>
 						<tr class="tbc-new__table-row tbc-new__table-row--underlined">
-							<td class="tbc-new__table-row-value tbc-new__table-row-value--coloured">8010125557</td>
-							<td class="tbc-new__table-row-value">31. 12. 2017</td>
-							<td class="tbc-new__table-row-value">Jan Novák</td>
-							<td class="tbc-new__table-row-value tbc-new__table-row-value--warn">Vydaná</td>
-							<td class="tbc-new__table-row-value"><span class="h-text-center">-</span></td>
-							<td class="tbc-new__table-row-value"><a href="#" class="link link--coloured link--underlined">Aktivovat</a></td>
+							<td class="tbc-new__table-row-value tbc-new__table-row-value--coloured" data-th="Číslo karty">8010125557</td>
+							<td class="tbc-new__table-row-value" data-th="Validní do">31. 12. 2017</td>
+							<td class="tbc-new__table-row-value" data-th="Držitel karty">Jan Novák</td>
+							<td class="tbc-new__table-row-value tbc-new__table-row-value--warn" data-th="Stav">Vydaná</td>
+							<td class="tbc-new__table-row-value" data-th="Zůstatek"><span class="h-text-center">-</span></td>
+							<td class="tbc-new__table-row-value" data-th="Volba"><a href="#" class="link link--coloured link--underlined"><span class="link">Aktivovat</span></a></td>
 						</tr>
 						<tr class="tbc-new__table-row tbc-new__table-row--underlined" data-balance="5000">
-							<td class="tbc-new__table-row-value tbc-new__table-row-value--coloured">8010125557</td>
-							<td class="tbc-new__table-row-value">31. 12. 2017</td>
-							<td class="tbc-new__table-row-value">Jan Novák</td>
-							<td class="tbc-new__table-row-value tbc-new__table-row-value--info">Aktivovaná</td>
-							<td class="tbc-new__table-row-value">5000 Kč</td>
-							<td class="tbc-new__table-row-value"></td>
+							<td class="tbc-new__table-row-value tbc-new__table-row-value--coloured" data-th="Číslo karty">8010125557</td>
+							<td class="tbc-new__table-row-value" data-th="Validní do">31. 12. 2017</td>
+							<td class="tbc-new__table-row-value" data-th="Držitel karty">Jan Novák</td>
+							<td class="tbc-new__table-row-value tbc-new__table-row-value--info" data-th="Stav">Aktivovaná</td>
+							<td class="tbc-new__table-row-value" data-th="Zůstatek">5000 Kč</td>
+							<td class="tbc-new__table-row-value" data-th="Volba"></td>
 						</tr>
 					</tbody>
 				</table>

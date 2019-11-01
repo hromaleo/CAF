@@ -1,10 +1,7 @@
 <form class="aside-menu">
 	<fieldset class="aside-menu__block">
-		<legend class="aside-menu__block-title">
-			<span>Kategorie</span>
-			<span class="aside-menu__selected-count">
-				(2/11)
-			</span>
+		<legend class="aside-menu__block-title" data-selected-count="2" data-number="11">
+			Kategorie (2/11)
 		</legend>
 		<div class="aside-menu__content">
 			<div class="aside-menu__item">
@@ -55,11 +52,8 @@
 		</div>
 	</fieldset>
 	<fieldset class="aside-menu__block">
-		<legend class="aside-menu__block-title">
-			<span>Možnost platby</span>
-			<span class="aside-menu__selected-count">
-				(0/6)
-			</span>
+		<legend class="aside-menu__block-title" data-selected-count="0" data-number="6">
+			Možnost platby (0/6)
 		</legend>
 		<div class="aside-menu__content">
 			<div class="aside-menu__item">

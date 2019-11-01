@@ -42,16 +42,12 @@
 		}
 	}
 
-	&__selected-count {
-		margin-left: 0.25em;
-	}
-
 	&__content {
 		margin-top: 1.5rem;
 		display: none;
 
 		&--active {
-			display: initial;
+			display: inline;
 		}
 	}
 

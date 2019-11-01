@@ -29,8 +29,13 @@
   }
 
   &__table-heading {
-    height: 1.5rem;
+    display: none;
 
+    @include mediaTiUp {
+      display: table-row;
+      height: 1.5rem;
+    }
+    
     &--underlined {
       height: 4rem;
       border-bottom: $line-thin solid $color-light;
@@ -38,13 +43,23 @@
   }
   
   &__table-row {
-    height: 3.5rem;
+    display: block;
+    margin: 1rem 0;
+    
+    @include mediaTiUp {
+      height: 3.5rem;
+      display: table-row;
+      margin: 0;
+    }
 
     &--underlined {
-      height: 4rem;
-      border-bottom: $line-thinner solid $color-light;
+      border-bottom: $line-thin solid $color-light;
       &:last-of-type {
         border-bottom: none;
+      }
+      @include mediaTiUp {
+        height: 4rem;
+        border-bottom: $line-thinner solid $color-light;
       }
     }
   }
@@ -105,7 +120,24 @@
   }
 
   &__table-row-value {
-    word-break: break-all;
+		word-break: break-all;
+    display: block;
+    margin: 0.25em 0;
+
+		&:before {
+      display: inline-block;
+      content: attr(data-th) ": ";
+      color: $color-dark;
+      width: 6rem;
+    }
+    
+    @include mediaTiUp {
+      display: table-cell;
+      margin: 0;
+      &:before {
+        content: none;
+      }
+    }
 
     &--coloured {
       color: $color-alt;
