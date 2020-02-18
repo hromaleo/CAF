@@ -5,6 +5,12 @@
 <meta name="keywords" content="{{ page.keywords }}">
 <meta name="author" content="{{ page.author }}">
 <meta name="robots" content="{{ page.robots }}">
+<meta property="og:title" content="{{ page.title }} | {{ includeTitle }}" />
+<meta property="og:description" content="{{ page.description }}" />
+<meta property="og:url" content="https://www.hromadkoleos.site" />
+<meta property="og:image" content="./img/edenred-logo.png" />
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:type" content="website">
 {% block title %}
 		<title>{{ page.title }} | {{ includeTitle }}</title>
 {% endblock %}
